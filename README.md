@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-This is the source code to Ye Zheng's public website: https://zhengyeah.cn/. 
+This is the source code to Ye Zheng's public website: http://zhengyeah.cn/. 
 
 Feel free to clone this code for your own personal use.
 
