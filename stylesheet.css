@@ -1,53 +1,54 @@
 a {
-  color: #1772d0;
-  text-decoration: none;
+    color: #1772d0;
+    text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #D0104C;
-  text-decoration: none;
+    color: #D0104C;
+    text-decoration: none;
 }
 
+/*Font family comes from GitHub*/
 body,
 td,
 th,
 tr,
 p,
 a {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif;
-  font-size: 16px
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px
 }
 
 strong {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif;
-  font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
 }
 
-heading {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif;
-  font-size: 24px;
+.heading {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    font-size: 24px;
 }
 
-heading-grey {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif;
-  font-size: 24px;
-  color: lightgrey;
+.heading-grey {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    color: lightgrey;
 }
 
-heading-grey:focus,
-heading-grey:hover {
-  color: #D0104C;
-  text-decoration: none;
+.heading-grey:focus,
+.heading-grey:hover {
+    color: #D0104C;
+    text-decoration: none;
 }
 
-papertitle {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 700
+.paper-title {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700
 }
 
-name {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif;
-  font-size: 32px;
+#my-name {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    font-size: 32px;
 }
