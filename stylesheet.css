@@ -56,21 +56,21 @@ strong {
 }
 
 #bio-profile .bio {
-    padding: 20px;
+    padding: 15px;
     width: 65%;
     vertical-align: middle
 }
 
 #bio-profile .profile {
-    padding: 20px;
-    padding-right: 25px;
+    padding: 15px;
+    padding-right: 20px;
     width: 30%;
     max-width: 30%
 }
 
 @media (max-width: 860px) {
     #bio-profile .bio {
-        padding: 20px;
+        padding: 15px;
         width: 100%;
         vertical-align: middle
     }
