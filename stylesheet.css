@@ -81,8 +81,7 @@ strong {
 }
 
 #bio-profile .profile {
-    padding: 15px;
-    padding-right: 20px;
+    padding: 15px 15px 15px 20px;
     width: 30%;
     max-width: 30%
 }
@@ -96,6 +95,24 @@ td .td-whole-line {
 @media (max-width: 860px) {
     #bio-profile .bio {
         padding: 15px;
+        width: 100%;
+        vertical-align: middle
+    }
+
+    #bio-profile .profile {
+        display: none
+    }
+}
+
+@media (max-width: 400px) {
+    td .td-whole-line {
+        padding: 15px 0;
+        width: 100%;
+        vertical-align: middle
+    }
+
+    #bio-profile .bio {
+        padding: 15px 0;
         width: 100%;
         vertical-align: middle
     }
