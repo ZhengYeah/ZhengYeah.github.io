@@ -51,5 +51,30 @@ strong {
 #my-name {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
     font-size: 32px;
-    margin-top: 20px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+#bio-profile .bio {
+    padding: 20px;
+    width: 65%;
+    vertical-align: middle
+}
+
+#bio-profile .profile {
+    padding: 20px;
+    padding-right: 25px;
+    width: 30%;
+    max-width: 30%
+}
+
+@media (max-width: 860px) {
+    #bio-profile .bio {
+        padding: 20px;
+        width: 100%;
+        vertical-align: middle
+    }
+    #bio-profile .profile {
+        display: none
+    }
 }
