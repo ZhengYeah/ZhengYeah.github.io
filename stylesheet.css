@@ -5,7 +5,7 @@ a {
 
 a:focus,
 a:hover {
-  color: #f09228;
+  color: #D0104C;
   text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ heading-grey {
 
 heading-grey:focus,
 heading-grey:hover {
-  color: #f09228;
+  color: #D0104C;
   text-decoration: none;
 }
 
