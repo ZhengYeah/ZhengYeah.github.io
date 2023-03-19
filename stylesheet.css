@@ -107,13 +107,13 @@ td .td-whole-line {
 
 @media (max-width: 420px) {
     td .td-whole-line {
-        padding: 20px 0;
+        padding: 20px 10px;
         width: 100%;
         vertical-align: middle
     }
 
     #bio-profile .bio {
-        padding: 20px 0;
+        padding: 20px 10px;
         width: 100%;
         vertical-align: middle
     }
