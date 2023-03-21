@@ -11,9 +11,6 @@ a:hover {
 
 /*Font family comes from GitHub*/
 body,
-td,
-th,
-tr,
 p,
 a {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
@@ -42,26 +39,6 @@ strong {
     text-decoration: none;
 }
 
-.table-level-1 {
-    width: 100%;
-    max-width: 860px;
-    border: 0;
-    border-spacing: 0;
-    border-collapse: separate;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 30px
-}
-
-.table-level-2 {
-    width: 100%;
-    border: 0;
-    border-spacing: 0;
-    border-collapse: separate;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 .paper-title {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -75,50 +52,62 @@ strong {
     margin-bottom: 40px;
 }
 
-#bio-profile .bio {
-    padding: 20px;
-    width: 65%;
-    vertical-align: middle
-}
-
-#bio-profile .profile {
-    padding: 20px 25px 20px 20px;
-    width: 30%;
-    max-width: 30%
-}
-
-td .td-whole-line {
-    padding: 20px;
+.layout-level-1 {
     width: 100%;
-    vertical-align: middle
+    max-width: 860px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px
 }
 
-@media (max-width: 860px) {
-    #bio-profile .bio {
-        padding: 20px;
+.layout-level-2 {
+    padding: 20px;
+}
+
+#bio-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div #bio-profile .bio {
+    width: 68%;
+}
+
+div #bio-profile .profile {
+    width: 27%;
+    padding: 10px 5px 10px 0;
+}
+
+.horizontal-scroll {
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.paper-list:nth-child(1) {
+    margin-top: 40px;
+}
+
+.paper-entry {
+    margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+    div #bio-profile .bio {
         width: 100%;
-        vertical-align: middle
     }
 
-    #bio-profile .profile {
+    div #bio-profile .profile {
         display: none
     }
 }
 
 @media (max-width: 420px) {
-    td .td-whole-line {
+    .layout-level-2 {
         padding: 20px 10px;
-        width: 100%;
-        vertical-align: middle
-    }
-
-    #bio-profile .bio {
-        padding: 20px 10px;
-        width: 100%;
-        vertical-align: middle
-    }
-
-    #bio-profile .profile {
-        display: none
     }
 }
