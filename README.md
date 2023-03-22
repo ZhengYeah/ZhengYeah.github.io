@@ -12,7 +12,7 @@ This website is designed for personal academic homepage, with the following feat
 
 * Responsive design: different layouts on different screen sizes;
 * Well-designed layouts: elements' sizes, margins, and paddings are fine-tuned;
-* Simple and structural code template: easy to extend. 
+* Easy extensibility: simple and structural code template. 
 
 
 <!--

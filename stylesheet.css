@@ -96,7 +96,7 @@ div #bio-profile .profile {
     margin-top: 40px;
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
     div #bio-profile .bio {
         width: 100%;
     }
@@ -106,7 +106,7 @@ div #bio-profile .profile {
     }
 }
 
-@media (max-width: 420px) {
+@media screen and (max-width: 420px) {
     .layout-level-2 {
         padding: 20px 10px;
     }
