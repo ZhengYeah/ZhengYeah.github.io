@@ -11,7 +11,8 @@ Feel free to clone this code for your own personal use.
 This website is designed for personal academic homepage, with the following features:
 
 * Responsive design: different layouts on different screen sizes;
-* Well-designed layouts: elements' sizes, margins, and paddings are fine-tuned;
+* Well-designed layouts: elements' colors, sizes, margins, and paddings are fine-tuned;
+* Subpages (filters) implemented by pure JSP;
 * Easy extensibility: simple and structural code template. 
 
 
