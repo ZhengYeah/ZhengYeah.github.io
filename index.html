@@ -50,13 +50,15 @@
     </div>
     <div class="layout-level-2">
         <div class="horizontal-scroll">
-            <span class="heading" style="text-decoration: underline">Publication</span>
-            <span class="heading" style="color: lightgray">&nbsp; - &nbsp;</span>
-            <a href="#Misc">
-                <span class="heading-grey" style="text-decoration: underline">Misc</span>
+            <a href="javascript:toggle_publication()" id="button-publication" class="heading" style="color: black">
+                Publication
+            </a>
+            <span class="heading" style="color: lightgrey">&nbsp; - &nbsp;</span>
+            <a href="javascript:toggle_misc()" id="button-misc" class="heading-grey">
+                Misc
             </a>
         </div>
-        <div class="paper-list">
+        <div id="category-publication" class="paper-list">
 
 
             <div class="paper-entry">
@@ -128,33 +130,31 @@
                 </p>
             </div>
         </div>
-    </div>
 
-    <div class="layout-level-2">
-        <div class="heading" id="Misc">Misc</div>
+        <div id="category-misc" style="display: none">
 
-
-        <div class="paper-entry">
-            <a href="https://www.zhihu.com/column/c_1622892806279782400">
-                <span class="paper-title">文学双月刊《收获》- 长篇小说评论集</span>
-            </a>
-            <p>
-                杂志《收获》由巴金、靳以先生于 1957 年创办，内容以严肃文学为主，具有高水平的艺术格调。
-                当代中国文学史上有一定影响的作家几乎都跟《收获》有关系，可以说它是中国当代严肃文学的简写本。
-                此评论集收录我尝试对《收获》长篇小说的主观评论。
-            </p>
-        </div>
-        <div class="paper-entry">
-            <a href="https://github.com/ZhengYeah/PaperRank-of-NNVerification">
-                <span class="paper-title">PaperRank-of-NNVerification</span>
-            </a>
-            <p>
-                A personal ranking of papers in Neural Network Verification, organized by the publication
-                year.
-                I use "+++" as the maximum score, meaning I think the paper had an iconic contribution to
-                this area.
-                Such papers are selected and listed in the README file.
-            </p>
+            <div class="paper-entry">
+                <a href="https://www.zhihu.com/column/c_1622892806279782400">
+                    <span class="paper-title">文学双月刊《收获》- 长篇小说评论集</span>
+                </a>
+                <p>
+                    杂志《收获》由巴金、靳以先生于 1957 年创办，内容以严肃文学为主，具有高水平的艺术格调。
+                    当代中国文学史上有一定影响的作家几乎都跟《收获》有关系，可以说它是中国当代严肃文学的简写本。
+                    此评论集收录我尝试对《收获》长篇小说的主观评论。
+                </p>
+            </div>
+            <div class="paper-entry">
+                <a href="https://github.com/ZhengYeah/PaperRank-of-NNVerification">
+                    <span class="paper-title">PaperRank-of-NNVerification</span>
+                </a>
+                <p>
+                    A personal ranking of papers in Neural Network Verification, organized by the publication
+                    year.
+                    I use "+++" as the maximum score, meaning I think the paper had an iconic contribution to
+                    this area.
+                    Such papers are selected and listed in the README file.
+                </p>
+            </div>
         </div>
     </div>
 
@@ -168,3 +168,37 @@
         </p>
     </div>
 </div>
+
+<script>
+    function toggle_misc() {
+        const x = document.getElementById("category-publication");
+        const y = document.getElementById("category-misc");
+        const a = document.getElementById("button-publication");
+        const b = document.getElementById("button-misc");
+        if (y.style.display === "none") {
+            y.style.display = "block";
+            x.style.display = "none";
+            a.removeAttribute("style")
+            a.className = "heading-grey";
+            b.style.color = "black";
+        } else {
+        }
+    }
+
+    function toggle_publication() {
+        const x = document.getElementById("category-publication");
+        const y = document.getElementById("category-misc");
+        const a = document.getElementById("button-publication");
+        const b = document.getElementById("button-misc");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.display = "none";
+            b.removeAttribute("style")
+            b.className = "heading-grey";
+            a.style.color = "black";
+        } else {
+        }
+    }
+</script>
+
+</body>

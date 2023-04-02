@@ -33,12 +33,6 @@ strong {
     color: lightgrey;
 }
 
-.heading-grey:focus,
-.heading-grey:hover {
-    color: #D0104C;
-    text-decoration: none;
-}
-
 .paper-title {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
     font-size: 16px;
