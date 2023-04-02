@@ -50,11 +50,12 @@
     </div>
     <div class="layout-level-2">
         <div class="horizontal-scroll">
-            <a href="javascript:toggle_publication()" id="button-publication" class="heading" style="color: black">
+            <a href="javascript:toggle_publication()" id="button-publication" class="heading"
+               style="color: black; text-decoration: underline">
                 Publication
             </a>
             <span class="heading" style="color: lightgrey">&nbsp; - &nbsp;</span>
-            <a href="javascript:toggle_misc()" id="button-misc" class="heading-grey">
+            <a href="javascript:toggle_misc()" id="button-misc" class="heading-grey" style="text-decoration: underline">
                 Misc
             </a>
         </div>
@@ -178,7 +179,7 @@
         if (y.style.display === "none") {
             y.style.display = "block";
             x.style.display = "none";
-            a.removeAttribute("style")
+            a.style.removeProperty("color");
             a.className = "heading-grey";
             b.style.color = "black";
         } else {
@@ -193,7 +194,7 @@
         if (x.style.display === "none") {
             x.style.display = "block";
             y.style.display = "none";
-            b.removeAttribute("style")
+            b.style.removeProperty("color");
             b.className = "heading-grey";
             a.style.color = "black";
         } else {
