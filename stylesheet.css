@@ -52,13 +52,9 @@ body {
     align-items: center;
 }
 
-div #bio-profile .bio {
-    width: 68%;
-}
-
 div #bio-profile .profile {
-    width: 27%;
-    padding: 10px 5px 10px 0;
+    max-width: 225px;
+    padding: 0 5px 0 20px;
 }
 
 .horizontal-scroll {
@@ -82,17 +78,6 @@ div #bio-profile .profile {
 #footer p{
     text-align: center;
     color: dimgray;
-}
-
-@media screen and (max-width: 800px) {
-    div #bio-profile .bio {
-        width: 58%;
-    }
-
-    div #bio-profile .profile {
-        width: 36%;
-        padding: 10px 5px 10px 0;
-    }
 }
 
 @media screen and (max-width: 700px) {
