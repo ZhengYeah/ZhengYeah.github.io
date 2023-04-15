@@ -57,6 +57,10 @@ div #bio-profile .profile {
     padding: 0 5px 0 20px;
 }
 
+.profile img {
+    border: 1px solid dimgrey;
+}
+
 .horizontal-scroll {
     white-space: nowrap;
     overflow-x: scroll;
