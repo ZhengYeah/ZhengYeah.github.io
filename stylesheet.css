@@ -78,6 +78,10 @@ div #bio-profile .profile {
     background-color: #FCFAF2;
 }
 
+#category-awards ul li {
+    margin-bottom: 1em;
+}
+
 #footer {
     padding: 0;
     font-size: 13px;
