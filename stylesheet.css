@@ -74,6 +74,10 @@ div #bio-profile .profile {
     margin-top: 40px;
 }
 
+.highlight-entry {
+    background-color: #FCFAF2;
+}
+
 #footer {
     padding: 0;
     font-size: 13px;

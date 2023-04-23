@@ -55,6 +55,9 @@
             <span class="heading" style="color: lightgrey">&nbsp; - &nbsp;</span>
             <a href="javascript:toggle_misc()" id="button-misc" class="heading-grey"
                style="text-decoration: underline">Misc</a>
+            <span class="heading" style="color: lightgrey">&nbsp; - &nbsp;</span>
+            <a href="javascript:toggle_awards()" id="button-awards" class="heading-grey"
+               style="text-decoration: underline">Awards</a>
         </div>
         <div id="category-publication" class="paper-list">
 
@@ -131,13 +134,13 @@
 
         <div id="category-misc" style="display: none">
 
-            <div class="paper-entry">
+            <div class="paper-entry highlight-entry">
                 <a href="https://www.zhihu.com/people/zhengyeah/columns">
                     <span class="paper-title">文学评论、阅读笔记、随笔文集</span>
                 </a>
                 <p>
-                    维护于知乎平台，包括对一些长篇小说的分析与主观评论、一些书籍的阅读笔记、以及一些过去所写的随笔。
-                    除此之外，也包括关于其他领域问题的一些琐碎回答。
+                    这里是关于人文学科的创作内容，维护于知乎平台，包括对一些长篇小说的分析与主观评论、一些书籍的阅读笔记、以及一些过去所写的随笔。
+                    除此之外，也包括一些关于其他领域问题的琐碎回答。
                 </p>
             </div>
             <div class="paper-entry">
@@ -153,7 +156,31 @@
                 </p>
             </div>
         </div>
+
+        <div id="category-awards" style="display: none">
+
+            <div class="paper-entry">
+                <div class="paper-entry">
+                <span>Shenzhen University (2020 - 2023)</span>
+                <ul>
+                    <li>First prize, Academic Scholarship of Shenzhen University(top 15% students), 2022</li>
+                    <p></p>
+                    <li>National Merit Scholarship, Ministry of Education, China, 2022</li>
+                    <p></p>
+                    <li>First prize, Academic Scholarship of Shenzhen University (top 15% students), 2020</li>
+                </ul>
+            </div>
+            </div>
+            <div class="paper-entry">
+                <span>Henan University (2016 - 2020)</span>
+                <ul>
+                    <li>First prize, English Vocabulary Contest of Henan University, 2017</li>
+                </ul>
+            </div>
+        </div>
     </div>
+    </div>
+
 
     <div id="footer">
         <p>
@@ -166,32 +193,62 @@
 </div>
 
 <script>
-    function toggle_misc() {
+    function toggle_publication() {
         const x = document.getElementById("category-publication");
         const y = document.getElementById("category-misc");
+        const z = document.getElementById("category-awards")
         const a = document.getElementById("button-publication");
         const b = document.getElementById("button-misc");
-        if (y.style.display === "none") {
-            y.style.display = "block";
-            x.style.display = "none";
-            a.style.removeProperty("color");
-            a.className = "heading-grey";
-            b.style.color = "black";
+        const c = document.getElementById("button-awards")
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.display = "none";
+            z.style.display = "none"
+            a.style.color = "black";
+            b.style.removeProperty("color");
+            b.className = "heading-grey";
+            c.style.removeProperty("color");
+            c.className = "heading-grey";
         } else {
         }
     }
 
-    function toggle_publication() {
+    function toggle_misc() {
         const x = document.getElementById("category-publication");
         const y = document.getElementById("category-misc");
+        const z = document.getElementById("category-awards")
         const a = document.getElementById("button-publication");
         const b = document.getElementById("button-misc");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-            y.style.display = "none";
+        const c = document.getElementById("button-awards")
+        if (y.style.display === "none") {
+            y.style.display = "block";
+            x.style.display = "none";
+            z.style.display = "none"
+            a.style.removeProperty("color");
+            a.className = "heading-grey";
+            b.style.color = "black";
+            c.style.removeProperty("color");
+            c.className = "heading-grey";
+        } else {
+        }
+    }
+
+    function toggle_awards() {
+        const x = document.getElementById("category-publication");
+        const y = document.getElementById("category-misc");
+        const z = document.getElementById("category-awards")
+        const a = document.getElementById("button-publication");
+        const b = document.getElementById("button-misc");
+        const c = document.getElementById("button-awards")
+        if (z.style.display === "none") {
+            z.style.display = "block";
+            x.style.display = "none";
+            y.style.display = "none"
+            a.style.removeProperty("color");
+            a.className = "heading-grey";
             b.style.removeProperty("color");
             b.className = "heading-grey";
-            a.style.color = "black";
+            c.style.color = "black";
         } else {
         }
     }
