@@ -53,12 +53,26 @@ body {
 }
 
 div #bio-profile .profile {
-    max-width: 225px;
-    padding: 0 5px 0 20px;
+    max-width: 220px;
+    padding: 0 5px 0 30px;
 }
 
 .profile img {
-    border: 1px solid dimgrey;
+    width: 100%;
+    border: 2px solid #FCFAF2;
+}
+
+.mobile-profile {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.mobile-profile img{
+    max-width: 225px;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #FCFAF2;
 }
 
 .horizontal-scroll {
@@ -92,6 +106,11 @@ div #bio-profile .profile {
     color: dimgray;
 }
 
+@media screen and (min-width: 651px) {
+    .mobile-profile {
+        display: none;
+    }
+}
 @media screen and (max-width: 650px) {
     div #bio-profile .bio {
         width: 100%;
@@ -99,6 +118,12 @@ div #bio-profile .profile {
 
     div #bio-profile .profile {
         display: none
+    }
+
+    .my-name {
+        font-size: 36px;
+        text-align: center;
+        margin: 20px auto 40px;
     }
 }
 
@@ -124,9 +149,9 @@ div #bio-profile .profile {
     }
 
     .my-name {
-        font-size: 28px;
-        margin-top: 0;
-        margin-bottom: 30px;
+        font-size: 36px;
+        text-align: center;
+        margin: 15px auto 25px;
     }
 
     #footer {
