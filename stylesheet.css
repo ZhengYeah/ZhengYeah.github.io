@@ -150,8 +150,9 @@ div #bio-profile .profile {
 
     .my-name {
         font-size: 36px;
+        font-weight: lighter;
         text-align: center;
-        margin: 15px auto 25px;
+        margin: 15px auto 30px;
     }
 
     #footer {
