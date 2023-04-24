@@ -68,7 +68,7 @@ div #bio-profile .profile {
     text-align: center;
 }
 
-.mobile-profile img{
+.mobile-profile img {
     max-width: 225px;
     width: 100%;
     border-radius: 50%;
@@ -101,7 +101,7 @@ div #bio-profile .profile {
     font-size: 13px;
 }
 
-#footer p{
+#footer p {
     text-align: center;
     color: dimgray;
 }
@@ -111,6 +111,7 @@ div #bio-profile .profile {
         display: none;
     }
 }
+
 @media screen and (max-width: 650px) {
     div #bio-profile .bio {
         width: 100%;
