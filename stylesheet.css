@@ -101,6 +101,13 @@ div #bio-profile .profile {
     font-size: 13px;
 }
 
+#footer .split-line {
+    border: 0;
+    padding: 1px;
+    width: 72%;
+    background: repeating-linear-gradient(to right, lightgrey 0, lightgrey 3px, transparent 0, transparent 12px);
+}
+
 #footer p {
     text-align: center;
     color: dimgray;
