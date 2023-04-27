@@ -11,7 +11,8 @@ a:hover {
 /*Font family comes from GitHub*/
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
-    font-size: 16px
+    font-size: 16px;
+    margin: 0
 }
 
 .heading {
@@ -28,18 +29,13 @@ body {
     font-weight: 700
 }
 
-.my-name {
-    font-size: 32px;
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
 
 .layout-level-1 {
     width: 100%;
     max-width: 860px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 30px
+    margin-top: 70px
 }
 
 .layout-level-2 {
@@ -52,9 +48,29 @@ body {
     align-items: center;
 }
 
-div #bio-profile .profile {
+
+#bio-profile .bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 255px;
+}
+
+@media screen and (max-width: 650px) {
+    #bio-profile .bio {
+        width: 100%;
+    }
+
+    #bio-profile .profile {
+        display: none
+    }
+
+}
+
+#bio-profile .profile {
     max-width: 220px;
     padding: 0 5px 0 30px;
+    margin: 0 20px;
 }
 
 .profile img {
@@ -119,21 +135,6 @@ div #bio-profile .profile {
     }
 }
 
-@media screen and (max-width: 650px) {
-    div #bio-profile .bio {
-        width: 100%;
-    }
-
-    div #bio-profile .profile {
-        display: none
-    }
-
-    .my-name {
-        font-size: 36px;
-        text-align: center;
-        margin: 20px auto 40px;
-    }
-}
 
 @media screen and (max-width: 450px) {
     .layout-level-1 {
@@ -156,14 +157,165 @@ div #bio-profile .profile {
         font-size: 20px;
     }
 
-    .my-name {
-        font-size: 36px;
-        font-weight: lighter;
-        text-align: center;
-        margin: 15px auto 30px;
-    }
-
     #footer {
         font-size: 11px;
     }
+}
+
+
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(33, 33, 33, 0.2);
+  transition: 0.6s;
+}
+.header a,
+.header p {
+  font-size: 20px;
+}
+
+  .navigation-bar {
+    max-width: 1040px;
+    margin: 0 auto;
+      height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navigation-bar a {
+  text-decoration: none;
+  color: #212121;
+}
+
+.my-name {
+  font-weight: bold;
+}
+
+.link-collection ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.link-collection li {
+  padding: 0 20px;
+  white-space: nowrap;
+}
+
+.link-collection li a:hover {
+  color: #D0104C;
+}
+
+@media only screen and (max-width: 1000px) {
+  .link-collection {
+    display: none;
+  }
+}
+
+/* menu button */
+.menu-button > div {
+  width: 24px;
+  height: 2px;
+  background-color: #212121;
+  margin: 5px 0;
+    transition: all 0.5s ease;
+    transform-origin: 0 50%;
+}
+
+.on-click-menu-button > div {
+  width: 24px;
+  height: 2px;
+  background-color: #212121;
+  margin: 6px 0;
+    transition: all 0.5s ease;
+    transform-origin: 0 50%;
+}
+.on-click-menu-button > div:first-child {
+  transform: rotate(45deg);
+}
+.on-click-menu-button > div:nth-child(2) {
+  opacity: 0;
+}
+.on-click-menu-button > div:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+
+.link-col-mobile {
+  cursor: pointer;
+    transform-origin:20px center;
+    transition: 1s;
+
+}
+@media screen and (min-width: 1000px) {
+  .link-col-mobile {
+    display: none;
+  }
+}
+
+/* mobile menu overlay */
+.mobile-overlay {
+  height: 0;
+    position: fixed;
+    z-index: 1;
+    margin-top: 70px;
+    right: 0;
+    opacity: 0;
+    top: 0;
+    background-color: white;
+    box-shadow: -1px 1px 4px rgba(0,0,0,0.25);
+    transition: 0.5s;
+    overflow-y: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .mobile-overlay a,
+.mobile-overlay p {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mobile-overlay a,
+.mobile-overlay p {
+    font-size: 2rem;
+  }
+}
+
+.mobile-menu {
+  display: grid;
+}
+.mobile-menu a {
+  text-decoration: none;
+}
+.mobile-menu a:hover {
+  text-decoration: underline;
+}
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.mobile-menu li {
+  transition: 0.3s;
+  margin: 0.5rem 0;
+}
+
+.close-button {
+  display: flex;
+  justify-content: flex-end;
+    align-items: center;
+    font-size: 40px;
+  color: #fff;
+      font-weight: bold;
+    margin-right: 40px;
+      cursor: pointer;
+
 }

@@ -13,6 +13,47 @@
 </head>
 
 <body>
+<!-- Header -->
+<section class="header">
+    <div class="navigation-bar">
+        <div class="my-name">
+            <a href="https://zhengyeah.github.io">Ye Zheng</a>
+        </div>
+        <div class="link-collection">
+            <ul>
+                <li><a href="#category-publication">Publication</a></li>
+                <li><a href="#category-misc">Misc</a></li>
+                <li><a href="#category-awards">Awards</a></li>
+            </ul>
+        </div>
+        <div class="link-col-mobile">
+            <div class="menu-button">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu-button-quit">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+<!--        <div class="navbar-mobile-menu">-->
+<!--            <span class="icon-menu cross"><span class="middle"></span></span>-->
+<!--        </div>-->
+    </div>
+</section>
+<!-- Mobile Overlay -->
+<section class="mobile-overlay">
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#category-publication">Publication</a></li>
+                <li><a href="#category-misc">Misc</a></li>
+                <li><a href="#category-awards">Awards</a></li>
+        </ul>
+    </div>
+</section>
+
 <div class="layout-level-1">
     <div class="layout-level-2">
         <div class="mobile-profile">
@@ -20,7 +61,7 @@
         </div>
         <div id="bio-profile">
             <div class="bio">
-                <div class="my-name">Ye Zheng</div>
+                <div class="flex-top">
                 <p>
                     I am currently a master student majoring in Software Engineering at Shenzhen University,
                     supervised by
@@ -30,12 +71,15 @@
                     Now I focus mainly on formal verification. Specifically, my research topic is neural network
                     verification.
                 </p>
+                </div>
+                <div class="flex-bottom">
                 <p>
                     <a href="data/YeZheng-resume.pdf">Resume</a> &nbsp-&nbsp
                     <a href="https://scholar.google.com/citations?user=fIwzSr4AAAAJ">G. Scholar</a>&nbsp-&nbsp
                     <a href="https://github.com/ZhengYeah/">GitHub</a> &nbsp-&nbsp
                     <a href="https://zhihu.com/people/zhengyeah">ZhiHu</a>
                 </p>
+                </div>
             </div>
             <div class="profile">
                 <img alt="profile photo" src="/images/YeZheng-profile-1.jpg">
@@ -51,18 +95,9 @@
         </p>
     </div>
     <div class="layout-level-2">
-        <div class="horizontal-scroll">
-            <a href="javascript:toggle_publication()" id="button-publication" class="heading"
-               style="color: black; text-decoration: underline">Publication</a>
-            <span class="heading" style="color: lightgrey">&nbsp; - &nbsp;</span>
-            <a href="javascript:toggle_misc()" id="button-misc" class="heading-grey"
-               style="text-decoration: underline">Misc</a>
-            <span class="heading" style="color: lightgrey">&nbsp; - &nbsp;</span>
-            <a href="javascript:toggle_awards()" id="button-awards" class="heading-grey"
-               style="text-decoration: underline">Awards</a>
-        </div>
-        <div id="category-publication" class="paper-list">
+        <div id="category-publication" class="heading">Publication</div>
 
+        <div class="paper-list">
 
             <div class="paper-entry">
                 <a href="https://doi.org/10.1145/3540250.3558924">
@@ -133,8 +168,11 @@
                 </p>
             </div>
         </div>
+    </div>
 
-        <div id="category-misc" style="display: none">
+        <div class="layout-level-2">
+            <div id="category-misc" class="heading">Misc</div>
+
 
             <div class="paper-entry highlight-entry">
                 <a href="https://www.zhihu.com/people/zhengyeah/columns">
@@ -159,8 +197,8 @@
             </div>
         </div>
 
-        <div id="category-awards" style="display: none">
-
+<div class="layout-level-2">
+            <div id="category-awards" class="heading">Awards</div>
             <div class="paper-entry">
                 <div class="paper-entry">
                     <span>Shenzhen University (2020 - 2023)</span>
@@ -177,7 +215,6 @@
                     <li>First prize, English Vocabulary Contest of Henan University, 2017</li>
                 </ul>
             </div>
-        </div>
     </div>
 
     <div id="footer">
@@ -192,65 +229,48 @@
 </div>
 
 <script>
-    function toggle_publication() {
-        const x = document.getElementById("category-publication");
-        const y = document.getElementById("category-misc");
-        const z = document.getElementById("category-awards")
-        const a = document.getElementById("button-publication");
-        const b = document.getElementById("button-misc");
-        const c = document.getElementById("button-awards")
-        if (x.style.display === "none") {
-            x.style.display = "block";
-            y.style.display = "none";
-            z.style.display = "none"
-            a.style.color = "black";
-            b.style.removeProperty("color");
-            b.className = "heading-grey";
-            c.style.removeProperty("color");
-            c.className = "heading-grey";
-        } else {
-        }
-    }
 
-    function toggle_misc() {
-        const x = document.getElementById("category-publication");
-        const y = document.getElementById("category-misc");
-        const z = document.getElementById("category-awards")
-        const a = document.getElementById("button-publication");
-        const b = document.getElementById("button-misc");
-        const c = document.getElementById("button-awards")
-        if (y.style.display === "none") {
-            y.style.display = "block";
-            x.style.display = "none";
-            z.style.display = "none"
-            a.style.removeProperty("color");
-            a.className = "heading-grey";
-            b.style.color = "black";
-            c.style.removeProperty("color");
-            c.className = "heading-grey";
-        } else {
-        }
-    }
+    let prevScroll = window.scrollY;
+    const mobileOverlay = document.getElementsByClassName("mobile-overlay")[0];
+    const menuButton = document.getElementsByClassName("menu-button")[0];
 
-    function toggle_awards() {
-        const x = document.getElementById("category-publication");
-        const y = document.getElementById("category-misc");
-        const z = document.getElementById("category-awards")
-        const a = document.getElementById("button-publication");
-        const b = document.getElementById("button-misc");
-        const c = document.getElementById("button-awards")
-        if (z.style.display === "none") {
-            z.style.display = "block";
-            x.style.display = "none";
-            y.style.display = "none"
-            a.style.removeProperty("color");
-            a.className = "heading-grey";
-            b.style.removeProperty("color");
-            b.className = "heading-grey";
-            c.style.color = "black";
+    window.onscroll = () => {
+        let curScroll = window.scrollY;
+        const headerElement = document.getElementsByClassName("header")[0];
+        if (prevScroll > curScroll) {
+            headerElement.style.top = "0";
         } else {
+            headerElement.style.top = "-25vh";
         }
-    }
+        prevScroll = curScroll;
+        if (mobileOverlay.style.height === "auto") {
+            mobileOverlay.style.height = "0";
+            mobileOverlay.style.opacity = "0";
+            menuButton.className = "menu-button";
+        }
+
+    };
+    const mobileMenu = document.getElementsByClassName("link-col-mobile")[0];
+    // const menuButton = document.getElementsByClassName("menu-button")[0];
+    // const mobileOverlay = document.getElementsByClassName("mobile-overlay")[0];
+    const closeButton = document.getElementsByClassName("close-button")[0];
+    mobileMenu.addEventListener("click", () => {
+        if (mobileOverlay.style.height === "auto") {
+            menuButton.className = "menu-button";
+            mobileOverlay.style.height = "0";
+            mobileOverlay.style.opacity = "0";
+        }
+        else {
+menuButton.className = "on-click-menu-button";
+            mobileOverlay.style.height = "auto";
+        mobileOverlay.style.opacity = "1";}
+
+    });
+
+    // closeButton.addEventListener("click", () => {
+    //     mobileOverlay.style.height = "0";
+    //     mobileOverlay.style.opacity = "0";
+    // });
 </script>
 
 </body>
