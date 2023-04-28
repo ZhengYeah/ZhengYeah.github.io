@@ -313,7 +313,19 @@ body {
 
 @media screen and (max-width: 450px) {
     .layout-level-2 {
-        padding: 10px 10px;
+        padding: 10px 15px;
+    }
+    .footer-left {
+        margin-left: 15px;
+    }
+    .footer-right {
+        margin-right: 15px;
+    }
+    .navigation-bar {
+        padding: 0 15px;
+    }
+    .mobile-overlay {
+        right: 15px;
     }
     #pc-bio-profile .bio {
         height: auto;
