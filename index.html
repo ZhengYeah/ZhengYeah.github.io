@@ -13,7 +13,6 @@
 </head>
 
 <body>
-<!-- Header -->
 <section class="header">
     <div class="navigation-bar">
         <div class="my-name">
@@ -21,35 +20,26 @@
         </div>
         <div class="link-collection">
             <ul>
-                <li><a href="#category-publication">Publication</a></li>
-                <li><a href="#category-misc">Misc</a></li>
+                <li><a href="#category-publications">Publications</a></li>
+                <li><a href="#category-writings">Writings</a></li>
                 <li><a href="#category-awards">Awards</a></li>
             </ul>
         </div>
-        <div class="link-col-mobile">
+        <div class="mobile-menu-button">
             <div class="menu-button">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-            <div class="menu-button-quit">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
         </div>
-<!--        <div class="navbar-mobile-menu">-->
-<!--            <span class="icon-menu cross"><span class="middle"></span></span>-->
-<!--        </div>-->
     </div>
 </section>
-<!-- Mobile Overlay -->
 <section class="mobile-overlay">
-    <div class="mobile-menu">
+    <div class="mobile-overlay-list">
         <ul>
-            <li><a href="#category-publication">Publication</a></li>
-                <li><a href="#category-misc">Misc</a></li>
-                <li><a href="#category-awards">Awards</a></li>
+            <li><a href="#category-publications">Publications</a></li>
+            <li><a href="#category-writings">Writings</a></li>
+            <li><a href="#category-awards">Awards</a></li>
         </ul>
     </div>
 </section>
@@ -59,26 +49,25 @@
         <div class="mobile-profile">
             <img alt="profile photo" src="/images/YeZheng-profile-1.jpg">
         </div>
-        <div id="bio-profile">
+        <div id="pc-bio-profile">
             <div class="bio">
                 <div class="flex-top">
-                <p>
+
                     I am currently a master student majoring in Software Engineering at Shenzhen University,
                     supervised by
                     <a href="https://csse.szu.edu.cn/pages/user/index?id=1031"> Dr. Jiaxiang Liu</a>.
-                </p>
-                <p>
+                </div>
+                <div>
                     Now I focus mainly on formal verification. Specifically, my research topic is neural network
                     verification.
-                </p>
                 </div>
                 <div class="flex-bottom">
-                <p>
+
                     <a href="data/YeZheng-resume.pdf">Resume</a> &nbsp-&nbsp
                     <a href="https://scholar.google.com/citations?user=fIwzSr4AAAAJ">G. Scholar</a>&nbsp-&nbsp
                     <a href="https://github.com/ZhengYeah/">GitHub</a> &nbsp-&nbsp
                     <a href="https://zhihu.com/people/zhengyeah">ZhiHu</a>
-                </p>
+
                 </div>
             </div>
             <div class="profile">
@@ -94,10 +83,9 @@
             <a href="https://maths.henu.edu.cn/info/1204/3593.htm"> Dr. Zhonghua Wang</a>.
         </p>
     </div>
-    <div class="layout-level-2">
-        <div id="category-publication" class="heading">Publication</div>
-
-        <div class="paper-list">
+    <div id="category-publications" class="layout-level-2">
+        <div class="heading">Publications</div>
+        <div class="publications-list">
 
             <div class="paper-entry">
                 <a href="https://doi.org/10.1145/3540250.3558924">
@@ -167,13 +155,13 @@
                     使用多条回溯路径可以有效改善这类方法的精度。
                 </p>
             </div>
+
         </div>
     </div>
 
-        <div class="layout-level-2">
-            <div id="category-misc" class="heading">Misc</div>
-
-
+    <div id="category-writings" class="layout-level-2">
+        <div class="heading">Writings</div>
+        <div class="writings-list">
             <div class="paper-entry highlight-entry">
                 <a href="https://www.zhihu.com/people/zhengyeah/columns">
                     <span class="paper-title">文学评论、阅读笔记、随笔文集</span>
@@ -196,81 +184,42 @@
                 </p>
             </div>
         </div>
+    </div>
 
-<div class="layout-level-2">
-            <div id="category-awards" class="heading">Awards</div>
+    <div id="category-awards" class="layout-level-2">
+        <div class="heading">Awards</div>
+        <div class="awards-list">
             <div class="paper-entry">
-                <div class="paper-entry">
-                    <span>Shenzhen University (2020 - 2023)</span>
-                    <ul>
-                        <li>First prize, Academic Scholarship of Shenzhen University (top 15% students), 2022</li>
-                        <li>National Merit Scholarship, Ministry of Education, China, 2022</li>
-                        <li>First prize, Academic Scholarship of Shenzhen University (top 15% students), 2020</li>
-                    </ul>
-                </div>
+                <span>Shenzhen University (2020 - 2023)</span>
+                <ul>
+                    <li>First prize, Academic Scholarship of Shenzhen University (top 15% students), 2022</li>
+                    <li>National Merit Scholarship, Ministry of Education, China, 2022</li>
+                    <li>First prize, Academic Scholarship of Shenzhen University (top 15% students), 2020</li>
+                </ul>
             </div>
+
             <div class="paper-entry">
                 <span>Henan University (2016 - 2020)</span>
                 <ul>
                     <li>First prize, English Vocabulary Contest of Henan University, 2017</li>
                 </ul>
             </div>
+        </div>
     </div>
 
-    <div id="footer">
-        <hr class="split-line">
-        <p>
-            Last update: March 2023. &nbsp;&nbsp;&nbsp;&nbsp;--
-            Thanks for your browsing.
-            Here is the <a href="https://github.com/ZhengYeah/ZhengYeah.github.io">source code</a>
-            to this website. Feel free to clone them for your own personal use.
-        </p>
+</div>
+<div id="footer">
+    <hr class="split-line">
+    <div class="footer-box">
+        <div class="footer-left">
+            Last update: March 2023
+        </div>
+        <div class="footer-right">
+            -- Here is the <a href="https://github.com/ZhengYeah/ZhengYeah.github.io">source code</a>
+            to this website. Feel free to clone them for your own personal use :)
+        </div>
     </div>
 </div>
 
-<script>
-
-    let prevScroll = window.scrollY;
-    const mobileOverlay = document.getElementsByClassName("mobile-overlay")[0];
-    const menuButton = document.getElementsByClassName("menu-button")[0];
-
-    window.onscroll = () => {
-        let curScroll = window.scrollY;
-        const headerElement = document.getElementsByClassName("header")[0];
-        if (prevScroll > curScroll) {
-            headerElement.style.top = "0";
-        } else {
-            headerElement.style.top = "-25vh";
-        }
-        prevScroll = curScroll;
-        if (mobileOverlay.style.height === "auto") {
-            mobileOverlay.style.height = "0";
-            mobileOverlay.style.opacity = "0";
-            menuButton.className = "menu-button";
-        }
-
-    };
-    const mobileMenu = document.getElementsByClassName("link-col-mobile")[0];
-    // const menuButton = document.getElementsByClassName("menu-button")[0];
-    // const mobileOverlay = document.getElementsByClassName("mobile-overlay")[0];
-    const closeButton = document.getElementsByClassName("close-button")[0];
-    mobileMenu.addEventListener("click", () => {
-        if (mobileOverlay.style.height === "auto") {
-            menuButton.className = "menu-button";
-            mobileOverlay.style.height = "0";
-            mobileOverlay.style.opacity = "0";
-        }
-        else {
-menuButton.className = "on-click-menu-button";
-            mobileOverlay.style.height = "auto";
-        mobileOverlay.style.opacity = "1";}
-
-    });
-
-    // closeButton.addEventListener("click", () => {
-    //     mobileOverlay.style.height = "0";
-    //     mobileOverlay.style.opacity = "0";
-    // });
-</script>
-
+<script src="script.js"></script>
 </body>
