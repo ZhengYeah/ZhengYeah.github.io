@@ -12,7 +12,7 @@ This website is designed for personal academic homepage, with the following feat
 
 * Responsive design: different layouts on different screen sizes;
 * Well-designed layouts: elements' colors, sizes, margins, and paddings are fine-tuned;
-* Subpages (filters) implemented by pure JSP;
+* Implemented by pure HTML+CSS+JSP, no dependence on frameworks;
 * Easy extensibility: simple and structural code template. 
 
 
