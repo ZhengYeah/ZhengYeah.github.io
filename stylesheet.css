@@ -99,7 +99,7 @@ body {
 .menu-button > div {
     width: 25px;
     height: 2px;
-    background-color: #212121;
+    background-color: black;
     margin: 5px 0;
     transition: 0.3s;
     transform-origin: 0 50%;
@@ -108,7 +108,7 @@ body {
 .on-click-menu-button > div {
     width: 25px;
     height: 2px;
-    background-color: #212121;
+    background-color: black;
     margin: 7px 0;
     transition: 0.3s;
     transform-origin: 0 50%;
@@ -309,23 +309,16 @@ body {
     margin-right: 20px;
 }
 
+/******************** mobile layout ********************/
+
 @media screen and (max-width: 450px) {
-    /*.layout-level-1 {*/
-    /*    margin-top: 20px*/
-    /*}*/
-    /*.layout-level-2 {*/
-    /*    padding: 10px 10px*/
-    /*}*/
-    /*body {*/
-    /*    font-size: 14px*/
-    /*}*/
-    /*.paper-title {*/
-    /*    font-size: 14px;*/
-    /*}*/
-    /*.heading, .heading-grey {*/
-    /*    font-size: 20px;*/
-    /*}*/
-    #footer {
-        font-size: 11px;
+    .layout-level-2 {
+        padding: 10px 10px;
+    }
+    #pc-bio-profile .bio {
+        height: auto;
+    }
+    #pc-bio-profile .bio > div {
+        margin: 10px 0;
     }
 }
