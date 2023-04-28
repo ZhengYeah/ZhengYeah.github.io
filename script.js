@@ -18,15 +18,6 @@ window.addEventListener("scroll", () => {
     }
 })
 
-window.addEventListener("resize", () => {
-    let curWidth = window.screen.availWidth;
-    if (curWidth > 1000) {
-        mobileOverlay.style.height = "0";
-        mobileOverlay.style.opacity = "0";
-        menuButton.className = "menu-button";
-    }
-})
-
 function toggleMenu() {
     if (mobileOverlay.style.height === "auto") {
         menuButton.className = "menu-button";
@@ -42,3 +33,11 @@ function toggleMenu() {
 const mobileMenu = document.getElementsByClassName("mobile-menu-button")[0];
 mobileMenu.addEventListener("click", toggleMenu)
 
+window.addEventListener("resize", () => {
+    let curWidth = window.screen.availWidth;
+    if (curWidth > 1000) {
+        mobileOverlay.style.height = "0";
+        mobileOverlay.style.opacity = "0";
+        menuButton.className = "menu-button";
+    }
+})
