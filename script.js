@@ -35,7 +35,7 @@ mobileMenu.addEventListener("click", toggleMenu)
 
 window.addEventListener("resize", () => {
     let curWidth = window.screen.availWidth;
-    if (curWidth > 1000) {
+    if (curWidth > 860) {
         mobileOverlay.style.height = "0";
         mobileOverlay.style.opacity = "0";
         menuButton.className = "menu-button";
