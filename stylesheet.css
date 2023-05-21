@@ -9,7 +9,7 @@ a {
 
 a:hover {
     color: #D0104C;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /*Font family comes from GitHub*/
@@ -228,6 +228,20 @@ body {
     }
 }
 
+.button-links {
+    font-size: 13px;
+    padding: 0 4px 1px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.button-links:hover {
+    color: #fff;
+    background-color: #D0104C;
+    border-color: #D0104C;
+    text-decoration: none;
+}
+
 /******************** heading block ********************/
 
 .layout-level-1 {
@@ -254,7 +268,8 @@ body {
 
 .publications-list .paper-entry:first-child,
 .writings-list .paper-entry:first-child,
-.awards-list .paper-entry:first-child {
+.awards-list .paper-entry:first-child,
+.archives-list .paper-entry:first-child {
     margin-top: 20px;
 }
 
