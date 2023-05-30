@@ -42,9 +42,19 @@ window.addEventListener("resize", () => {
     }
 })
 
-window.onload = function () {
-    let i = Math.ceil(Math.random() * 3);
-    let showingImg = "./images/profile/profile-" + i + ".jpg";
-    document.getElementById("showing-profile").setAttribute("src", showingImg);
-    document.getElementById("showing-mobile-profile").setAttribute("src", showingImg);
-}
+const totalImgNum = 3;
+const showingImg = document.getElementById("showing-profile");
+let i = 2;
+showingImg.addEventListener("click", () => {
+    i = i % totalImgNum + 1;
+    let imgPath = "./images/profile/profile-" + i + ".jpg";
+    showingImg.setAttribute("src", imgPath);
+})
+
+const showingMobileImg = document.getElementById("showing-mobile-profile");
+let j = 1;
+showingMobileImg.addEventListener("click", () => {
+    j = j % totalImgNum + 1;
+    let imgPath = "./images/profile/profile-" + j + ".jpg";
+    showingMobileImg.setAttribute("src", imgPath);
+})
