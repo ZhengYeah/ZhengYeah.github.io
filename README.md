@@ -4,7 +4,7 @@ This is the source code to Ye Zheng's public website: http://zhengyeah.cn/.
 
 Feel free to clone this code for your own personal use.
 
-![](/images/screen-webiste.png)
+![](/images/screen-website.png)
 
 ### Features
 
