@@ -41,3 +41,10 @@ window.addEventListener("resize", () => {
         menuButton.className = "menu-button";
     }
 })
+
+window.onload = function () {
+    let i = Math.ceil(Math.random() * 3);
+    let showingImg = "./images/profile/profile-" + i + ".jpg";
+    document.getElementById("showing-profile").setAttribute("src", showingImg);
+    document.getElementById("showing-mobile-profile").setAttribute("src", showingImg);
+}
