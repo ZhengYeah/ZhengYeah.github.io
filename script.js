@@ -43,7 +43,7 @@ window.addEventListener("resize", () => {
 })
 
 window.onload = function () {
-    let i = Math.ceil(Math.random() * 3);
+    let i = Math.ceil(Math.random() * 4);
     let showingImg = "./images/profile/profile-" + i + ".jpg";
     document.getElementById("showing-profile").setAttribute("src", showingImg);
     document.getElementById("showing-mobile-profile").setAttribute("src", showingImg);
