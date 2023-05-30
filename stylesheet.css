@@ -196,6 +196,7 @@ body {
 .profile img {
     width: 100%;
     border: 2px solid #FCFAF2;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 650px) {
