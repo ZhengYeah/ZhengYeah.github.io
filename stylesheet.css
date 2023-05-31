@@ -189,8 +189,11 @@ body {
 }
 
 #pc-bio-profile .profile {
+    display: flex;
     max-width: 200px;
     margin: 0 0 0 50px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .profile img {
