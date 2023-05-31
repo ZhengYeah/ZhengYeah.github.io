@@ -44,7 +44,7 @@ window.addEventListener("resize", () => {
 
 const totalImgNum = 3;
 const showingImg = document.getElementById("showing-profile");
-let i = 2;
+let i = 1;
 showingImg.addEventListener("click", () => {
     i = i % totalImgNum + 1;
     let imgPath = "./images/profile/profile-" + i + ".jpg";
