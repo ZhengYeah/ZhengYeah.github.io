@@ -286,7 +286,7 @@ body {
     background-color: #FCFAF2;
 }
 
-.bio-list ul li,
+#category-more-bio ul li,
 #category-awards ul li {
     margin-bottom: 16px;
 }
