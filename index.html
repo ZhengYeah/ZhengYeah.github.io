@@ -99,25 +99,16 @@
     <div id="category-publications" class="layout-level-2">
         <div class="heading">Publications</div>
         <div class="publications-list">
-
             <div class="paper-entry">
                 <a class="paper-title" href="https://doi.org/10.1145/3540250.3558924">
                     MpBP: Verifying Robustness of Neural Networks with Multi-path Bound Propagation</a>&nbsp;&nbsp;
                 <a class="button-links" href="https://github.com/ZhengYeah/MpBP">Code</a>&nbsp;&nbsp;
                 <a class="button-links" href="/data/mpbp-slides.pdf">Slides</a>
-                <p></p>
+                <p>
                 <strong>Ye Zheng</strong>, Jiaxiang Liu, Xiaomu Shi
                 <br>
                 Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the
                 Foundations of Software Engineering <em><strong>(ESEC/FSE Demonstration)</strong></em>, 2022
-                <p></p>
-                <p>
-                    MpBP (Multipath Bound Propagation) extends classical bound propagation methods with multiple
-                    propagation paths.
-                    Multiple propagation paths provides multiple pairs of bounds for each neuron in a DNN, enabling
-                    tighter bounds.
-                    MpBP is based on the widely-used PyTorch machine learning framework, and paths are
-                    parallelized to provide efficient verification on GPUs.
                 </p>
             </div>
 
@@ -129,23 +120,11 @@
                         Multi-path Back-propagation Method for Neural Network Verification</a>&nbsp;&nbsp;
                 <a class="button-links" href="https://github.com/ZhengYeah/AbstraCMP">Code</a>&nbsp;&nbsp;
                 <a class="button-links" href="/data/abstracmp-slides.pdf">Slides</a>
-                <p></p>
+                <p>
                 <strong>郑烨</strong>，施晓牧，刘嘉祥
                 <br>
                 软件学报 <em><strong>(JOS)</strong></em>, 2022; International Journal of Software and Informatics
                 <em><strong>(IJSI)</strong></em>, 2022
-                <p></p>
-                <p>
-                    本文提出多路径回溯的概念，在此概念下，现有的回溯验证方法可看作仅使用单条回溯路径计算每个神经网络节点的上下界，是这一概念的特例。
-                    使用多条回溯路径可以有效改善这类方法的精度。
-                </p>
-                <p>
-                    This paper proposes the concept of back-propagation path for back-propagation methods. Under
-                    this concept, the existing
-                    back-propagation methods can be regarded as only using a single back-propagation path,
-                    which is a special case of the proposed concept.
-                    The verification accuracy of back-propagation methods can be improved significantly by using
-                    multiple back-propagation paths.
                 </p>
             </div>
         </div>
@@ -155,16 +134,23 @@
         <div class="heading">Writings</div>
         <div class="writings-list">
             <div class="paper-entry">
-                <a href="https://github.com/ZhengYeah/PaperRank-of-DP">
-                    <span class="paper-title">Paper Ranking in Differential Privacy</span>
+                <a href="https://github.com/ZhengYeah/PaperComments-of-DP">
+                    <span class="paper-title">Paper Comments in Differential Privacy</span>
                 </a>
                 <p>
-                    A personal ranking of papers in Differential Privacy, organized by the publication
+                    A personal comments of papers in Differential Privacy, organized by publication
                     year and conference / journal name.
-                    I use "+++" as the maximum score, meaning I think the paper had an iconic contribution to
-                    this area.
                 </p>
             </div>
+        </div>
+        <div class="paper-entry highlight-entry">
+            <a href="https://www.zhihu.com/people/zhengyeah/columns">
+                <span class="paper-title">文学评论、阅读笔记、随笔文集</span>
+            </a>
+            <p>
+                关于人文学科的内容，维护于知乎平台。包括对一些长篇小说的分析与主观评论、一些书籍的阅读笔记、以及一些过去所写的随笔。
+                除此之外，也包括一些关于其他领域问题的琐碎回答。
+            </p>
         </div>
     </div>
 
@@ -194,21 +180,12 @@
         <div class="heading">Archives</div>
         <div class="archives-list">
             <div class="paper-entry highlight-entry">
-                <a href="https://www.zhihu.com/people/zhengyeah/columns">
-                    <span class="paper-title">文学评论、阅读笔记、随笔文集</span>
-                </a>
-                <p>
-                    关于人文学科的内容，维护于知乎平台。包括对一些长篇小说的分析与主观评论、一些书籍的阅读笔记、以及一些过去所写的随笔。
-                    除此之外，也包括一些关于其他领域问题的琐碎回答。
-                </p>
-            </div>
-            <div class="paper-entry highlight-entry">
                 <a class="paper-title" href="./data/硕士学位论文.pdf">
                     硕士学位论文《多路径方法在神经网络验证中的研究与应用》</a>&nbsp;
                 <a class="button-links" href="./data/硕士学位论文.pdf">PDF</a>&nbsp;&nbsp;
                 <a class="button-links" href="./data/硕士学位论文-slides.pdf">Slides</a>
                 <p>
-                    本文关注神经网络验证方法中界限传播方法的精度问题。本文提出界限传播路径的概念，
+                    本文关注神经网络验证方法中界限传播方法的精度问题。关于此问题，本文提出界限传播路径的概念，
                     将各种界限传播方法扩展到其对应的多路径界限传播方法；此外，本文将多路径界限传播在 PyTorch 框架上并行化，
                     开发了高效而易用的鲁棒性验证工具。
                 </p>
