@@ -269,6 +269,7 @@ body {
     margin-top: 40px;
 }
 
+.bio-list .paper-entry:first-child,
 .publications-list .paper-entry:first-child,
 .writings-list .paper-entry:first-child,
 .awards-list .paper-entry:first-child,
@@ -285,6 +286,7 @@ body {
     background-color: #FCFAF2;
 }
 
+.bio-list ul li,
 #category-awards ul li {
     margin-bottom: 16px;
 }
