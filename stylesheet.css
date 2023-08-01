@@ -179,6 +179,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 #pc-bio-profile .bio {
@@ -209,6 +210,10 @@ body {
 
     #pc-bio-profile .profile {
         display: none
+    }
+
+    #pc-bio-profile {
+        margin-bottom: 0;
     }
 }
 
