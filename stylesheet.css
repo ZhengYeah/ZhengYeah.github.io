@@ -209,6 +209,10 @@ body {
         width: 100%;
     }
 
+    #pc-bio-profile .bio > div {
+        margin: 10px 0;
+    }
+
     #pc-bio-profile .profile {
         display: none
     }
