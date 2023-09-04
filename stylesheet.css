@@ -207,6 +207,11 @@ body {
 @media screen and (max-width: 650px) {
     #pc-bio-profile .bio {
         width: 100%;
+        height: auto;
+    }
+
+    #pc-bio-profile .bio > div:first-child {
+        margin-top: 15px;
     }
 
     #pc-bio-profile .bio > div {
@@ -356,11 +361,5 @@ body {
     }
     .mobile-overlay {
         right: 15px;
-    }
-    #pc-bio-profile .bio {
-        height: auto;
-    }
-    #pc-bio-profile .bio > div {
-        margin: 10px 0;
     }
 }
