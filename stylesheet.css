@@ -185,14 +185,14 @@ body {
 #pc-bio-profile .bio {
     display: flex;
     flex-direction: column;
-    height: 200px;
-    justify-content: space-around;
+    height: 185px;
+    justify-content: space-between;
 }
 
 #pc-bio-profile .profile {
     display: flex;
-    max-width: 200px;
-    margin: 0 0 0 50px;
+    max-width: 185px;
+    margin: 0 0 0 60px;
     align-items: center;
     justify-content: space-around;
 }
@@ -200,6 +200,7 @@ body {
 .profile img {
     width: 100%;
     border: 2px solid #FCFAF2;
+    border-radius: 8px;
     cursor: pointer;
 }
 
@@ -257,7 +258,7 @@ body {
     max-width: 860px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 90px
+    margin-top: 108px
 }
 
 .layout-level-2 {
