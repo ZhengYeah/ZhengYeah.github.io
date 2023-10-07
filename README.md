@@ -1,8 +1,8 @@
 ### Hi there 👋
 
-This is the source code for Ye Zheng's public website: https://zhengyeah.com/. 
+This is the source code for Ye Zheng's public homepage: https://zhengyeah.com/. 
 
-Feel free to clone this code for your own personal use.
+Feel free to clone this code for your personal usage.
 
 ![](/images/screen-website.png)
 

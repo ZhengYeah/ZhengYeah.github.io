@@ -200,7 +200,7 @@ body {
 .profile img {
     width: 100%;
     border: 2px solid #FCFAF2;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -347,18 +347,26 @@ body {
 /******************** mobile layout ********************/
 
 @media screen and (max-width: 450px) {
+    .layout-level-1 {
+        margin-top: 90px;
+    }
+
     .layout-level-2 {
         padding: 10px 15px;
     }
+
     .footer-left {
         margin-left: 15px;
     }
+
     .footer-right {
         margin-right: 15px;
     }
+
     .navigation-bar {
         padding: 0 15px;
     }
+
     .mobile-overlay {
         right: 15px;
     }
