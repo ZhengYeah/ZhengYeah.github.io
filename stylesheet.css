@@ -236,7 +236,7 @@ body {
 .mobile-profile img {
     max-width: 225px;
     width: 100%;
-    border-radius: 50%;
+    border-radius: 5px;
     border: 2px solid #FCFAF2;
 }
 
@@ -347,10 +347,6 @@ body {
 /******************** mobile layout ********************/
 
 @media screen and (max-width: 450px) {
-    .layout-level-1 {
-        margin-top: 90px;
-    }
-
     .layout-level-2 {
         padding: 10px 15px;
     }
