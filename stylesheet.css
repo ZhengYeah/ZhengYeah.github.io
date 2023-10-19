@@ -228,16 +228,17 @@ body {
 }
 
 .mobile-profile {
-    width: 80%;
     margin: 0 auto 20px;
     text-align: center;
+    background: linear-gradient(135deg, #B9887D55 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #B9887D 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #B9887D55 25%, transparent 25%) 0 0/ 20px 20px, linear-gradient(45deg, #B9887D 25%, #ffffff 25%) 0 0/ 20px 20px;
+    border-radius: 5px;
 }
 
 .mobile-profile img {
-    max-width: 225px;
+    max-width: 204px;
     width: 100%;
     border-radius: 5px;
-    border: 2px solid #FCFAF2;
+    vertical-align: middle;
 }
 
 @media screen and (min-width: 651px) {
