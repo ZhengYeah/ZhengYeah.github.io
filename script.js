@@ -42,7 +42,7 @@ window.addEventListener("resize", () => {
     }
 })
 
-const totalImgNum = 3;
+const totalImgNum = 4;
 const showingImg = document.getElementById("showing-profile");
 let i = 1;
 showingImg.addEventListener("click", () => {
