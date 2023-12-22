@@ -321,7 +321,7 @@ body {
     background: repeating-linear-gradient(to right, lightgrey 0, lightgrey 3px, transparent 0, transparent 12px);
 }
 
-#footer .footer-box {
+.footer-box {
     width: 1040px;
     max-width: 100%;
     margin: auto;
@@ -352,6 +352,10 @@ body {
     }
 
     .layout-level-1 {
+        min-width: 300px;
+    }
+
+    .footer-box {
         min-width: 300px;
     }
 
