@@ -351,6 +351,10 @@ body {
         padding: 10px 15px;
     }
 
+    .layout-level-1 {
+        min-width: 300px;
+    }
+
     .footer-left {
         margin-left: 15px;
     }
