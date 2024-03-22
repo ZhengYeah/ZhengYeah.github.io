@@ -230,8 +230,7 @@ body {
 .mobile-profile {
     margin: 0 auto 20px;
     text-align: center;
-    background-image: url("images/mobile-profile-bg.png");
-    background-repeat: repeat;
+    background: linear-gradient(135deg, #e5e5e555 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #e5e5e5 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #e5e5e555 25%, transparent 25%) 0 0/ 20px 20px, linear-gradient(45deg, #e5e5e5 25%, #ffffff 25%) 0 0/ 20px 20px;
 }
 
 .mobile-profile img {
