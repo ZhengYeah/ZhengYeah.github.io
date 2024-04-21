@@ -1,3 +1,4 @@
+// menu bar scroll effect
 const mobileOverlay = document.getElementsByClassName("mobile-overlay")[0];
 const menuButton = document.getElementsByClassName("menu-button")[0];
 
@@ -18,6 +19,7 @@ window.addEventListener("scroll", () => {
     }
 })
 
+// toggle menu mobile
 function toggleMenu() {
     if (mobileOverlay.style.height === "auto") {
         menuButton.className = "menu-button";
@@ -33,6 +35,7 @@ function toggleMenu() {
 const mobileMenu = document.getElementsByClassName("mobile-menu-button")[0];
 mobileMenu.addEventListener("click", toggleMenu)
 
+// auto close menu when screen is resized to be smaller than 860px
 window.addEventListener("resize", () => {
     let curWidth = window.screen.availWidth;
     if (curWidth > 860) {
@@ -42,6 +45,7 @@ window.addEventListener("resize", () => {
     }
 })
 
+// change profile image when clicked
 const totalImgNum = 4;
 const showingImg = document.getElementById("showing-profile");
 let i = 1;
