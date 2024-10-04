@@ -279,6 +279,11 @@ body {
     padding: 8px 0;
 }
 
+.small-gray {
+    color: #91989F;
+    font-size: 12px;
+}
+
 .paper-entry {
     margin-top: 40px;
 }

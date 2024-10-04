@@ -46,7 +46,7 @@ window.addEventListener("resize", () => {
 })
 
 // change profile image when clicked
-const totalImgNum = 4;
+const totalImgNum = 3; // only change this number when adding more images
 const showingImg = document.getElementById("showing-profile");
 let i = 1;
 showingImg.addEventListener("click", () => {
