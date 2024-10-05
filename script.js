@@ -45,7 +45,6 @@ window.addEventListener("resize", () => {
     }
 })
 
-
 const totalImgNum = 3; // only change this number when adding more images
 
 // change profile image when clicked (PC)
