@@ -374,6 +374,10 @@ body {
         min-width: 320px;
     }
 
+    .header {
+        min-width: auto;
+    }
+
     .footer-left {
         margin-left: 15px;
     }
