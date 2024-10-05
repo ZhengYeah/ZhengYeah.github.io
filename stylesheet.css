@@ -242,7 +242,6 @@ body {
     vertical-align: middle;
 }
 
-/* float button at the most leftside */
 .mobile-profile .profile-left-button {
     display: inline-block;
     padding: 40px 5px 40px 0;
@@ -371,7 +370,7 @@ body {
         padding: 10px 15px;
     }
 
-    .header, #footer, .layout-level-1 {
+    .layout-level-1, #footer {
         min-width: 320px;
     }
 
