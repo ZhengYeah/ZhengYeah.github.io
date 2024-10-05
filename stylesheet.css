@@ -372,7 +372,7 @@ body {
     }
 
     .header, #footer, .layout-level-1 {
-        min-width: 350px;
+        min-width: 320px;
     }
 
     .footer-left {
