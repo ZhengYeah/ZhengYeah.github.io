@@ -45,8 +45,10 @@ window.addEventListener("resize", () => {
     }
 })
 
-// change profile image when clicked
+
 const totalImgNum = 3; // only change this number when adding more images
+
+// change profile image when clicked (PC)
 const showingImg = document.getElementById("showing-profile");
 let i = 1;
 showingImg.addEventListener("click", () => {
@@ -55,9 +57,23 @@ showingImg.addEventListener("click", () => {
     showingImg.setAttribute("src", imgPath);
 })
 
+// change profile image when the img and buttons are clicked (mobile)
 const showingMobileImg = document.getElementById("showing-mobile-profile");
 let j = 1;
 showingMobileImg.addEventListener("click", () => {
+    j = j % totalImgNum + 1;
+    let imgPath = "./images/profile/profile-" + j + ".jpg";
+    showingMobileImg.setAttribute("src", imgPath);
+})
+
+const leftButton = document.getElementById("profile-left-button");
+const rightButton = document.getElementById("profile-right-button");
+leftButton.addEventListener("click", () => {
+    j = (j - 2 + totalImgNum) % totalImgNum + 1;
+    let imgPath = "./images/profile/profile-" + j + ".jpg";
+    showingMobileImg.setAttribute("src", imgPath);
+})
+rightButton.addEventListener("click", () => {
     j = j % totalImgNum + 1;
     let imgPath = "./images/profile/profile-" + j + ".jpg";
     showingMobileImg.setAttribute("src", imgPath);

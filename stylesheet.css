@@ -231,12 +231,28 @@ body {
     margin: 0 auto 20px;
     text-align: center;
     background: linear-gradient(135deg, #ebebeb55 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #ebebeb 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #ebebeb55 25%, transparent 25%) 0 0/ 20px 20px, linear-gradient(45deg, #ebebeb 25%, #ffffff 25%) 0 0/ 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .mobile-profile img {
     max-width: 204px;
     width: 100%;
     vertical-align: middle;
+}
+
+/* float button at the most leftside */
+.mobile-profile .profile-left-button {
+    display: inline-block;
+    padding: 40px 5px 40px 0;
+    cursor: pointer;
+}
+
+.mobile-profile .profile-right-button {
+    display: inline-block;
+    padding: 40px 0 40px 5px;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 651px) {
@@ -356,11 +372,11 @@ body {
     }
 
     .layout-level-1 {
-        min-width: 300px;
+        min-width: 320px;
     }
 
     .footer-box {
-        min-width: 300px;
+        min-width: 320px;
     }
 
     .footer-left {
@@ -378,4 +394,28 @@ body {
     .mobile-overlay {
         right: 15px;
     }
+}
+
+
+/******************** icon font ********************/
+@font-face {
+    font-family: "iconfont"; /* Project id  */
+    src: url('iconfont.ttf?t=1728134084433') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 32px;
+    color: #BDC0BA;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-you:before {
+    content: "\e50f";
+}
+
+.icon-zuo:before {
+    content: "\e510";
 }
