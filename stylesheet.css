@@ -370,14 +370,6 @@ body {
         padding: 10px 15px;
     }
 
-    .layout-level-1, #footer {
-        min-width: 320px;
-    }
-
-    .header {
-        min-width: auto;
-    }
-
     .footer-left {
         margin-left: 15px;
     }
@@ -395,6 +387,11 @@ body {
     }
 }
 
+@media screen and (max-width: 320px) {
+     .header, .layout-level-1, #footer {
+        width: 320px;
+    }
+}
 
 /******************** icon font ********************/
 @font-face {
