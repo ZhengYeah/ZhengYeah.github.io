@@ -260,6 +260,8 @@ body {
     }
 }
 
+/******************** text content ********************/
+
 .button-links {
     font-size: 13px;
     padding: 0 4px;
@@ -272,6 +274,10 @@ body {
     background-color: #D0104C;
     border-color: #D0104C;
     text-decoration: none;
+}
+
+.gray-name {
+    color: #91989F;
 }
 
 /******************** heading block ********************/
@@ -313,7 +319,6 @@ body {
 
 .paper-title {
     font-size: 16px;
-    font-weight: 700
 }
 
 .highlight-entry {
@@ -346,7 +351,7 @@ body {
     margin: auto;
     padding: 10px 0 20px;
     font-size: 12px;
-    color: dimgrey;
+    color: #91989F;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
