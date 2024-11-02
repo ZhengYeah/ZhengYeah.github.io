@@ -1,12 +1,12 @@
-### Hi there 👋
+## Hi there 👋
 
-This is the source code for Ye Zheng's public homepage: https://zhengyeah.com/. 
+This is the source code of Ye Zheng's public homepage: https://zhengyeah.com/. 
 
-Feel free to clone this code for your personal usage.
+Feel free to clone for your personal usage.
 
-![](/images/screen-website.png)
+![Poster](/images/screen-website.png)
 
-### Features
+## Features
 
 This website is designed for personal academic homepage, with the following features:
 
@@ -15,18 +15,7 @@ This website is designed for personal academic homepage, with the following feat
 * Implemented by pure HTML+CSS+JSP, no dependence on frameworks;
 * Easy extensibility: simple and structural code template. 
 
+## Freedom of Usage
 
-<!--
-**ZhengYeah/ZhengYeah** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Feel free to clone this repository and modify.
+No need to reference the original author.
