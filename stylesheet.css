@@ -413,6 +413,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.iconfont-zuoyou {
+    font-family: "iconfont" !important;
+    font-size: 32px;
+    color: #BDC0BA;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .icon-company:before {
   content: "\e659";
 }
