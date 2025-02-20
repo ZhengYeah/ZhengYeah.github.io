@@ -400,9 +400,21 @@ body {
 
 /******************** icon font ********************/
 
+/* special style for arrows */
+.iconfont-zuoyou {
+    font-family: "iconfont" !important;
+    font-size: 32px;
+    color: #BDC0BA;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* normal styles*/
+
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1740075548499') format('truetype');
+  src: url('iconfont.ttf?t=1740088151641') format('truetype');
 }
 
 .iconfont {
@@ -411,15 +423,6 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.iconfont-zuoyou {
-    font-family: "iconfont" !important;
-    font-size: 32px;
-    color: #BDC0BA;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-company:before {
@@ -431,10 +434,13 @@ body {
 }
 
 .icon-you:before {
-  content: "\e50f";
+  content: "\e600";
 }
 
 .icon-zuo:before {
-  content: "\e510";
+  content: "\e601";
 }
 
+.icon-youjiantou:before {
+  content: "\e64e";
+}
