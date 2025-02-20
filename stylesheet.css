@@ -401,23 +401,31 @@ body {
 /******************** icon font ********************/
 
 @font-face {
-    font-family: "iconfont"; /* Project id  */
-    src: url('iconfont.ttf?t=1728134084433') format('truetype');
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1740075548499') format('truetype');
 }
 
 .iconfont {
-    font-family: "iconfont" !important;
-    font-size: 32px;
-    color: #BDC0BA;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-company:before {
+  content: "\e659";
+}
+
+.icon-profile:before {
+  content: "\e616";
 }
 
 .icon-you:before {
-    content: "\e50f";
+  content: "\e50f";
 }
 
 .icon-zuo:before {
-    content: "\e510";
+  content: "\e510";
 }
+
