@@ -411,10 +411,9 @@ body {
 }
 
 /* normal styles*/
-
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1740088151641') format('truetype');
+  src: url('iconfont.ttf?t=1740227840294') format('truetype');
 }
 
 .iconfont {
@@ -429,10 +428,6 @@ body {
   content: "\e659";
 }
 
-.icon-profile:before {
-  content: "\e616";
-}
-
 .icon-you:before {
   content: "\e600";
 }
@@ -441,6 +436,11 @@ body {
   content: "\e601";
 }
 
+.icon-outline-profile-circle:before {
+  content: "\e681";
+}
+
 .icon-youjiantou:before {
   content: "\e64e";
 }
+
