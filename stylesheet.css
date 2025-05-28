@@ -414,12 +414,11 @@ body {
 /* normal styles*/
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1740227840294') format('truetype');
+  src: url('iconfont.ttf?t=1748459019534') format('truetype');
 }
 
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -437,6 +436,10 @@ body {
   content: "\e601";
 }
 
+.icon-musicfill:before {
+  content: "\e795";
+}
+
 .icon-outline-profile-circle:before {
   content: "\e681";
 }
@@ -445,3 +448,6 @@ body {
   content: "\e64e";
 }
 
+.icon-book4:before {
+  content: "\e7e9";
+}
