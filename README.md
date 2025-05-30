@@ -2,7 +2,7 @@
 
 This is the source code of Ye Zheng's public homepage: https://zhengyeah.com/. 
 
-Feel free to clone for your personal usage.
+Feel free to clone for your own use.
 
 ![Poster](/images/screen-website.png)
 
