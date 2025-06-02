@@ -105,12 +105,6 @@ body {
     transform-origin: 0 50%;
 }
 
-@media (prefers-color-scheme: dark) {
-    .menu-button > div {
-        background-color: #8D8680; /* avoid to be overridden by dark mode plugin */
-    }
-}
-
 .on-click-menu-button > div {
     width: 25px;
     height: 2px;
