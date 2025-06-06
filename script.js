@@ -1,4 +1,4 @@
-// menu bar scroll effect
+// menu bar scroll effect: when scrolling down, the header hides; when scrolling up, the header shows
 const mobileOverlay = document.getElementsByClassName("mobile-overlay")[0];
 const menuButton = document.getElementsByClassName("menu-button")[0];
 
@@ -31,11 +31,22 @@ function toggleMenu() {
         mobileOverlay.style.opacity = "1";
     }
 }
-
 const mobileMenu = document.getElementsByClassName("mobile-menu-button")[0];
 mobileMenu.addEventListener("click", toggleMenu)
 
-// auto close menu when screen is resized to be smaller than 860px
+// close menu when clicking outside the menu
+document.addEventListener("click", (event) => {
+    if (mobileOverlay.style.height === "auto") {
+        const isClickInside = mobileOverlay.contains(event.target) || menuButton.contains(event.target);
+        if (!isClickInside) {
+            mobileOverlay.style.height = "0";
+            mobileOverlay.style.opacity = "0";
+            menuButton.className = "menu-button";
+        }
+    }
+})
+
+// corner case: auto close menu when screen is resized to be smaller than 860px
 window.addEventListener("resize", () => {
     let curWidth = window.screen.availWidth;
     if (curWidth > 860) {
