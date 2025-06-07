@@ -1,17 +1,28 @@
-// menu bar scroll effect: when scrolling down, the header hides; when scrolling up, the header shows
 const mobileOverlay = document.getElementsByClassName("mobile-overlay")[0];
 const menuButton = document.getElementsByClassName("menu-button")[0];
 
+/*
+Menu bar scroll effect: when scrolling down, the header hides; when scrolling up, the header shows.
+This effect is only applied after scrolling down 100px from the top.
+*/
 let prevScroll = window.scrollY;
+const hideThreshold = 100;
+
 window.addEventListener("scroll", () => {
     let curScroll = window.scrollY;
     const headerElement = document.getElementsByClassName("header")[0];
+    if (curScroll < hideThreshold) {
+        headerElement.style.top = "0";
+        prevScroll = curScroll;
+    } else {
     if (prevScroll > curScroll) {
         headerElement.style.top = "0";
-    } else {
+        } else {
         headerElement.style.top = "-25vh";
-    }
+        }
     prevScroll = curScroll;
+    }
+    // auto close menu when scrolling
     if (mobileOverlay.style.height === "auto") {
         mobileOverlay.style.height = "0";
         mobileOverlay.style.opacity = "0";
@@ -19,7 +30,11 @@ window.addEventListener("scroll", () => {
     }
 })
 
-// toggle menu mobile
+/*
+Toggle menu mobile: when the menu button is clicked, toggle the mobile menu.
+When the mobile menu is open, change the menu button to a cross.
+When clicking outside the mobile menu, close the mobile menu.
+*/
 function toggleMenu() {
     if (mobileOverlay.style.height === "auto") {
         menuButton.className = "menu-button";
@@ -46,7 +61,10 @@ document.addEventListener("click", (event) => {
     }
 })
 
-// corner case: auto close menu when screen is resized to be smaller than 860px
+/*
+Corner case: auto close menu when screen is resized to be smaller than 860px.
+This only happens when the menu is open and the screen is resized to be larger than 860px.
+*/
 window.addEventListener("resize", () => {
     let curWidth = window.screen.availWidth;
     if (curWidth > 860) {
@@ -56,6 +74,9 @@ window.addEventListener("resize", () => {
     }
 })
 
+/*
+Profile image carousel: when the profile image is clicked, change to the next image.
+*/
 const totalImgNum = 3; // only change this number when adding more images
 
 // change profile image when clicked (PC)
@@ -75,7 +96,7 @@ showingMobileImg.addEventListener("click", () => {
     let imgPath = "./images/profile/profile-" + j + ".jpg";
     showingMobileImg.setAttribute("src", imgPath);
 })
-
+// left and right buttons for mobile
 const leftButton = document.getElementById("profile-left-button");
 const rightButton = document.getElementById("profile-right-button");
 leftButton.addEventListener("click", () => {
