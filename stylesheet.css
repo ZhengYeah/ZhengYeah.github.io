@@ -291,6 +291,12 @@ body {
     margin-top: 108px
 }
 
+@media screen and (max-width: 650px) {
+    .layout-level-1 {
+        margin-top: 90px;
+    }
+}
+
 .layout-level-2 {
     padding: 10px 20px;
 }
