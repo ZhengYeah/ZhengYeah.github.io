@@ -417,6 +417,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.iconfont-zuoyou:active {
+    color: #D0104C;
+}
+
 /* normal styles*/
 @font-face {
   font-family: "iconfont"; /* Project id  */
