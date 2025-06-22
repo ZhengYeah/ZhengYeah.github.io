@@ -349,7 +349,7 @@ body {
     margin: auto;
     border: 0;
     padding: 1px;
-    background: repeating-linear-gradient(to right, lightgrey 0, lightgrey 3px, transparent 0, transparent 12px);
+    background: repeating-linear-gradient(to right, lightgrey 0, lightgrey 3px, transparent 0, transparent 8px);
 }
 
 .footer-box {
