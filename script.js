@@ -121,8 +121,8 @@ window.addEventListener("load", () => {
     let options = {timeZone: 'America/New_York', hour: '2-digit', hour12: false};
     let hours = new Intl.DateTimeFormat('en-US', options).format(new Date());
     if (hours >= 8 && hours < 20) {
-        pcWakeSleepEmoji.innerHTML = "&#128516;"; // wake emoji
-        mobileWakeSleepEmoji.innerHTML = "&#128516;"; // wake emoji
+        pcWakeSleepEmoji.innerHTML = "&#128522;"; // wake emoji
+        mobileWakeSleepEmoji.innerHTML = "&#128522;"; // wake emoji
     }
     else {
         pcWakeSleepEmoji.innerHTML = "&#128564;"; // sleep emoji
