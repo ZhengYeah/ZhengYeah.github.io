@@ -109,3 +109,23 @@ rightButton.addEventListener("click", () => {
     let imgPath = "./images/profile/profile-" + j + ".jpg";
     showingMobileImg.setAttribute("src", imgPath);
 })
+
+/*
+Change wake-sleep emoji based on time of day: (American time)
+- If the time is between 8:00 and 20:00, show the wake emoji.
+- If the time is between 20:00 and 8:00, show the sleep emoji.
+*/
+let pcWakeSleepEmoji = document.getElementsByClassName("pc-wake-sleep-emoji")[0];
+let mobileWakeSleepEmoji = document.getElementsByClassName("mobile-wake-sleep-emoji")[0];
+window.addEventListener("load", () => {
+    let options = {timeZone: 'America/New_York', hour: '2-digit', hour12: false};
+    let hours = new Intl.DateTimeFormat('en-US', options).format(new Date());
+    if (hours >= 8 && hours < 20) {
+        pcWakeSleepEmoji.innerHTML = "&#128516;"; // wake emoji
+        mobileWakeSleepEmoji.innerHTML = "&#128516;"; // wake emoji
+    }
+    else {
+        pcWakeSleepEmoji.innerHTML = "&#128564;"; // sleep emoji
+        mobileWakeSleepEmoji.innerHTML = "&#128564;"; // sleep emoji
+    }
+})

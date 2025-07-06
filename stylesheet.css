@@ -28,6 +28,7 @@ body {
     background-color: #F5F5F5;
     transition: 0.3s;
     font-size: 20px;
+    z-index: 1;
 }
 
 .navigation-bar {
@@ -191,6 +192,7 @@ body {
 }
 
 #pc-bio-profile .profile {
+    position: relative;
     display: flex;
     max-width: 185px;
     margin: 0 0 0 60px;
@@ -198,9 +200,24 @@ body {
     justify-content: space-around;
 }
 
+#pc-bio-profile .tag {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #FFFFFF;
+    padding: 0 0 8px 8px;
+    border-bottom-left-radius: 16px;
+}
+
+#pc-bio-profile .tag-item {
+    font-size: 18px;
+    border-radius: 10px;
+}
+
 .profile img {
     width: 100%;
-    border: 2px solid #FCFAF2;
+    padding: 3px;
+    border: 2px solid #F5F5F5;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -237,8 +254,26 @@ body {
     align-items: center;
 }
 
+.mobile-profile .profile-item {
+    position: relative;
+}
+
+.mobile-profile .tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #FFFFFF;
+    padding: 4px 6px 6px 8px;
+    border-bottom-left-radius: 16px;
+}
+
+.mobile-profile .tag-item {
+    font-size: 18px;
+    border-radius: 10px;
+}
+
 .mobile-profile img {
-    max-width: 204px;
+    max-width: 200px;
     width: 100%;
     vertical-align: middle;
 }
