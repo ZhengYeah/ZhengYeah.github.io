@@ -202,16 +202,24 @@ body {
 
 #pc-bio-profile .tag {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    bottom: 4px;
+    right: 4px;
     background: #FFFFFF;
-    padding: 0 0 8px 8px;
-    border-bottom-left-radius: 16px;
+    padding: 5px 0 0 5px;
+    border-top-left-radius: 16px;
 }
 
 #pc-bio-profile .tag-item {
+    display: block;
     font-size: 18px;
-    border-radius: 10px;
+    border: 1px solid #1772D0;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+#pc-bio-profile .tag-item:hover {
+    background-color: #D0104C;
+    text-decoration: none;
 }
 
 .profile img {
@@ -260,16 +268,24 @@ body {
 
 .mobile-profile .tag {
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
     background: #FFFFFF;
-    padding: 4px 6px 6px 8px;
-    border-bottom-left-radius: 16px;
+    padding: 6px 0 0 6px;
+    border-top-left-radius: 16px;
 }
 
 .mobile-profile .tag-item {
+    display: block;
     font-size: 18px;
-    border-radius: 10px;
+    border: 1px solid #1772D0;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.mobile-profile .tag-item:hover {
+    background-color: #D0104C;
+    text-decoration: none;
 }
 
 .mobile-profile img {
