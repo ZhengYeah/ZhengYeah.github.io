@@ -206,7 +206,7 @@ body {
     right: 4px;
     background: #FFFFFF;
     padding: 5px 0 0 5px;
-    border-top-left-radius: 16px;
+    border-top-left-radius: 50%;
 }
 
 #pc-bio-profile .tag-item {
@@ -272,7 +272,7 @@ body {
     right: 0;
     background: #FFFFFF;
     padding: 6px 0 0 6px;
-    border-top-left-radius: 16px;
+    border-top-left-radius: 50%;
 }
 
 .mobile-profile .tag-item {
