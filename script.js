@@ -118,7 +118,7 @@ Change wake-sleep emoji based on time of day: (American time)
 let pcWakeSleepEmoji = document.getElementsByClassName("pc-wake-sleep-emoji")[0];
 let mobileWakeSleepEmoji = document.getElementsByClassName("mobile-wake-sleep-emoji")[0];
 window.addEventListener("load", () => {
-    let options = {timeZone: 'America/New_York', hour: '2-digit', hour12: false};
+    let options = {timeZone: 'Asia/Shanghai', hour: '2-digit', hour12: false};
     let hours = new Intl.DateTimeFormat('en-US', options).format(new Date());
     if (hours >= 8 && hours < 20) {
         pcWakeSleepEmoji.innerHTML = "&#128522;"; // wake emoji
