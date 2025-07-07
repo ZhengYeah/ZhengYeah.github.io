@@ -212,6 +212,7 @@ body {
 #pc-bio-profile .tag-item {
     display: block;
     font-size: 18px;
+    aspect-ratio: 1 / 1;
     border: 1px solid #1772D0;
     border-radius: 50%;
     padding: 4px;
@@ -278,6 +279,7 @@ body {
 .mobile-profile .tag-item {
     display: block;
     font-size: 18px;
+    aspect-ratio: 1 / 1;
     border: 1px solid #1772D0;
     border-radius: 50%;
     padding: 4px;
