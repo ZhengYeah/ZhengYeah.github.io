@@ -99,8 +99,7 @@ body {
 
 .menu-button > div {
     width: 25px;
-    height: 2px;
-    background-color: black;
+    border-top: 2px solid black;
     margin: 5px 0;
     transition: 0.3s;
     transform-origin: 0 50%;
@@ -108,8 +107,7 @@ body {
 
 .on-click-menu-button > div {
     width: 25px;
-    height: 2px;
-    background-color: black;
+    border-top: 2px solid black;
     margin: 7px 0;
     transition: 0.3s;
     transform-origin: 0 50%;
@@ -117,17 +115,17 @@ body {
 
 .on-click-menu-button > div:first-child {
     transform: rotate(45deg);
-    background-color: #D0104C;
+    border-top: 2px solid #D0104C;
 }
 
 .on-click-menu-button > div:nth-child(2) {
     opacity: 0;
-    background-color: #D0104C;
+    border-top: 2px solid #D0104C;
 }
 
 .on-click-menu-button > div:nth-child(3) {
     transform: rotate(-45deg);
-    background-color: #D0104C;
+    border-top: 2px solid #D0104C;
 }
 
 /* mobile menu list */
@@ -298,13 +296,13 @@ body {
 
 .mobile-profile .profile-left-button {
     display: inline-block;
-    padding: 40px 5px 40px 0;
+    /*padding: 40px 5px 40px 0;*/
     cursor: pointer;
 }
 
 .mobile-profile .profile-right-button {
     display: inline-block;
-    padding: 40px 0 40px 5px;
+    /*padding: 40px 0 40px 5px;*/
     cursor: pointer;
 }
 
