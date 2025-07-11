@@ -435,7 +435,7 @@ body {
     margin-right: 20px;
 }
 
-/******************** mobile layout ********************/
+/******************** additional mobile layout ********************/
 
 @media screen and (max-width: 450px) {
     .layout-level-2 {
