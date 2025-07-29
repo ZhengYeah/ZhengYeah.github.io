@@ -341,6 +341,11 @@ body {
     color: #91989F;
 }
 
+.best-paper {
+    font-style: italic;
+    color: #49BF90;
+}
+
 /******************** heading block ********************/
 
 .layout-level-1 {
