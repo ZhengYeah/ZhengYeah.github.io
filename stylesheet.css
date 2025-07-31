@@ -75,7 +75,7 @@ body {
     color: #D0104C;
 }
 
-@media only screen and (max-width: 860px) {
+@media screen and (max-width: 860px) {
     .link-collection {
         display: none;
     }
@@ -385,18 +385,12 @@ body {
 
 .bio-list .paper-entry:first-child,
 .publications-list .paper-entry:first-child,
-.writings-list .paper-entry:first-child,
-.awards-list .paper-entry:first-child,
 .archives-list .paper-entry:first-child {
     margin-top: 20px;
 }
 
 .paper-title {
     font-size: 16px;
-}
-
-.highlight-entry {
-    background-color: #FCFAF2;
 }
 
 #category-more-bio ul li,
@@ -469,6 +463,52 @@ body {
 @media screen and (max-width: 320px) {
      .header, .layout-level-1, #footer {
         width: 320px;
+    }
+}
+
+/******************** print styles ********************/
+
+@media print {
+    .header {
+        display: none;
+    }
+    .layout-level-1 {
+        margin-top: 30px;
+    }
+    .navigation-bar {
+        display: none;
+    }
+    #footer {
+        display: none;
+    }
+}
+
+@media print and (min-width: 651px) {
+    .mobile-profile {
+        display: none;
+    }
+}
+
+@media print and (max-width: 650px) {
+    #pc-bio-profile .bio {
+        width: 100%;
+        height: auto;
+    }
+
+    #pc-bio-profile .bio > div:first-child {
+        margin-top: 15px;
+    }
+
+    #pc-bio-profile .bio > div {
+        margin: 10px 0;
+    }
+
+    #pc-bio-profile .profile {
+        display: none
+    }
+
+    #pc-bio-profile {
+        margin-bottom: 0;
     }
 }
 
