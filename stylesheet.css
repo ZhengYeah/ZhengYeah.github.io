@@ -426,13 +426,13 @@ body {
 }
 
 .footer-left {
-    max-width: 38%;
+    max-width: 40%;
     margin-left: 20px;
 }
 
 .footer-right {
     text-align: right;
-    max-width: 36%;
+    max-width: 38%;
     margin-right: 20px;
 }
 
