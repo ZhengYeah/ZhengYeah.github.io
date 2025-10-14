@@ -530,8 +530,8 @@ body {
 
 /* normal styles*/
 @font-face {
-  font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1748459019534') format('truetype');
+  font-family: "iconfont"; /* Project id 1721354 */
+  src: url('iconfont.ttf?t=1760458186677') format('truetype');
 }
 
 .iconfont {
@@ -541,16 +541,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-company:before {
-  content: "\e659";
+.icon-ico-finevoice-podcast:before {
+  content: "\e6ad";
 }
 
-.icon-you:before {
-  content: "\e600";
-}
-
-.icon-zuo:before {
-  content: "\e601";
+.icon-book4:before {
+  content: "\e7e9";
 }
 
 .icon-musicfill:before {
@@ -565,6 +561,14 @@ body {
   content: "\e64e";
 }
 
-.icon-book4:before {
-  content: "\e7e9";
+.icon-company:before {
+  content: "\e659";
+}
+
+.icon-you:before {
+  content: "\e600";
+}
+
+.icon-zuo:before {
+  content: "\e601";
 }
