@@ -531,7 +531,7 @@ body {
 /* normal styles*/
 @font-face {
   font-family: "iconfont"; /* Project id 1721354 */
-  src: url('iconfont.ttf?t=1760458186677') format('truetype');
+  src: url('iconfont.ttf?t=1763419455543') format('truetype');
 }
 
 .iconfont {
@@ -539,6 +539,10 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ArXiv:before {
+  content: "\e6f4";
 }
 
 .icon-ico-finevoice-podcast:before {
@@ -572,3 +576,4 @@ body {
 .icon-zuo:before {
   content: "\e601";
 }
+
