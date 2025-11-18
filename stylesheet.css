@@ -230,7 +230,7 @@ body {
 }
 
 #pc-bio-profile .tag-item img {
-    width: 30px;
+    width: 40px;
     aspect-ratio: 1 / 1;
 }
 
@@ -449,7 +449,7 @@ body {
     }
 
     .footer-left, .footer-right {
-        max-width: 100%;
+        max-width: 75%;
         margin-left: 15px;
         margin-right: 15px;
         text-align: left;
