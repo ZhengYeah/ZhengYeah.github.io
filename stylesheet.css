@@ -443,12 +443,20 @@ body {
         padding: 10px 15px;
     }
 
-    .footer-left {
+    .footer-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-left, .footer-right {
+        max-width: 100%;
         margin-left: 15px;
+        margin-right: 15px;
+        text-align: left;
     }
 
     .footer-right {
-        margin-right: 15px;
+        margin-top: 30px;
     }
 
     .navigation-bar {
