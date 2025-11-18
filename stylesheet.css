@@ -230,7 +230,7 @@ body {
 }
 
 #pc-bio-profile .tag-item img {
-    width: 40px;
+    width: 30px;
     aspect-ratio: 1 / 1;
 }
 
@@ -302,18 +302,16 @@ body {
 }
 
 .mobile-profile .tag-item img {
-    width: 30px;
+    width: 35px;
 }
 
 .mobile-profile .profile-left-button {
     display: inline-block;
-    /*padding: 40px 5px 40px 0;*/
     cursor: pointer;
 }
 
 .mobile-profile .profile-right-button {
     display: inline-block;
-    /*padding: 40px 0 40px 5px;*/
     cursor: pointer;
 }
 
