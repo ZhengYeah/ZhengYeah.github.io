@@ -7,7 +7,12 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a.link-no-color {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover, a.link-no-color:hover {
     color: #D0104C;
     text-decoration: underline;
 }
