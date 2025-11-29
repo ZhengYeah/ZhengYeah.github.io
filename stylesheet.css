@@ -396,8 +396,7 @@ body {
     font-size: 16px;
 }
 
-#category-more-bio ul li,
-#category-awards ul li {
+#category-bio ul li {
     margin-bottom: 16px;
 }
 
@@ -587,4 +586,3 @@ body {
 .icon-zuo:before {
   content: "\e601";
 }
-
