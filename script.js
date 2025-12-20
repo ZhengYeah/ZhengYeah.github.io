@@ -22,7 +22,7 @@ window.addEventListener("scroll", () => {
         }
     prevScroll = curScroll;
     }
-    // auto close menu when scrolling
+    // Auto close menu when scrolling
     if (mobileOverlay.style.height === "auto") {
         mobileOverlay.style.height = "0";
         mobileOverlay.style.opacity = "0";
@@ -44,12 +44,13 @@ function toggleMenu() {
         menuButton.className = "on-click-menu-button";
         mobileOverlay.style.height = "auto";
         mobileOverlay.style.opacity = "1";
+        menuButton.setAttribute("aria-expanded", "true");
     }
 }
 const mobileMenu = document.getElementsByClassName("mobile-menu-button")[0];
 mobileMenu.addEventListener("click", toggleMenu)
 
-// close menu when clicking outside the menu
+// Close menu when clicking outside the menu
 document.addEventListener("click", (event) => {
     if (mobileOverlay.style.height === "auto") {
         const isClickInside = mobileOverlay.contains(event.target) || menuButton.contains(event.target);
@@ -57,6 +58,7 @@ document.addEventListener("click", (event) => {
             mobileOverlay.style.height = "0";
             mobileOverlay.style.opacity = "0";
             menuButton.className = "menu-button";
+            menuButton.setAttribute("aria-expanded", "false");
         }
     }
 })
@@ -71,19 +73,20 @@ window.addEventListener("resize", () => {
         mobileOverlay.style.height = "0";
         mobileOverlay.style.opacity = "0";
         menuButton.className = "menu-button";
+        menuButton.setAttribute("aria-expanded", "false");
     }
 })
 
 /*
 Profile image carousel: when the profile image is clicked, change to the next image.
 */
-// if not home page, do not run the profile image carousel script
+// If not home page, do not run the profile image carousel script
 if (!document.getElementById("showing-profile")) {
-    // do nothing
+    // Do nothing
 } else {
     const totalImgNum = 3; // only change this number when adding more images
 
-// change profile image when clicked (PC)
+    // Change profile image when clicked (PC)
     const showingImg = document.getElementById("showing-profile");
     let i = 1;
     showingImg.addEventListener("click", () => {
@@ -92,7 +95,7 @@ if (!document.getElementById("showing-profile")) {
         showingImg.setAttribute("src", imgPath);
     })
 
-// change profile image when the img and buttons are clicked (mobile)
+    // Change profile image when the img and buttons are clicked (mobile)
     const showingMobileImg = document.getElementById("showing-mobile-profile");
     let j = 1;
     showingMobileImg.addEventListener("click", () => {
@@ -100,7 +103,7 @@ if (!document.getElementById("showing-profile")) {
         let imgPath = "./images/profile/profile-" + j + ".jpg";
         showingMobileImg.setAttribute("src", imgPath);
     })
-// left and right buttons for mobile
+    // Left and right buttons for mobile
     const leftButton = document.getElementById("profile-left-button");
     const rightButton = document.getElementById("profile-right-button");
     leftButton.addEventListener("click", () => {
@@ -114,4 +117,3 @@ if (!document.getElementById("showing-profile")) {
         showingMobileImg.setAttribute("src", imgPath);
     })
 }
-

@@ -17,6 +17,12 @@ a:hover, a.link-no-color:hover {
     text-decoration: underline;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -31,9 +37,10 @@ body {
 
 main, .layout-level-1 {
     flex: 1;
+    margin: 0;
 }
 
-/******************** header ********************/
+/******************** Header ********************/
 
 .header {
     position: fixed;
@@ -96,7 +103,7 @@ main, .layout-level-1 {
     }
 }
 
-/* mobile menu button */
+/* Mobile menu button */
 .mobile-menu-button {
     cursor: pointer;
 }
@@ -112,38 +119,40 @@ main, .layout-level-1 {
     }
 }
 
-.menu-button > div {
+.menu-button > span {
     width: 25px;
     border-top: 2px solid black;
     margin: 5px 0;
     transition: 0.3s;
     transform-origin: 0 50%;
+    display: block;
 }
 
-.on-click-menu-button > div {
+.on-click-menu-button > span {
     width: 25px;
     border-top: 2px solid black;
     margin: 7px 0;
     transition: 0.3s;
     transform-origin: 0 50%;
+    display: block;
 }
 
-.on-click-menu-button > div:first-child {
+.on-click-menu-button > span:first-child {
     transform: rotate(45deg);
     border-top: 2px solid #D0104C;
 }
 
-.on-click-menu-button > div:nth-child(2) {
+.on-click-menu-button > span:nth-child(2) {
     opacity: 0;
     border-top: 2px solid #D0104C;
 }
 
-.on-click-menu-button > div:nth-child(3) {
+.on-click-menu-button > span:nth-child(3) {
     transform: rotate(-45deg);
     border-top: 2px solid #D0104C;
 }
 
-/* mobile menu list */
+/* Mobile menu list */
 .mobile-overlay {
     height: 0;
     position: fixed;
@@ -189,7 +198,7 @@ main, .layout-level-1 {
     border-bottom: none;
 }
 
-/******************** bio and profile ********************/
+/******************** Bio and profile ********************/
 
 #pc-bio-profile {
     display: flex;
@@ -336,7 +345,7 @@ main, .layout-level-1 {
     }
 }
 
-/******************** text content ********************/
+/******************** Text content ********************/
 
 .button-links {
     font-size: 13px;
@@ -366,7 +375,7 @@ main, .layout-level-1 {
     border-radius: 8px;
 }
 
-/******************** heading block ********************/
+/******************** Heading block ********************/
 
 .layout-level-1 {
     width: 100%;
@@ -415,7 +424,7 @@ main, .layout-level-1 {
     margin-bottom: 16px;
 }
 
-/******************** footer ********************/
+/******************** Footer ********************/
 
 #footer {
     background-color: #F5F5F5;
@@ -453,7 +462,7 @@ main, .layout-level-1 {
     margin-right: 20px;
 }
 
-/******************** additional mobile layout ********************/
+/******************** Additional mobile layout ********************/
 
 @media screen and (max-width: 450px) {
     .layout-level-2 {
@@ -491,7 +500,7 @@ main, .layout-level-1 {
     }
 }
 
-/******************** print styles ********************/
+/******************** Print styles ********************/
 
 @media print {
     .header {
@@ -537,11 +546,11 @@ main, .layout-level-1 {
     }
 }
 
-/******************** icon font ********************/
+/******************** Icon font ********************/
 
-/* special style for arrows */
+/* Special style for arrows */
 .iconfont-zuoyou {
-    font-family: "iconfont" !important;
+    font-family: "iconfont", sans-serif !important;
     font-size:32px;
     color: #BDC0BA;
     font-style: normal;
@@ -553,14 +562,9 @@ main, .layout-level-1 {
     color: #D0104C;
 }
 
-/* normal styles*/
-@font-face {
-    font-family: "iconfont"; /* Project id 1721354 */
-    src: url('iconfont.ttf?t=1766099418925') format('truetype');
-}
-
+/* Normal styles*/
 .iconfont {
-    font-family: "iconfont" !important;
+    font-family: "iconfont", sans-serif !important;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -605,4 +609,3 @@ main, .layout-level-1 {
 .icon-zuo:before {
     content: "\e601";
 }
-
