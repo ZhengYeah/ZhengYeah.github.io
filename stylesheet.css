@@ -35,7 +35,7 @@ body {
     flex-direction: column;
 }
 
-main, .layout-level-1 {
+main {
     flex: 1;
     margin: 0;
 }
@@ -48,7 +48,6 @@ main, .layout-level-1 {
     overflow: hidden;
     width: 100%;
     background-color: #F5F5F5;
-    transition: 0.3s;
     font-size: 20px;
     z-index: 1;
 }
