@@ -9,25 +9,25 @@ let prevScroll = window.scrollY;
 const hideThreshold = 100;
 
 window.addEventListener("scroll", () => {
-    let curScroll = window.scrollY;
-    const headerElement = document.getElementsByClassName("header")[0];
-    if (curScroll < hideThreshold) {
-        headerElement.style.top = "0";
-        prevScroll = curScroll;
-    } else {
-    if (prevScroll > curScroll) {
-        headerElement.style.top = "0";
-        } else {
-        headerElement.style.top = "-25vh";
-        }
+  let curScroll = window.scrollY;
+  const headerElement = document.getElementsByClassName("header")[0];
+  if (curScroll < hideThreshold) {
+    headerElement.style.top = "0";
     prevScroll = curScroll;
+  } else {
+    if (prevScroll > curScroll) {
+      headerElement.style.top = "0";
+    } else {
+      headerElement.style.top = "-25vh";
     }
-    // Auto close menu when scrolling
-    if (mobileOverlay.style.height === "auto") {
-        mobileOverlay.style.height = "0";
-        mobileOverlay.style.opacity = "0";
-        menuButton.className = "menu-button";
-    }
+    prevScroll = curScroll;
+  }
+  // Auto close menu when scrolling
+  if (mobileOverlay.style.height === "auto") {
+    mobileOverlay.style.height = "0";
+    mobileOverlay.style.opacity = "0";
+    menuButton.className = "menu-button";
+  }
 })
 
 /*
@@ -36,31 +36,32 @@ When the mobile menu is open, change the menu button to a cross.
 When clicking outside the mobile menu, close the mobile menu.
 */
 function toggleMenu() {
-    if (mobileOverlay.style.height === "auto") {
-        menuButton.className = "menu-button";
-        mobileOverlay.style.height = "0";
-        mobileOverlay.style.opacity = "0";
-    } else {
-        menuButton.className = "on-click-menu-button";
-        mobileOverlay.style.height = "auto";
-        mobileOverlay.style.opacity = "1";
-        menuButton.setAttribute("aria-expanded", "true");
-    }
+  if (mobileOverlay.style.height === "auto") {
+    menuButton.className = "menu-button";
+    mobileOverlay.style.height = "0";
+    mobileOverlay.style.opacity = "0";
+  } else {
+    menuButton.className = "on-click-menu-button";
+    mobileOverlay.style.height = "auto";
+    mobileOverlay.style.opacity = "1";
+    menuButton.setAttribute("aria-expanded", "true");
+  }
 }
+
 const mobileMenu = document.getElementsByClassName("mobile-menu-button")[0];
 mobileMenu.addEventListener("click", toggleMenu)
 
 // Close menu when clicking outside the menu
 document.addEventListener("click", (event) => {
-    if (mobileOverlay.style.height === "auto") {
-        const isClickInside = mobileOverlay.contains(event.target) || menuButton.contains(event.target);
-        if (!isClickInside) {
-            mobileOverlay.style.height = "0";
-            mobileOverlay.style.opacity = "0";
-            menuButton.className = "menu-button";
-            menuButton.setAttribute("aria-expanded", "false");
-        }
+  if (mobileOverlay.style.height === "auto") {
+    const isClickInside = mobileOverlay.contains(event.target) || menuButton.contains(event.target);
+    if (!isClickInside) {
+      mobileOverlay.style.height = "0";
+      mobileOverlay.style.opacity = "0";
+      menuButton.className = "menu-button";
+      menuButton.setAttribute("aria-expanded", "false");
     }
+  }
 })
 
 /*
@@ -68,13 +69,13 @@ Corner case: auto close menu when screen is resized to be smaller than 860px.
 This only happens when the menu is open and the screen is resized to be larger than 860px.
 */
 window.addEventListener("resize", () => {
-    let curWidth = window.screen.availWidth;
-    if (curWidth > 860) {
-        mobileOverlay.style.height = "0";
-        mobileOverlay.style.opacity = "0";
-        menuButton.className = "menu-button";
-        menuButton.setAttribute("aria-expanded", "false");
-    }
+  let curWidth = window.screen.availWidth;
+  if (curWidth > 860) {
+    mobileOverlay.style.height = "0";
+    mobileOverlay.style.opacity = "0";
+    menuButton.className = "menu-button";
+    menuButton.setAttribute("aria-expanded", "false");
+  }
 })
 
 /*
@@ -82,38 +83,38 @@ Profile image carousel: when the profile image is clicked, change to the next im
 */
 // If not home page, do not run the profile image carousel script
 if (!document.getElementById("showing-profile")) {
-    // Do nothing
+  // Do nothing
 } else {
-    const totalImgNum = 3; // only change this number when adding more images
+  const totalImgNum = 3; // only change this number when adding more images
 
-    // Change profile image when clicked (PC)
-    const showingImg = document.getElementById("showing-profile");
-    let i = 1;
-    showingImg.addEventListener("click", () => {
-        i = i % totalImgNum + 1;
-        let imgPath = "./images/profile/profile-" + i + ".jpg";
-        showingImg.setAttribute("src", imgPath);
-    })
+  // Change profile image when clicked (PC)
+  const showingImg = document.getElementById("showing-profile");
+  let i = 1;
+  showingImg.addEventListener("click", () => {
+    i = i % totalImgNum + 1;
+    let imgPath = "./images/profile/profile-" + i + ".jpg";
+    showingImg.setAttribute("src", imgPath);
+  })
 
-    // Change profile image when the img and buttons are clicked (mobile)
-    const showingMobileImg = document.getElementById("showing-mobile-profile");
-    let j = 1;
-    showingMobileImg.addEventListener("click", () => {
-        j = j % totalImgNum + 1;
-        let imgPath = "./images/profile/profile-" + j + ".jpg";
-        showingMobileImg.setAttribute("src", imgPath);
-    })
-    // Left and right buttons for mobile
-    const leftButton = document.getElementById("profile-left-button");
-    const rightButton = document.getElementById("profile-right-button");
-    leftButton.addEventListener("click", () => {
-        j = (j - 2 + totalImgNum) % totalImgNum + 1;
-        let imgPath = "./images/profile/profile-" + j + ".jpg";
-        showingMobileImg.setAttribute("src", imgPath);
-    })
-    rightButton.addEventListener("click", () => {
-        j = j % totalImgNum + 1;
-        let imgPath = "./images/profile/profile-" + j + ".jpg";
-        showingMobileImg.setAttribute("src", imgPath);
-    })
+  // Change profile image when the img and buttons are clicked (mobile)
+  const showingMobileImg = document.getElementById("showing-mobile-profile");
+  let j = 1;
+  showingMobileImg.addEventListener("click", () => {
+    j = j % totalImgNum + 1;
+    let imgPath = "./images/profile/profile-" + j + ".jpg";
+    showingMobileImg.setAttribute("src", imgPath);
+  })
+  // Left and right buttons for mobile
+  const leftButton = document.getElementById("profile-left-button");
+  const rightButton = document.getElementById("profile-right-button");
+  leftButton.addEventListener("click", () => {
+    j = (j - 2 + totalImgNum) % totalImgNum + 1;
+    let imgPath = "./images/profile/profile-" + j + ".jpg";
+    showingMobileImg.setAttribute("src", imgPath);
+  })
+  rightButton.addEventListener("click", () => {
+    j = j % totalImgNum + 1;
+    let imgPath = "./images/profile/profile-" + j + ".jpg";
+    showingMobileImg.setAttribute("src", imgPath);
+  })
 }
