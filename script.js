@@ -1,5 +1,6 @@
 const mobileOverlay = document.getElementsByClassName("mobile-overlay")[0];
 const menuButton = document.getElementsByClassName("menu-button")[0];
+const headerElement = document.getElementsByClassName("header")[0];
 
 /*
 Menu bar scroll effect: when scrolling down, the header hides; when scrolling up, the header shows.
@@ -9,8 +10,7 @@ let prevScroll = window.scrollY;
 const hideThreshold = 100;
 
 window.addEventListener("scroll", () => {
-  let curScroll = window.scrollY;
-  const headerElement = document.getElementsByClassName("header")[0];
+  const curScroll = window.scrollY;
   if (curScroll < hideThreshold) {
     headerElement.style.top = "0";
     prevScroll = curScroll;
@@ -40,6 +40,7 @@ function toggleMenu() {
     menuButton.className = "menu-button";
     mobileOverlay.style.height = "0";
     mobileOverlay.style.opacity = "0";
+    menuButton.setAttribute("aria-expanded", "false");
   } else {
     menuButton.className = "on-click-menu-button";
     mobileOverlay.style.height = "auto";
@@ -69,7 +70,7 @@ Corner case: auto close menu when screen is resized to be smaller than 860px.
 This only happens when the menu is open and the screen is resized to be larger than 860px.
 */
 window.addEventListener("resize", () => {
-  let curWidth = window.screen.availWidth;
+  const curWidth = window.screen.availWidth;
   if (curWidth > 860) {
     mobileOverlay.style.height = "0";
     mobileOverlay.style.opacity = "0";
@@ -81,40 +82,26 @@ window.addEventListener("resize", () => {
 /*
 Profile image carousel: when the profile image is clicked, change to the next image.
 */
-// If not home page, do not run the profile image carousel script
-if (!document.getElementById("showing-profile")) {
-  // Do nothing
-} else {
+if (document.getElementById("showing-profile")) {
   const totalImgNum = 3; // only change this number when adding more images
 
-  // Change profile image when clicked (PC)
-  const showingImg = document.getElementById("showing-profile");
-  let i = 1;
-  showingImg.addEventListener("click", () => {
-    i = i % totalImgNum + 1;
-    let imgPath = "./images/profile/profile-" + i + ".jpg";
-    showingImg.setAttribute("src", imgPath);
-  })
+  function createCarousel(imgElement, index) {
+    const updateImage = (newIndex) => {
+      index = newIndex;
+      imgElement.setAttribute("src", `./images/profile/profile-${index}.jpg`);
+      return index;
+    };
+    return {
+      next: () => updateImage(index % totalImgNum + 1),
+      prev: () => updateImage((index - 2 + totalImgNum) % totalImgNum + 1)
+    };
+  }
 
-  // Change profile image when the img and buttons are clicked (mobile)
-  const showingMobileImg = document.getElementById("showing-mobile-profile");
-  let j = 1;
-  showingMobileImg.addEventListener("click", () => {
-    j = j % totalImgNum + 1;
-    let imgPath = "./images/profile/profile-" + j + ".jpg";
-    showingMobileImg.setAttribute("src", imgPath);
-  })
-  // Left and right buttons for mobile
-  const leftButton = document.getElementById("profile-left-button");
-  const rightButton = document.getElementById("profile-right-button");
-  leftButton.addEventListener("click", () => {
-    j = (j - 2 + totalImgNum) % totalImgNum + 1;
-    let imgPath = "./images/profile/profile-" + j + ".jpg";
-    showingMobileImg.setAttribute("src", imgPath);
-  })
-  rightButton.addEventListener("click", () => {
-    j = j % totalImgNum + 1;
-    let imgPath = "./images/profile/profile-" + j + ".jpg";
-    showingMobileImg.setAttribute("src", imgPath);
-  })
+  const pcCarousel = createCarousel(document.getElementById("showing-profile"), 1);
+  const mobileCarousel = createCarousel(document.getElementById("showing-mobile-profile"), 1);
+
+  document.getElementById("showing-profile").addEventListener("click", pcCarousel.next);
+  document.getElementById("showing-mobile-profile").addEventListener("click", mobileCarousel.next);
+  document.getElementById("profile-left-button").addEventListener("click", mobileCarousel.prev);
+  document.getElementById("profile-right-button").addEventListener("click", mobileCarousel.next);
 }
