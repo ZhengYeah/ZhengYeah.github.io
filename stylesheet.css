@@ -318,7 +318,7 @@ main {
 }
 
 .mobile-profile img {
-  max-width: 180px; /* Don't forget the inline width in HTML */
+  max-width: 185px; /* Don't forget the inline width in HTML */
   border-radius: 2px;
   width: 100%;
   vertical-align: middle;
