@@ -88,7 +88,7 @@ if (document.getElementById("showing-profile")) {
   function createCarousel(imgElement, index) {
     const updateImage = (newIndex) => {
       index = newIndex;
-      imgElement.setAttribute("src", `./images/profile/profile-${index}.jpg`);
+      imgElement.setAttribute("src", `./images/profile/profile-${index}.webp`);
       return index;
     };
     return {
