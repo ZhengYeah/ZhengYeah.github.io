@@ -318,14 +318,14 @@ main {
 }
 
 .mobile-profile img {
-  max-width: 185px; /* Don't forget the inline width in HTML */
+  max-width: 100%; /* Don't forget the inline width in HTML */
   border-radius: 2px;
   width: 100%;
   vertical-align: middle;
 }
 
 .mobile-profile .tag-item img {
-  width: 30px;
+  width: 35px;
 }
 
 .mobile-profile .profile-left-button, .mobile-profile .profile-right-button {
@@ -549,7 +549,7 @@ main {
 .iconfont-zuoyou {
   font-family: "iconfont", sans-serif !important;
   font-size: 32px;
-  padding: 15px 0;
+  padding: 20px 0;
   color: #BDC0BA;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
