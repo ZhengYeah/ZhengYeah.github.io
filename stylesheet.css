@@ -510,7 +510,7 @@ main {
 /* Special style for arrows */
 .iconfont-zuoyou {
   font-family: "iconfont", sans-serif !important;
-  font-size: 32px;
+  font-size: 28px;
   color: #BDC0BA;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -601,7 +601,7 @@ main {
   }
 
   .iconfont-zuoyou {
-    padding: 77px 0;
+    padding: 81px 0;
     background-color: #D7C4BB20;
   }
 }
@@ -609,7 +609,7 @@ main {
 @media screen and (max-width: 650px) and (min-width: 451px) {
   .iconfont-zuoyou {
     font-size: 40px;
-    padding: 73px 0;
+    padding: 76px 0;
     background-color: #D7C4BB35;
   }
 }
