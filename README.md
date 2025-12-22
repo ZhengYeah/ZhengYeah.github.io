@@ -2,8 +2,6 @@
 
 This is the source code of Ye Zheng's public homepage: https://zhengyeah.com/. 
 
-Feel free to clone for your own use.
-
 ![Screenshots](/images/screen-website.png)
 
 ## Features
