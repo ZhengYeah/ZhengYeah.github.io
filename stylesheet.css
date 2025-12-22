@@ -456,6 +456,44 @@ main {
   margin-right: 20px;
 }
 
+/******************** Additional mobile layout ********************/
+
+@media screen and (max-width: 450px) {
+  .layout-level-2 {
+    padding: 10px 15px;
+  }
+
+  .footer-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-left, .footer-right {
+    max-width: 75%;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: left;
+  }
+
+  .footer-right {
+    margin-top: 30px;
+  }
+
+  .navigation-bar {
+    padding: 0 15px;
+  }
+
+  .mobile-overlay {
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header, .layout-level-1, #footer {
+    width: 320px;
+  }
+}
+
 /******************** Print styles ********************/
 
 @media print {
@@ -511,6 +549,7 @@ main {
 .iconfont-zuoyou {
   font-family: "iconfont", sans-serif !important;
   font-size: 28px;
+  padding: 15px 0;
   color: #BDC0BA;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -567,55 +606,4 @@ main {
 
 .icon-zuo:before {
   content: "\e601";
-}
-
-/******************** Additional mobile layout ********************/
-
-@media screen and (max-width: 450px) {
-  .layout-level-2 {
-    padding: 10px 15px;
-  }
-
-  .footer-box {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer-left, .footer-right {
-    max-width: 75%;
-    margin-left: 15px;
-    margin-right: 15px;
-    text-align: left;
-  }
-
-  .footer-right {
-    margin-top: 30px;
-  }
-
-  .navigation-bar {
-    padding: 0 15px;
-  }
-
-  .mobile-overlay {
-    right: 15px;
-  }
-
-  .iconfont-zuoyou {
-    padding: 81px 0;
-    background-color: #D7C4BB20;
-  }
-}
-
-@media screen and (max-width: 650px) and (min-width: 451px) {
-  .iconfont-zuoyou {
-    font-size: 40px;
-    padding: 76px 0;
-    background-color: #D7C4BB35;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .header, .layout-level-1, #footer {
-    width: 320px;
-  }
 }
