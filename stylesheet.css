@@ -93,8 +93,10 @@ main {
 }
 
 .link-collection li a:hover {
-  border-bottom: 3px solid #D0104C;
-  color: #D0104C;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #D0104C;
+  text-underline-offset: 10px;
 }
 
 @media screen and (max-width: 860px) {
