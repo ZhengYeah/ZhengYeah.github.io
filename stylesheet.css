@@ -93,10 +93,8 @@ main {
 }
 
 .link-collection li a:hover {
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: #D0104C;
-  text-underline-offset: 10px;
+  color: #D0104C;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 860px) {
@@ -183,6 +181,7 @@ main {
 
 .mobile-overlay-list a:hover {
   color: #D0104C;
+  text-decoration: underline;
 }
 
 .mobile-overlay-list ul {
