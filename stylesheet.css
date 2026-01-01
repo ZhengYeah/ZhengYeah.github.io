@@ -343,10 +343,10 @@ main {
 /******************** Text content ********************/
 
 .button-links {
-  font-size: 13px;
+  font-size: 12px;
   padding: 0 4px;
   border: 1px solid;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .button-links:hover {
