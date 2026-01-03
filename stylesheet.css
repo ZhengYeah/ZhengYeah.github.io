@@ -282,12 +282,9 @@ main {
 }
 
 .mobile-profile {
-  /*margin: 0 auto 20px;*/
-  text-align: center;
   background: linear-gradient(135deg, #ebebeb55 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #ebebeb 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #ebebeb55 25%, transparent 25%) 0 0/ 20px 20px, linear-gradient(45deg, #ebebeb 25%, #ffffff 25%) 0 0/ 20px 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
 }
 
 .mobile-profile .profile-item {
@@ -327,11 +324,6 @@ main {
 
 .mobile-profile .tag-item img {
   width: 35px;
-}
-
-.mobile-profile .profile-left-button, .mobile-profile .profile-right-button {
-  display: inline-block;
-  cursor: pointer;
 }
 
 .mobile-profile-frame {
@@ -568,23 +560,6 @@ main {
 
 /******************** Icon font ********************/
 
-/* Special style for arrows */
-.iconfont-zuoyou {
-  font-family: "iconfont", sans-serif !important;
-  font-size: 32px;
-  padding: 20px 0;
-  color: #BDC0BA;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: none;
-}
-
-.iconfont-zuoyou:active {
-  color: #D0104C;
-}
-
-/* Normal styles*/
 .iconfont {
   font-family: "iconfont", sans-serif !important;
   font-style: normal;

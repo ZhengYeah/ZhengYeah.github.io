@@ -93,7 +93,6 @@ if (document.getElementById("showing-profile")) {
     };
     return {
       next: () => updateImage(index % totalImgNum + 1),
-      prev: () => updateImage((index - 2 + totalImgNum) % totalImgNum + 1)
     };
   }
 
@@ -102,6 +101,4 @@ if (document.getElementById("showing-profile")) {
 
   document.getElementById("showing-profile").addEventListener("click", pcCarousel.next);
   document.getElementById("showing-mobile-profile").addEventListener("click", mobileCarousel.next);
-  document.getElementById("profile-left-button").addEventListener("click", mobileCarousel.prev);
-  document.getElementById("profile-right-button").addEventListener("click", mobileCarousel.next);
 }
