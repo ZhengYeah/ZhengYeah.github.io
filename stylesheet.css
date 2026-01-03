@@ -103,13 +103,6 @@ main {
     display: none;
   }
 
-  .soft-card {
-    box-shadow: none;
-    border: none;
-    padding: 0;
-    transition: none;
-  }
-
   .header {
     box-shadow: none;
   }
@@ -233,6 +226,11 @@ main {
     border: none;
     transition: none;
   }
+
+  .soft-card:hover {
+    box-shadow: none;
+    transform: none;
+  }
 }
 
 /******************** Bio and profile ********************/
@@ -241,7 +239,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px;
+  margin: 8px 0;
 }
 
 #pc-bio-profile .bio {
@@ -298,10 +296,6 @@ main {
   #pc-bio-profile .bio {
     width: 100%;
     height: auto;
-  }
-
-  #pc-bio-profile .bio > div:first-child {
-    margin-top: 15px;
   }
 
   #pc-bio-profile .bio > div {
@@ -430,7 +424,7 @@ main {
   margin-top: 108px
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 860px) {
   .layout-level-1 {
     margin-top: 90px;
   }
@@ -454,7 +448,7 @@ main {
 .heading {
   font-size: 24px;
   border-bottom: 2px solid #F5F5F5;
-  padding: 8px 0;
+  padding: 4px 0 8px;
 }
 
 .small-gray {
@@ -601,10 +595,6 @@ main {
   #pc-bio-profile .bio {
     width: 100%;
     height: auto;
-  }
-
-  #pc-bio-profile .bio > div:first-child {
-    margin-top: 15px;
   }
 
   #pc-bio-profile .bio > div {
