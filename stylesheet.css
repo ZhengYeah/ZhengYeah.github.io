@@ -334,8 +334,30 @@ main {
   cursor: pointer;
 }
 
+.mobile-profile-frame {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto 10px;
+}
+
+.corner {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #BDC0BA80;
+}
+
+.corner.tl {top: 0; left: 0; border-right: none; border-bottom: none;}
+
+.corner.tr {top: 0; right: 0; border-left: none; border-bottom: none;}
+
+.corner.bl {bottom: 0; left: 0; border-right: none; border-top: none;}
+
+.corner.br {bottom: 0; right: 0; border-left: none; border-top: none;}
+
 @media screen and (min-width: 651px) {
-  .mobile-profile {
+  .mobile-profile-frame, .mobile-profile, .conor {
     display: none;
   }
 }
@@ -610,48 +632,4 @@ main {
   content: "\e601";
 }
 
-.mobile-profile-frame {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  margin: 0 auto 10px;
-}
 
-.corner {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border: 2px solid #BDC0BA;
-}
-
-/* 左上 */
-.corner.tl {
-  top: 0;
-  left: 0;
-  border-right: none;
-  border-bottom: none;
-}
-
-/* 右上 */
-.corner.tr {
-  top: 0;
-  right: 0;
-  border-left: none;
-  border-bottom: none;
-}
-
-/* 左下 */
-.corner.bl {
-  bottom: 0;
-  left: 0;
-  border-right: none;
-  border-top: none;
-}
-
-/* 右下 */
-.corner.br {
-  bottom: 0;
-  right: 0;
-  border-left: none;
-  border-top: none;
-}
