@@ -337,7 +337,7 @@ main {
   position: absolute;
   width: 25px;
   height: 25px;
-  border: 2px solid #BDC0BA80;
+  border: 2px solid #BDC0BA64;
 }
 
 .corner.tl {top: 0; left: 0; border-right: none; border-bottom: none;}
