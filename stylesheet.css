@@ -51,6 +51,7 @@ main {
   background-color: #F5F5F5;
   font-size: 20px;
   z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.04) 0 1px 2px, rgba(0, 0, 0, 0.06) 0 4px 12px;
 }
 
 .navigation-bar {
@@ -100,6 +101,17 @@ main {
 @media screen and (max-width: 860px) {
   .link-collection {
     display: none;
+  }
+
+  .soft-card {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    transition: none;
+  }
+
+  .header {
+    box-shadow: none;
   }
 }
 
@@ -197,6 +209,30 @@ main {
 
 .mobile-overlay-list li:last-child {
   border-bottom: none;
+}
+
+/******************** Soft card style ********************/
+
+.soft-card {
+  background-color: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0 1px 2px, rgba(0, 0, 0, 0.06) 0 4px 12px;
+  padding: 16px 18px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.soft-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 6px, rgba(0, 0, 0, 0.10) 0 8px 20px;
+  transform: translateY(-1px);
+}
+
+@media screen and (max-width: 860px) {
+  .soft-card, .soft-card:first-child {
+    box-shadow: none;
+    border: none;
+    transition: none;
+  }
 }
 
 /******************** Bio and profile ********************/
@@ -401,7 +437,18 @@ main {
 }
 
 .layout-level-2 {
-  padding: 10px 20px;
+  margin: 20px 0;
+}
+
+.layout-level-2:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 860px) {
+  .layout-level-2 {
+    margin: 0;
+    padding: 10px 20px;
+  }
 }
 
 .heading {
@@ -524,8 +571,23 @@ main {
     display: none;
   }
 
+  .corner {
+    display: none;
+  }
+
   #footer {
     display: none;
+  }
+
+  .soft-card {
+    box-shadow: none;
+    border: none;
+    transition: none;
+  }
+
+  .soft-card:hover {
+    box-shadow: none;
+    transform: none;
   }
 }
 
