@@ -282,7 +282,7 @@ main {
 }
 
 .mobile-profile {
-  margin: 0 auto 20px;
+  /*margin: 0 auto 20px;*/
   text-align: center;
   background: linear-gradient(135deg, #ebebeb55 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #ebebeb 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #ebebeb55 25%, transparent 25%) 0 0/ 20px 20px, linear-gradient(45deg, #ebebeb 25%, #ffffff 25%) 0 0/ 20px 20px;
   display: flex;
@@ -555,6 +555,7 @@ main {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: none;
 }
 
 .iconfont-zuoyou:active {
@@ -607,4 +608,50 @@ main {
 
 .icon-zuo:before {
   content: "\e601";
+}
+
+.mobile-profile-frame {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto 10px;
+}
+
+.corner {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #BDC0BA;
+}
+
+/* 左上 */
+.corner.tl {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+/* 右上 */
+.corner.tr {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+
+/* 左下 */
+.corner.bl {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+}
+
+/* 右下 */
+.corner.br {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
 }
