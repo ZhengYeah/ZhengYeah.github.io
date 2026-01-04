@@ -381,6 +381,7 @@ header {
   padding: 0 4px;
   border: 1px solid;
   border-radius: 6px;
+  white-space: nowrap;
 }
 
 .button-links:hover {
