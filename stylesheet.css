@@ -6,7 +6,6 @@
   --text-color: #212121;
   --border-light-gray: #F5F5F5;
   --muted-text-color: #91989F;
-  --highlight-bg-color: #FFF4E5;
   --link-color: #1772D0;
   --link-hover-color: #D0104C;
   --shadow-soft: rgba(0, 0, 0, 0.04) 0 1px 2px, rgba(0, 0, 0, 0.06) 0 4px 12px;
@@ -208,7 +207,7 @@ header {
   opacity: 0;
   top: 0;
   background-color: #FFFFFF;
-  box-shadow: rgba(0, 0, 0, 0.04) 0 1px 2px, rgba(0, 0, 0, 0.06) 0 4px 12px;
+  box-shadow: var(--shadow-soft);
   border-radius: 5px;
   transition: 0.3s;
   overflow-y: hidden;
@@ -280,13 +279,13 @@ header {
 .mobile-photo .tag-item {
   display: block;
   aspect-ratio: 1 / 1;
-  border: 1px solid #1772D0;
+  border: 1px solid var(--link-color);
   border-radius: 50%;
   padding: 4px;
 }
 
 .mobile-photo .tag-item:hover {
-  background-color: #D0104C;
+  background-color: var(--link-hover-color);
   text-decoration: none;
 }
 
@@ -353,13 +352,13 @@ header {
 .pc-photo .tag-item {
   display: block;
   aspect-ratio: 1 / 1;
-  border: 1px solid #1772D0;
+  border: 1px solid var(--link-color);
   border-radius: 50%;
   padding: 2px 4px;
 }
 
 .pc-photo-bio .tag-item:hover {
-  background-color: #D0104C;
+  background-color: var(--link-hover-color);
   text-decoration: none;
 }
 
@@ -414,7 +413,7 @@ header {
 }
 
 .small-muted-text {
-  color: #91989F;
+  color: var(--muted-text-color);
   font-size: 12px;
 }
 
@@ -457,7 +456,7 @@ header {
   margin: auto;
   padding: 10px 0 20px;
   font-size: 12px;
-  color: #91989F;
+  color: var(--muted-text-color);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
