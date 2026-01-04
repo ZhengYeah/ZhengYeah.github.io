@@ -4,6 +4,7 @@
   --bg-light-gray: #F8F9FA;
   --fg-gray: #91989F;
   --text-color: #212121;
+  --border-light-gray: #F5F5F5;
   --muted-text-color: #91989F;
   --highlight-bg-color: #FFF4E5;
   --link-color: #1772D0;
@@ -258,15 +259,20 @@ header {
   width: fit-content; /* Don't forget the inline width in HTML */
   align-self: center;
   position: relative;
-  border: 3px solid #EBEBEB;
-  border-radius: 2px;
+}
+
+#showing-mobile-photo {
+  border: 2px solid var(--border-light-gray);
+  border-radius: 5px;
+  padding: 4px;
+  cursor: pointer;
 }
 
 .mobile-photo .tag-box {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  background: #EBEBEB;
+  bottom: 6px;
+  right: 6px;
+  background: #FFFFFF;
   padding: 6px 0 0 6px;
   border-top-left-radius: 50%;
 }
@@ -324,16 +330,20 @@ header {
 
 .pc-photo {
   position: relative;
-  display: flex;
   max-width: 185px; /* Don't forget the inline width in HTML */
   margin: 0 0 0 80px;
-  align-items: center;
-  justify-content: space-around;
+}
+
+#showing-pc-photo {
+  padding: 3px;
+  border: 2px solid var(--border-light-gray);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .pc-photo .tag-box {
   position: absolute;
-  bottom: 5px;
+  bottom: 9px;
   right: 5px;
   background: #FFFFFF;
   padding: 5px 0 0 5px;
@@ -351,13 +361,6 @@ header {
 .pc-photo-bio .tag-item:hover {
   background-color: #D0104C;
   text-decoration: none;
-}
-
-#showing-pc-photo {
-  padding: 3px;
-  border: 2px solid #F5F5F5;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 .pc-photo-bio .tag-item img {
@@ -405,7 +408,7 @@ header {
 
 .heading {
   font-size: 24px;
-  border-bottom: 2px solid #F5F5F5;
+  border-bottom: 2px solid var(--border-light-gray);
   padding: 0 0 8px;
 }
 
@@ -435,7 +438,7 @@ header {
 /******************** Footer ********************/
 
 .footer {
-  background-color: #F5F5F5;
+  background-color: var(--border-light-gray);
   margin-top: 40px;
 }
 
@@ -511,6 +514,10 @@ header {
 /******************** Print styles ********************/
 
 @media print {
+  body {
+    background-color: #FFFFFF !important;
+  }
+
   .header {
     display: none;
   }
@@ -540,22 +547,8 @@ header {
 }
 
 @media print and (max-width: 650px) {
-  .pc-photo-bio .pc-bio {
-    width: 100%;
-    height: auto;
-  }
-
-  .pc-photo-bio .pc-bio > div {
-    margin: 10px 0;
-    text-align: center;
-  }
-
-  .pc-photo-bio .pc-profile {
-    display: none
-  }
-
   .pc-photo-bio {
-    margin-bottom: 0;
+    display: none
   }
 }
 
@@ -607,5 +600,3 @@ header {
 .icon-zuo:before {
   content: "\e601";
 }
-
-
