@@ -82,7 +82,7 @@ window.addEventListener("resize", () => {
 /*
 Profile image carousel: when the profile image is clicked, change to the next image.
 */
-if (document.getElementById("showing-profile")) {
+if (document.getElementById("showing-pc-photo" || document.getElementById("showing-mobile-photo"))) {
   const totalImgNum = 3; // only change this number when adding more images
 
   function createCarousel(imgElement, index) {
@@ -96,9 +96,9 @@ if (document.getElementById("showing-profile")) {
     };
   }
 
-  const pcCarousel = createCarousel(document.getElementById("showing-profile"), 1);
-  const mobileCarousel = createCarousel(document.getElementById("showing-mobile-profile"), 1);
+  const pcCarousel = createCarousel(document.getElementById("showing-pc-photo"), 1);
+  const mobileCarousel = createCarousel(document.getElementById("showing-mobile-photo"), 1);
 
-  document.getElementById("showing-profile").addEventListener("click", pcCarousel.next);
-  document.getElementById("showing-mobile-profile").addEventListener("click", mobileCarousel.next);
+  document.getElementById("showing-pc-photo").addEventListener("click", pcCarousel.next);
+  document.getElementById("showing-mobile-photo").addEventListener("click", mobileCarousel.next);
 }

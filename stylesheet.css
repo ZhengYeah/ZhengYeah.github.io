@@ -8,6 +8,7 @@
   --highlight-bg-color: #FFF4E5;
   --link-color: #1772D0;
   --link-hover-color: #D0104C;
+  --shadow-soft: rgba(0, 0, 0, 0.04) 0 1px 2px, rgba(0, 0, 0, 0.06) 0 4px 12px;
 }
 
 *, *:before, *:after {
@@ -69,7 +70,7 @@ main {
 .soft-card {
   background-color: #FFFFFF;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.04) 0 1px 2px, rgba(0, 0, 0, 0.06) 0 4px 12px;
+  box-shadow: var(--shadow-soft);
   padding: 18px 20px;
 }
 
@@ -94,7 +95,7 @@ header {
   background-color: #FFFFFF;
   font-size: 20px;
   z-index: 1;
-  box-shadow: rgba(0, 0, 0, 0.04) 0 1px 2px, rgba(0, 0, 0, 0.06) 0 4px 12px;
+  box-shadow: var(--shadow-soft);
 }
 
 .navigation-bar {
@@ -205,8 +206,8 @@ header {
   right: 20px;
   opacity: 0;
   top: 0;
-  background-color: #F5F5F5;
-  box-shadow: rgba(0, 0, 0, 0.10) -1px 1px 4px, rgba(0, 0, 0, 0.1) 1px 1px 4px;
+  background-color: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.04) 0 1px 2px, rgba(0, 0, 0, 0.06) 0 4px 12px;
   border-radius: 5px;
   transition: 0.3s;
   overflow-y: hidden;
@@ -218,7 +219,7 @@ header {
 
 .mobile-overlay-list a {
   text-decoration: none;
-  color: #212121;
+  color: var(--text-color);
   display: block;
   padding: 0 24px;
 }
@@ -250,6 +251,7 @@ header {
   flex-direction: column;
   justify-content: center;
   gap: 16px;
+  margin-top: 8px; /* Margin to unify with other soft-cards */
 }
 
 .mobile-photo {
@@ -401,19 +403,13 @@ header {
 
 /******************** Heading block ********************/
 
-@media screen and (max-width: 820px) {
-  .soft-card {
-    padding: 10px 20px;
-  }
-}
-
 .heading {
   font-size: 24px;
-  border-bottom: 1px solid #F5F5F5;
-  padding: 4px 0 8px;
+  border-bottom: 2px solid #F5F5F5;
+  padding: 0 0 8px;
 }
 
-.small-gray {
+.small-muted-text {
   color: #91989F;
   font-size: 12px;
 }
@@ -438,12 +434,12 @@ header {
 
 /******************** Footer ********************/
 
-#footer {
+.footer {
   background-color: #F5F5F5;
   margin-top: 40px;
 }
 
-#footer .split-line {
+.footer .split-line {
   max-width: 100%;
   margin: auto;
   border: 0;
@@ -474,11 +470,19 @@ header {
   margin-right: 20px;
 }
 
-/******************** Additional mobile layout ********************/
+/******************** Additional mobile layout for small screen ********************/
 
 @media screen and (max-width: 450px) {
   .soft-card {
     padding: 10px 15px;
+  }
+
+  .navigation-bar {
+    padding: 0 15px;
+  }
+
+  .mobile-overlay {
+    right: 15px;
   }
 
   .footer-box {
@@ -496,18 +500,10 @@ header {
   .footer-right {
     margin-top: 30px;
   }
-
-  .navigation-bar {
-    padding: 0 15px;
-  }
-
-  .mobile-overlay {
-    right: 15px;
-  }
 }
 
 @media screen and (max-width: 320px) {
-  main, .header, #footer {
+  main, .header, .footer {
     width: 320px;
   }
 }
@@ -519,7 +515,7 @@ header {
     display: none;
   }
 
-  .layout-level-1 {
+  main {
     margin-top: 30px;
   }
 
@@ -527,14 +523,13 @@ header {
     display: none;
   }
 
-  #footer {
+  .footer {
     display: none;
   }
 
   .soft-card {
     box-shadow: none;
     border: none;
-    transition: none;
   }
 }
 
@@ -545,21 +540,21 @@ header {
 }
 
 @media print and (max-width: 650px) {
-  #pc-photo-bio .pc-bio {
+  .pc-photo-bio .pc-bio {
     width: 100%;
     height: auto;
   }
 
-  #pc-photo-bio .pc-bio > div {
+  .pc-photo-bio .pc-bio > div {
     margin: 10px 0;
     text-align: center;
   }
 
-  #pc-photo-bio .pc-profile {
+  .pc-photo-bio .pc-profile {
     display: none
   }
 
-  #pc-photo-bio {
+  .pc-photo-bio {
     margin-bottom: 0;
   }
 }
