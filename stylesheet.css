@@ -260,6 +260,10 @@ header {
   position: relative;
 }
 
+.mobile-photo img {
+  vertical-align: middle;
+}
+
 #showing-mobile-photo {
   border: 2px solid var(--border-light-gray);
   border-radius: 5px;
@@ -281,23 +285,12 @@ header {
   aspect-ratio: 1 / 1;
   border: 1px solid var(--link-color);
   border-radius: 50%;
-  padding: 4px;
+  padding: 2px 4px;
 }
 
 .mobile-photo .tag-item:hover {
   background-color: var(--link-hover-color);
   text-decoration: none;
-}
-
-.mobile-photo .tag-item img {
-  width: 35px;
-}
-
-.mobile-photo img {
-  max-width: 100%; /* Don't forget the inline width in HTML */
-  border-radius: 2px;
-  width: 100%;
-  vertical-align: middle;
 }
 
 .mobile-bio > div {
@@ -329,12 +322,16 @@ header {
 
 .pc-photo {
   position: relative;
-  max-width: 185px; /* Don't forget the inline width in HTML */
+  max-width: 188px; /* Don't forget the inline width in HTML */
   margin: 0 0 0 80px;
 }
 
+.pc-photo img {
+  vertical-align: middle;
+}
+
 #showing-pc-photo {
-  padding: 3px;
+  padding: 4px;
   border: 2px solid var(--border-light-gray);
   border-radius: 5px;
   cursor: pointer;
@@ -342,7 +339,7 @@ header {
 
 .pc-photo .tag-box {
   position: absolute;
-  bottom: 9px;
+  bottom: 5px;
   right: 5px;
   background: #FFFFFF;
   padding: 5px 0 0 5px;
@@ -360,11 +357,6 @@ header {
 .pc-photo-bio .tag-item:hover {
   background-color: var(--link-hover-color);
   text-decoration: none;
-}
-
-.pc-photo-bio .tag-item img {
-  width: 30px;
-  aspect-ratio: 1 / 1;
 }
 
 @media screen and (max-width: 650px) {
