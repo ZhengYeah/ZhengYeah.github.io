@@ -78,14 +78,6 @@ main {
   margin: 20px 0;
 }
 
-#category-news.soft-card {
-  padding: 16px 20px 16px 14px;
-}
-
-.news-card {
-  border-left: 6px solid var(--link-color);
-}
-
 @media screen and (max-width: 820px) {
   .soft-card {
     border-radius: 0;
@@ -421,8 +413,8 @@ header {
   margin-top: 40px;
 }
 
-.bio-list .paper-entry:first-child,
 .publications-list .paper-entry:first-child,
+.bio-list .paper-entry:first-child,
 .archives-list .paper-entry:first-child {
   margin-top: 20px;
 }
@@ -478,14 +470,6 @@ header {
 @media screen and (max-width: 450px) {
   .soft-card {
     padding: 10px 15px;
-  }
-
-  #category-news.soft-card {
-    padding: 10px 15px 10px 12px;
-  }
-
-  .news-card {
-    border-left: 3px solid var(--link-color);
   }
 
   .navigation-bar {
