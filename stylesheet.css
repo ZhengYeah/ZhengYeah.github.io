@@ -78,6 +78,14 @@ main {
   margin: 20px 0;
 }
 
+#category-news.soft-card {
+  padding: 16px 20px 16px 14px;
+}
+
+.news-card {
+  border-left: 6px solid var(--link-color);
+}
+
 @media screen and (max-width: 820px) {
   .soft-card {
     border-radius: 0;
@@ -472,6 +480,14 @@ header {
     padding: 10px 15px;
   }
 
+  #category-news.soft-card {
+    padding: 10px 15px 10px 12px;
+  }
+
+  .news-card {
+    border-left: 3px solid var(--link-color);
+  }
+
   .navigation-bar {
     padding: 0 15px;
   }
@@ -553,6 +569,14 @@ header {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-find:before {
+  content: "\e60f";
+}
+
+.icon-0201chazhao:before {
+  content: "\e604";
+}
+
 .icon-donghuayanshi-:before {
   content: "\e62e";
 }
@@ -583,12 +607,4 @@ header {
 
 .icon-company:before {
   content: "\e659";
-}
-
-.icon-you:before {
-  content: "\e600";
-}
-
-.icon-zuo:before {
-  content: "\e601";
 }
