@@ -413,6 +413,7 @@ header {
   margin-top: 40px;
 }
 
+.news-list .paper-entry:first-child,
 .publications-list .paper-entry:first-child,
 .bio-list .paper-entry:first-child,
 .archives-list .paper-entry:first-child {
