@@ -416,7 +416,8 @@ header {
 .news-list .paper-entry:first-child,
 .publications-list .paper-entry:first-child,
 .bio-list .paper-entry:first-child,
-.archives-list .paper-entry:first-child {
+.archives-list .paper-entry:first-child,
+.awards-list .paper-entry:first-child {
   margin-top: 20px;
 }
 
