@@ -45,10 +45,17 @@ body {
   font-size: 16px; /* Base font size; 1em = 16px */
   display: flex;
   flex-direction: column;
+  min-width: 320px; /* Minimum width for mobile devices */
 }
 
 body.bg-light {
   background-color: var(--bg-light-gray);
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("iconfont.ttf") format("truetype");
+  font-display: swap;
 }
 
 main {
@@ -496,12 +503,6 @@ header {
 
   .footer-right {
     margin-top: 30px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  main, .header, .footer {
-    width: 320px;
   }
 }
 

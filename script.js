@@ -9,7 +9,14 @@ This effect is only applied after scrolling down 100px from the top.
 let prevScroll = window.scrollY;
 const hideThreshold = 100;
 
-window.addEventListener("scroll", () => {
+function closeMenu() {
+  mobileOverlay.style.height = "0";
+  mobileOverlay.style.opacity = "0";
+  menuButton.className = "menu-button";
+  menuButton.setAttribute("aria-expanded", "false");
+}
+
+function onScroll() {
   const curScroll = window.scrollY;
   if (curScroll < hideThreshold) {
     headerElement.style.top = "0";
@@ -24,11 +31,21 @@ window.addEventListener("scroll", () => {
   }
   // Auto close menu when scrolling
   if (mobileOverlay.style.height === "auto") {
-    mobileOverlay.style.height = "0";
-    mobileOverlay.style.opacity = "0";
-    menuButton.className = "menu-button";
+    closeMenu();
   }
-})
+}
+
+let scrollTicking = false;
+window.addEventListener("scroll", () => {
+  if (scrollTicking) {
+    return;
+  }
+  scrollTicking = true;
+  requestAnimationFrame(() => {
+    onScroll();
+    scrollTicking = false;
+  });
+}, { passive: true });
 
 /*
 Toggle menu mobile: when the menu button is clicked, toggle the mobile menu.
@@ -37,10 +54,7 @@ When clicking outside the mobile menu, close the mobile menu.
 */
 function toggleMenu() {
   if (mobileOverlay.style.height === "auto") {
-    menuButton.className = "menu-button";
-    mobileOverlay.style.height = "0";
-    mobileOverlay.style.opacity = "0";
-    menuButton.setAttribute("aria-expanded", "false");
+    closeMenu();
   } else {
     menuButton.className = "on-click-menu-button";
     mobileOverlay.style.height = "auto";
@@ -57,10 +71,7 @@ document.addEventListener("click", (event) => {
   if (mobileOverlay.style.height === "auto") {
     const isClickInside = mobileOverlay.contains(event.target) || menuButton.contains(event.target);
     if (!isClickInside) {
-      mobileOverlay.style.height = "0";
-      mobileOverlay.style.opacity = "0";
-      menuButton.className = "menu-button";
-      menuButton.setAttribute("aria-expanded", "false");
+      closeMenu();
     }
   }
 })
@@ -70,19 +81,19 @@ Corner case: auto close menu when screen is resized to be smaller than 860px.
 This only happens when the menu is open and the screen is resized to be larger than 860px.
 */
 window.addEventListener("resize", () => {
-  const curWidth = window.screen.availWidth;
+  const curWidth = window.innerWidth;
   if (curWidth > 860) {
-    mobileOverlay.style.height = "0";
-    mobileOverlay.style.opacity = "0";
-    menuButton.className = "menu-button";
-    menuButton.setAttribute("aria-expanded", "false");
+    closeMenu();
   }
 })
 
 /*
 Profile image carousel: when the profile image is clicked, change to the next image.
 */
-if (document.getElementById("showing-pc-photo" || document.getElementById("showing-mobile-photo"))) {
+const pcPhotoElement = document.getElementById("showing-pc-photo");
+const mobilePhotoElement = document.getElementById("showing-mobile-photo");
+
+if (pcPhotoElement || mobilePhotoElement) {
   const totalImgNum = 3; // only change this number when adding more images
 
   function createCarousel(imgElement, index) {
@@ -96,9 +107,13 @@ if (document.getElementById("showing-pc-photo" || document.getElementById("showi
     };
   }
 
-  const pcCarousel = createCarousel(document.getElementById("showing-pc-photo"), 1);
-  const mobileCarousel = createCarousel(document.getElementById("showing-mobile-photo"), 1);
+  if (pcPhotoElement) {
+    const pcCarousel = createCarousel(pcPhotoElement, 1);
+    pcPhotoElement.addEventListener("click", pcCarousel.next);
+  }
 
-  document.getElementById("showing-pc-photo").addEventListener("click", pcCarousel.next);
-  document.getElementById("showing-mobile-photo").addEventListener("click", mobileCarousel.next);
+  if (mobilePhotoElement) {
+    const mobileCarousel = createCarousel(mobilePhotoElement, 1);
+    mobilePhotoElement.addEventListener("click", mobileCarousel.next);
+  }
 }
