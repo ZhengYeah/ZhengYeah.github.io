@@ -114,7 +114,7 @@ header {
 
 .navigation-bar a {
   text-decoration: none;
-  color: #212121;
+  color: var(--text-color);
   padding: 10px 0;
 }
 
@@ -306,6 +306,10 @@ header {
   padding: 2px 4px;
 }
 
+.profile-photo .tag-item:hover {
+  background-color: var(--link-hover-color);
+}
+
 .mobile-only {
   display: none;
 }
@@ -322,7 +326,7 @@ header {
   display: block;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 650px), print and (max-width: 650px) {
   .profile-card {
     flex-direction: column-reverse;
     justify-content: center;
