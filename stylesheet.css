@@ -79,9 +79,6 @@ main {
   border-radius: 10px;
   box-shadow: var(--shadow-soft);
   padding: 18px 20px;
-}
-
-.soft-card {
   margin: 20px 0;
 }
 
@@ -180,7 +177,7 @@ header {
   display: block;
 }
 
-.on-click-menu-button > span {
+.menu-button.is-open > span {
   width: 25px;
   border-top: 2px solid black;
   margin: 7px 0;
@@ -189,17 +186,17 @@ header {
   display: block;
 }
 
-.on-click-menu-button > span:first-child {
+.menu-button.is-open > span:first-child {
   transform: rotate(45deg);
   border-top: 2px solid var(--link-hover-color);
 }
 
-.on-click-menu-button > span:nth-child(2) {
+.menu-button.is-open > span:nth-child(2) {
   opacity: 0;
   border-top: 2px solid var(--link-hover-color);
 }
 
-.on-click-menu-button > span:nth-child(3) {
+.menu-button.is-open > span:nth-child(3) {
   transform: rotate(-45deg);
   border-top: 2px solid var(--link-hover-color);
 }
@@ -218,6 +215,11 @@ header {
   border-radius: 5px;
   transition: 0.3s;
   overflow-y: hidden;
+}
+
+.mobile-overlay.is-open {
+  height: auto;
+  opacity: 1;
 }
 
 .mobile-overlay-list {
@@ -251,100 +253,39 @@ header {
   border-bottom: none;
 }
 
-/******************** Mobile-photo-bio ********************/
+/******************** Profile card ********************/
 
-.mobile-photo-bio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 8px; /* Margin to unify with other soft-cards */
-}
-
-.mobile-photo {
-  width: fit-content; /* Don't forget the inline width in HTML */
-  align-self: center;
-  position: relative;
-}
-
-.mobile-photo img {
-  vertical-align: middle;
-}
-
-#showing-mobile-photo {
-  border: 2px solid var(--border-light-gray);
-  border-radius: 5px;
-  padding: 4px;
-  cursor: pointer;
-}
-
-.mobile-photo .tag-box {
-  position: absolute;
-  bottom: 6px;
-  right: 6px;
-  background: #FFFFFF;
-  padding: 6px 0 0 6px;
-  border-top-left-radius: 50%;
-}
-
-.mobile-photo .tag-item {
-  display: block;
-  aspect-ratio: 1 / 1;
-  border: 1px solid var(--link-color);
-  border-radius: 50%;
-  padding: 2px 4px;
-}
-
-.mobile-photo .tag-item:hover {
-  background-color: var(--link-hover-color);
-  text-decoration: none;
-}
-
-.mobile-bio > div {
-  margin: 16px 0;
-  text-align: center;
-}
-
-@media screen and (min-width: 651px) {
-  .mobile-photo-bio {
-    display: none;
-  }
-}
-
-/******************** PC-photo-bio ********************/
-
-.pc-photo-bio {
+.profile-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 8px 0; /* Margin to unify with other soft-cards */
 }
 
-.pc-bio {
+.profile-bio {
   display: flex;
   flex-direction: column;
   height: 185px;
   justify-content: space-between;
 }
 
-.pc-photo {
+.profile-photo {
   position: relative;
-  max-width: 188px; /* Don't forget the inline width in HTML */
   margin: 0 0 0 80px;
 }
 
-.pc-photo img {
+.profile-photo img {
   vertical-align: middle;
 }
 
-#showing-pc-photo {
+#showing-profile-photo {
   padding: 4px;
   border: 2px solid var(--border-light-gray);
   border-radius: 5px;
   cursor: pointer;
 }
 
-.pc-photo .tag-box {
+.profile-photo .tag-box {
   position: absolute;
   bottom: 5px;
   right: 5px;
@@ -353,7 +294,7 @@ header {
   border-top-left-radius: 50%;
 }
 
-.pc-photo .tag-item {
+.profile-photo .tag-item {
   display: block;
   aspect-ratio: 1 / 1;
   border: 1px solid var(--link-color);
@@ -361,14 +302,80 @@ header {
   padding: 2px 4px;
 }
 
-.pc-photo-bio .tag-item:hover {
-  background-color: var(--link-hover-color);
-  text-decoration: none;
+.mobile-only {
+  display: none;
+}
+
+.pc-only {
+  display: inline;
+}
+
+.mobile-only-block {
+  display: none;
+}
+
+.pc-only-block {
+  display: block;
 }
 
 @media screen and (max-width: 650px) {
-  .pc-photo-bio {
-    display: none
+  .profile-card {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  /* Bigger profile photo and centered layout on mobile */
+  .profile-photo {
+    width: fit-content;
+    align-self: center;
+    margin: 0;
+  }
+
+  #showing-profile-photo {
+    width: 204px;
+    height: 204px;
+  }
+
+  .profile-photo .tag-box {
+    bottom: 6px;
+    right: 6px;
+    padding: 6px 0 0 6px;
+  }
+
+  .location-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* Centered profile bio on mobile */
+  .profile-bio {
+    height: auto;
+  }
+
+  .profile-bio > div {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .profile-bio > div:first-child {
+    margin-top: 16px;
+  }
+
+  .pc-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: inline;
+  }
+
+  .pc-only-block {
+    display: none;
+  }
+
+  .mobile-only-block {
+    display: block;
   }
 }
 
@@ -532,18 +539,6 @@ header {
   .soft-card {
     box-shadow: none;
     border: none;
-  }
-}
-
-@media print and (min-width: 651px) {
-  .mobile-photo-bio {
-    display: none;
-  }
-}
-
-@media print and (max-width: 650px) {
-  .pc-photo-bio {
-    display: none
   }
 }
 
