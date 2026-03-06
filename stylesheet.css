@@ -259,7 +259,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 8px 0; /* Margin to unify with other soft-cards */
+  margin: 16px 0; /* Margin to unify with other soft-cards */
 }
 
 .profile-bio {
@@ -267,6 +267,10 @@ header {
   flex-direction: column;
   height: 185px;
   justify-content: space-between;
+}
+
+.pc-bold-text {
+  font-weight: bold;
 }
 
 .profile-photo {
@@ -325,6 +329,10 @@ header {
     gap: 16px;
   }
 
+  .pc-bold-text {
+    font-weight: normal;
+  }
+
   /* Bigger profile photo and centered layout on mobile */
   .profile-photo {
     width: fit-content;
@@ -354,12 +362,8 @@ header {
   }
 
   .profile-bio > div {
-    margin-bottom: 16px;
-    text-align: center;
-  }
-
-  .profile-bio > div:first-child {
     margin-top: 16px;
+    text-align: center;
   }
 
   .pc-only {
