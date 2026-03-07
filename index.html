@@ -1,25 +1,42 @@
 <!DOCTYPE HTML>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Ye Zheng (郑烨)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Ye Zheng's academic homepage. Ph.D. student in Computer Science at Rochester Institute of Technology (RIT).">
-  <!-- Open Graph meta tags -->
-  <meta property="og:title" content="Ye Zheng (郑烨)"/>
-  <meta property="og:description" content="Ye Zheng's academic homepage. Ph.D. student in Computer Science at Rochester Institute of Technology (RIT)."/>
-  <meta property="og:image" content="https://zhengyeah.com/images/profile/profile-1.webp"/>
-  <meta property="og:url" content="https://zhengyeah.com"/>
-  <meta property="og:type" content="website"/>
-  <!-- Load CSS and iconfont -->
+  <meta property="og:title" content="Ye Zheng (郑烨)">
+  <meta property="og:description" content="Ye Zheng's academic homepage. Ph.D. student in Computer Science at Rochester Institute of Technology (RIT).">
+  <meta property="og:image" content="https://zhengyeah.com/images/profile/profile-1.webp">
+  <meta property="og:url" content="https://zhengyeah.com">
+  <meta property="og:type" content="website">
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
-  <link rel="preload" href="iconfont.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="iconfont.woff2" as="font" type="font/woff2" crossorigin>
   <script src="nav.js" defer></script>
   <script src="script.js" defer></script>
   <link href="/images/web-icon.png" rel="icon" type="image/png">
   <link rel="canonical" href="https://zhengyeah.com">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ye Zheng",
+      "alternateName": "郑烨",
+      "url": "https://zhengyeah.com",
+      "image": "https://zhengyeah.com/images/profile/profile-1.webp",
+      "jobTitle": "Ph.D. Student",
+      "worksFor": {
+        "@type": "CollegeOrUniversity",
+        "name": "Rochester Institute of Technology"
+      },
+      "sameAs": [
+        "https://scholar.google.com/citations?hl=en&user=fIwzSr4AAAAJ&view_op=list_works&sortby=pubdate",
+        "https://github.com/ZhengYeah/",
+        "https://www.zhihu.com/people/zhengyeah/"
+      ]
+    }
+  </script>
 </head>
-
 
 <body class="bg-light">
 <header id="header" class="header">
@@ -33,14 +50,13 @@
       </ul>
     </div>
     <div class="mobile-menu-button">
-      <!-- An accessible button -->
-      <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false" type="button">
+      <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-overlay" type="button">
         <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
       </button>
     </div>
   </nav>
 </header>
-<div class="mobile-overlay">
+<div id="mobile-overlay" class="mobile-overlay">
   <div class="mobile-overlay-list">
     <ul>
       <li><a href="#category-publications">Publications</a></li>
@@ -49,7 +65,6 @@
     </ul>
   </div>
 </div>
-
 
 <main id="main-content" class="main-content">
   <div class="soft-card">
@@ -69,7 +84,7 @@
         </div>
       </div>
       <div class="profile-photo">
-        <img fetchpriority="high" id="showing-profile-photo" alt="Profile photo of Ye Zheng" src="images/profile/profile-1.webp" width="188" height="188">
+        <img fetchpriority="high" loading="eager" decoding="async" id="showing-profile-photo" alt="Profile photo of Ye Zheng" src="images/profile/profile-1.webp" width="188" height="188">
         <div class="tag-box"><a class="tag-item"
                                 href="https://www.google.com/maps/place/ESL+Global+Cybersecurity+Institute/@43.0835798,-77.6810207,18z/data=!4m14!1m7!3m6!1s0x89d14c60777f4265:0xde1d962619ffaac7!2sRIT+Libraries!8m2!3d43.0839229!4d-77.676333!16s%2Fg%2F1hf3j89_l!3m5!1s0x89d14d2c49d8c867:0x334b947e3eed5a20!8m2!3d43.083636!4d-77.6806043!16s%2Fg%2F11pc76sjk7?hl=en&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"><img
                 class="location-icon" src="images/location.svg" alt="Workplace location on Google Maps" loading="lazy" width="30" height="30"></a></div>
@@ -86,15 +101,9 @@
           Feel free to <a href="mailto:zhengye.cn@gmail.com?subject=Job%20Opportunity&body=Hi%20Ye">reach out</a> if you think I might be a good fit.
         </p>
       </div>
-<!--      <div class="paper-entry">-->
-<!--        <p><strong>PETS'26 - Issue 3:</strong>-->
-<!--          One paper got direct acceptance. Two papers are under revision.-->
-<!--        </p>-->
-<!--      </div>-->
       <div class="paper-entry">
         <p><strong>Dissertation:</strong>
-          I finished the first version of my Ph.D. dissertation <a href="data/PhD-dissertation.pdf">
-          “Local Differential Privacy: Refined Mechanism Design and Utility Analysis”</a>. Here is the <a href="data/PhD-dissertation-slides.pdf">presentation slides</a>.
+          I finished the first version of my Ph.D. dissertation <a href="data/PhD-dissertation.pdf">"Local Differential Privacy: Refined Mechanism Design and Utility Analysis"</a>. Here are the <a href="data/PhD-dissertation-slides.pdf">presentation slides</a>.
         </p>
       </div>
     </div>
@@ -186,26 +195,25 @@
     </div>
   </section>
 
-
   <section id="category-bio" class="soft-card">
     <div class="heading">Biography</div>
     <div class="bio-list">
       <div class="paper-entry">
-        <span>Rochester Institute of Technology (2023 – Present)</span>
+        <span>Rochester Institute of Technology (2023 - Present)</span>
         <ul>
           <li>Ph.D. candidate in Computer Science</li>
           <li>Research topics: <strong>AI Privacy</strong> and <strong>Differential Privacy</strong> (Formal Privacy), advised by <a href="https://yidanhu.csec.rit.edu/">Dr. Yidan Hu</a></li>
         </ul>
       </div>
       <div class="paper-entry">
-        <span>Shenzhen University (2020 – 2023)</span>
+        <span>Shenzhen University (2020 - 2023)</span>
         <ul>
           <li>M.S. in Software Engineering</li>
           <li>Research topics: <strong>Neural Network Verification</strong> (Formal Verification), advised by <a href="https://csse.szu.edu.cn/pages/user/index?id=1031">Dr. Jiaxiang Liu</a></li>
         </ul>
       </div>
       <div class="paper-entry">
-        <span>Henan University (2016 – 2020)</span>
+        <span>Henan University (2016 - 2020)</span>
         <ul>
           <li>B.S. in Mathematics</li>
           <li>Majored in <strong>Pure Mathematics</strong>, advised by <a href="https://maths.henu.edu.cn/info/1204/3593.htm">Dr. Zhonghua Wang</a></li>
@@ -214,14 +222,13 @@
     </div>
   </section>
 
-
   <section id="category-more" class="soft-card">
     <div class="heading">More</div>
     <div class="archives-list">
       <article class="paper-entry">
         Ph.D. Dissertation
         <a class="paper-title" href="data/PhD-dissertation.pdf">
-          “Local Differential Privacy: Refined Mechanism Design and Utility Analysis”</a>&nbsp;
+          "Local Differential Privacy: Refined Mechanism Design and Utility Analysis"</a>&nbsp;
         <a class="button-links" href="./data/PhD-dissertation-slides.pdf">Slides</a>
         <p>
           One central direction in theoretical LDP research is the design of mechanisms that achieve improved data utility under the same privacy guarantees.
@@ -232,29 +239,28 @@
         </p>
       </article>
       <article class="paper-entry">
-        硕士学位论文<a class="paper-title" href="./data/硕士学位论文.pdf">《多路径方法在神经网络验证中的研究与应用》</a>&nbsp;
+        硕士学位论文 <a class="paper-title" href="./data/硕士学位论文.pdf">《多路径方法在神经网络验证中的研究与应用》</a>&nbsp;
         <a class="button-links" href="./data/硕士学位论文-slides.pdf">Slides</a>
         <p>
-          本文关注神经网络验证方法中界限传播方法的精度问题。关于此问题，本文提出界限传播路径的概念，将各种界限传播方法扩展到其对应的多路径界限传播方法；此外，本文将多路径界限传播在
-          PyTorch 框架上并行化，开发了高效而易用的鲁棒性验证工具。
+          本文关注神经网络验证中的界限传播方法精度问题。围绕该问题，论文提出界限传播路径的概念，
+          将多种界限传播方法扩展为对应的多路径界限传播方法，并在 PyTorch 框架上实现并行化，
+          开发了高效且易用的鲁棒性验证工具。
         </p>
       </article>
     </div>
   </section>
 
-
   <section id="category-awards" class="soft-card">
     <div class="heading">Awards</div>
     <div class="awards-list">
       <div class="paper-entry">
-        <p class=""><strong>Artifact Award Runner-up</strong> - PETS Artifact Evaluation Committee, August 2025</p>
+        <p><strong>Artifact Award Runner-up</strong> - PETS Artifact Evaluation Committee, August 2025</p>
         <p><strong>Outstanding Graduate</strong> - Shenzhen University, June 2023</p>
         <p><strong>National Scholarship</strong> - Ministry of Education, China, September 2022</p>
       </div>
     </div>
   </section>
 </main>
-
 
 <footer id="footer" class="footer">
   <hr class="split-line">
@@ -266,7 +272,7 @@
       <span class="iconfont icon-musicfill" aria-hidden="true"></span> <a href="https://music.163.com/#/user/home?id=82389811">Music list</a> of rock & pop
     </div>
     <div class="footer-right">
-      Last update: February 2026<br><br>
+      Last update: March 2026<br><br>
       Here is the source code for <a href="https://github.com/ZhengYeah/ZhengYeah.github.io">this homepage</a>
       and <a href="https://github.com/ZhengYeah/Academic-CV">my resume</a>. Feel free to clone it for your own use :)
     </div>
@@ -274,4 +280,3 @@
 </footer>
 </body>
 </html>
-

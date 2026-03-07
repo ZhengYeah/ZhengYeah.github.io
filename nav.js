@@ -29,12 +29,8 @@ if (mobileOverlay && menuButton && mobileMenuButton) {
   document.addEventListener("click", (event) => {
     if (!isMenuOpen()) {return;}
     const isClickInsideMenu = mobileOverlay.contains(event.target) || menuButton.contains(event.target);
-    if (!isClickInsideMenu) {closeMenu();}
-  });
-
-  document.addEventListener("click", (event) => {
-    if (!isMenuOpen()) {return;}
-    if (event.target instanceof Element && event.target.closest(".mobile-overlay a")) {closeMenu();}
+    const clickedMenuLink = event.target instanceof Element && event.target.closest(".mobile-overlay a");
+    if (!isClickInsideMenu || clickedMenuLink) {closeMenu();}
   });
 
   window.addEventListener("resize", () => {
@@ -49,11 +45,11 @@ if (mobileOverlay && menuButton && mobileMenuButton) {
     function onScroll() {
       const curScroll = window.scrollY;
       if (curScroll < hideThreshold) {
-        headerElement.style.top = "0";
+        headerElement.classList.remove("is-hidden");
       } else if (prevScroll > curScroll) {
-        headerElement.style.top = "0";
+        headerElement.classList.remove("is-hidden");
       } else {
-        headerElement.style.top = "-25vh";
+        headerElement.classList.add("is-hidden");
       }
       prevScroll = curScroll;
 

@@ -8,6 +8,7 @@
   --muted-text-color: #91989F;
   --link-color: #1772D0;
   --link-hover-color: #D0104C;
+  --surface-color: #FFFFFF;
   --shadow-soft: rgba(0, 0, 0, 0.04) 0 1px 2px, rgba(0, 0, 0, 0.06) 0 4px 12px;
 }
 
@@ -54,7 +55,8 @@ body.bg-light {
 
 @font-face {
   font-family: "iconfont";
-  src: url("iconfont.ttf") format("truetype");
+  src: url("iconfont.woff2") format("woff2"),
+       url("iconfont.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -75,7 +77,7 @@ main {
 /******************** Soft card ********************/
 
 .soft-card {
-  background-color: #FFFFFF;
+  background-color: var(--surface-color);
   border-radius: 10px;
   box-shadow: var(--shadow-soft);
   padding: 18px 20px;
@@ -93,13 +95,19 @@ main {
 header {
   position: fixed;
   top: 0;
-  transition: 0.3s;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+  will-change: transform;
   overflow: hidden;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: var(--surface-color);
   font-size: 20px;
   z-index: 1;
   box-shadow: var(--shadow-soft);
+}
+
+.header.is-hidden {
+  transform: translateY(-110%);
 }
 
 .navigation-bar {
@@ -168,22 +176,21 @@ header {
   }
 }
 
-.menu-button > span {
-  width: 25px;
-  border-top: 2px solid black;
-  margin: 5px 0;
-  transition: 0.3s;
-  transform-origin: 0 50%;
-  display: block;
-}
-
+.menu-button > span,
 .menu-button.is-open > span {
   width: 25px;
   border-top: 2px solid black;
-  margin: 7px 0;
-  transition: 0.3s;
   transform-origin: 0 50%;
   display: block;
+  transition: 0.3s;
+}
+
+.menu-button > span {
+  margin: 5px 0;
+}
+
+.menu-button.is-open > span {
+  margin: 7px 0;
 }
 
 .menu-button.is-open > span:first-child {
@@ -210,7 +217,7 @@ header {
   right: 20px;
   opacity: 0;
   top: 0;
-  background-color: #FFFFFF;
+  background-color: var(--surface-color);
   box-shadow: var(--shadow-soft);
   border-radius: 5px;
   transition: 0.3s;
@@ -293,7 +300,7 @@ header {
   position: absolute;
   bottom: 5px;
   right: 5px;
-  background: #FFFFFF;
+  background: var(--surface-color);
   padding: 5px 0 0 5px;
   border-top-left-radius: 50%;
 }
@@ -310,16 +317,13 @@ header {
   background-color: var(--link-hover-color);
 }
 
-.mobile-only {
+.mobile-only,
+.mobile-only-block {
   display: none;
 }
 
 .pc-only {
   display: inline;
-}
-
-.mobile-only-block {
-  display: none;
 }
 
 .pc-only-block {
@@ -398,7 +402,7 @@ header {
 }
 
 .button-links:hover {
-  color: #FFFFFF;
+  color: var(--surface-color);
   background-color: var(--link-hover-color);
   border-color: var(--link-hover-color);
   text-decoration: none;
@@ -525,7 +529,7 @@ header {
 
 @media print {
   body {
-    background-color: #FFFFFF !important;
+    background-color: var(--surface-color) !important;
   }
 
   .header {

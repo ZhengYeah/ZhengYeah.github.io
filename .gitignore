@@ -1,0 +1,7 @@
+# JetBrains / PyCharm
+.idea/
+*.iml
+out/
+
+# VSCode
+.vscode/
