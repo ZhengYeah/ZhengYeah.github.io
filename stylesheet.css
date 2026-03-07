@@ -55,7 +55,7 @@ body.bg-light {
 
 @font-face {
   font-family: "iconfont";
-  src: url("iconfont.woff2") format("woff2");
+  src: url('iconfont.woff2?t=1772886095292') format('woff2');
   font-display: swap;
 }
 
@@ -566,10 +566,6 @@ header {
   content: "\e60f";
 }
 
-.icon-0201chazhao:before {
-  content: "\e604";
-}
-
 .icon-donghuayanshi-:before {
   content: "\e62e";
 }
@@ -601,3 +597,4 @@ header {
 .icon-company:before {
   content: "\e659";
 }
+
