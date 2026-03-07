@@ -1,4 +1,35 @@
 /*----------------
+Navigation links: first render desktop and mobile menus from one source.
+-----------------*/
+const desktopNavList = document.getElementById("desktop-nav-links");
+const mobileNavList = document.getElementById("mobile-nav-links");
+const isIndexPage = document.getElementById("main-content") !== null;
+
+const navItems = [
+  { label: "Publications", sectionId: "category-publications", desktop: true, mobile: true },
+  { label: "Biography", sectionId: "category-bio", desktop: true, mobile: true },
+  { label: "More", sectionId: "category-more", desktop: true, mobile: true },
+  { label: "Awards", sectionId: "category-awards", desktop: false, mobile: true }
+];
+
+function buildNavMarkup(items) {
+  return items
+    .map((item) => {
+      const href = isIndexPage ? `#${item.sectionId}` : `index.html#${item.sectionId}`;
+      return `<li><a href="${href}">${item.label}</a></li>`;
+    })
+    .join("");
+}
+
+if (desktopNavList) {
+  desktopNavList.innerHTML = buildNavMarkup(navItems.filter((item) => item.desktop));
+}
+
+if (mobileNavList) {
+  mobileNavList.innerHTML = buildNavMarkup(navItems.filter((item) => item.mobile));
+}
+
+/*----------------
 Mobile menu toggle and header hide/show on scroll.
 -----------------*/
 const mobileOverlay = document.querySelector(".mobile-overlay");

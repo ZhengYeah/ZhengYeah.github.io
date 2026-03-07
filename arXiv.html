@@ -21,31 +21,22 @@
 
 
 <body class="bg-light">
-<header class="header">
+<header id="header" class="header">
   <nav class="navigation-bar">
     <div class="my-name"><a href="https://zhengyeah.com">Ye Zheng</a></div>
     <div class="link-collection">
-      <ul>
-        <li><a href="index.html#category-publications">Publications</a></li>
-        <li><a href="index.html#category-bio">Biography</a></li>
-        <li><a href="index.html#category-more">More</a></li>
-      </ul>
+      <ul id="desktop-nav-links"></ul>
     </div>
     <div class="mobile-menu-button">
-      <!-- An accessible button -->
-      <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false" type="button">
+      <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-overlay" type="button">
         <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
       </button>
     </div>
   </nav>
 </header>
-<div class="mobile-overlay">
+<div id="mobile-overlay" class="mobile-overlay">
   <div class="mobile-overlay-list">
-    <ul>
-      <li><a href="index.html#category-publications">Publications</a></li>
-      <li><a href="index.html#category-bio">Biography</a></li>
-      <li><a href="index.html#category-more">More</a></li>
-    </ul>
+    <ul id="mobile-nav-links"></ul>
   </div>
 </div>
 
