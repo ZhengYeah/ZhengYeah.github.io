@@ -55,8 +55,7 @@ body.bg-light {
 
 @font-face {
   font-family: "iconfont";
-  src: url("iconfont.woff2") format("woff2"),
-       url("iconfont.ttf") format("truetype");
+  src: url("iconfont.woff2") format("woff2");
   font-display: swap;
 }
 
