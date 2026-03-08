@@ -325,10 +325,6 @@ header {
   display: inline;
 }
 
-.pc-only-block {
-  display: block;
-}
-
 @media screen and (max-width: 650px), print and (max-width: 650px) {
   .profile-card {
     flex-direction: column-reverse;
@@ -381,12 +377,8 @@ header {
     display: inline;
   }
 
-  .pc-only-block {
-    display: none;
-  }
-
-  .mobile-only-block {
-    display: block;
+  .mobile-muted-text {
+    color: var(--muted-text-color);
   }
 }
 
@@ -495,7 +487,7 @@ header {
 .visitor-tracker {
   overflow: hidden;
   border-radius: 8px;
-  padding-top: 24px;
+  margin-top: 24px;
 }
 
 .visitor-tracker img {
