@@ -8,7 +8,7 @@ const isIndexPage = document.getElementById("main-content") !== null;
 const navItems = [
   { label: "Publications", sectionId: "category-publications", desktop: true, mobile: true },
   { label: "Biography", sectionId: "category-bio", desktop: true, mobile: true },
-  { label: "More", sectionId: "category-more", desktop: true, mobile: true },
+  { label: "Misc", sectionId: "category-misc", desktop: true, mobile: true },
   { label: "Awards", sectionId: "category-awards", desktop: false, mobile: true }
 ];
 
