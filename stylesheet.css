@@ -474,29 +474,14 @@ header {
 }
 
 .footer-left {
-  max-width: 40%;
+  max-width:36%;
   margin-left: 20px;
 }
 
 .footer-right {
   text-align: right;
-  max-width: 40%;
+  max-width: 36%;
   margin-right: 20px;
-}
-
-.visitor-tracker {
-  overflow: hidden;
-  border-radius: 8px;
-  margin-top: 24px;
-}
-
-.visitor-tracker img {
-  display: block;
-  max-width: 100%;
-  width: 120%;
-  height: auto;
-  transform: scale(1.2);
-  transform-origin: center;
 }
 
 /******************** Additional mobile layout for small screen ********************/
@@ -513,9 +498,7 @@ header {
   .mobile-overlay {
     right: 15px;
   }
-}
 
-@media screen and (max-width: 600px) {
   .footer-box {
     flex-direction: column;
     align-items: flex-start;
@@ -529,7 +512,7 @@ header {
   }
 
   .footer-right {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 
