@@ -118,8 +118,16 @@ if (profilePhotoElement) {
   const imagePaths = Array.from({ length: totalImgNum }, (_, index) => `./images/profile/profile-${index + 1}.webp`);
   let currentIndex = 0;
 
-  profilePhotoElement.addEventListener("click", () => {
+  profilePhotoElement.addEventListener("click", (e) => {
     currentIndex = (currentIndex + 1) % totalImgNum;
     profilePhotoElement.src = imagePaths[currentIndex];
+    // Trigger confetti at the click location when the profile image is clicked.
+    confetti({
+      particleCount: 100, spread: 60,
+      origin: {
+        x: e.clientX / window.innerWidth,
+        y: e.clientY / window.innerHeight
+      }
+    });
   });
 }
