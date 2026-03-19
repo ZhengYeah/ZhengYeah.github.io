@@ -121,7 +121,5 @@ if (profilePhotoElement) {
   profilePhotoElement.addEventListener("click", (e) => {
     currentIndex = (currentIndex + 1) % totalImgNum;
     profilePhotoElement.src = imagePaths[currentIndex];
-    // Trigger confetti at the click location when the profile image is clicked.
-    confetti({ position: { x: e.clientX, y: e.clientY }, count: 100, velocity: 100, fade: true });
   });
 }
