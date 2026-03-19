@@ -123,15 +123,3 @@ if (profilePhotoElement) {
     profilePhotoElement.src = imagePaths[currentIndex];
   });
 }
-
-if (typeof tippy === "function") {
-  tippy("#past-topics-link", {
-    content: "<strong>2020 - 2023:</strong> Neural Network Verification <br> \
-    <strong>2016 - 2020:</strong> Majored in Pure Mathematics",
-    allowHTML: true
-  });
-  tippy("#showing-profile-photo", {
-    content: "Click to see more photos &#128522;",
-    allowHTML: true
-  });
-}
