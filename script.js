@@ -131,7 +131,6 @@ if (typeof tippy === "function") {
   tippy.setDefaultProps({
     zIndex: 1,
     allowHTML: true,
-    touch: "hold",
   });
   tippy("#past-topics-link", {
     content: "<strong>2020 - 2023:</strong> Neural Network Verification <br> \
