@@ -16,7 +16,9 @@ function buildNavMarkup(items) {
   return items
     .map((item) => {
       const href = isIndexPage ? `#${item.sectionId}` : `index.html#${item.sectionId}`;
-      return `<li><a href="${href}">${item.label}</a></li>`;
+      // if teh label is "Misc", add an id to the link for tooltip purposes
+      const idAttr = item.label === "Misc" ? 'id="navbar-misc"' : "";
+      return `<li><a ${idAttr} href="${href}">${item.label}</a></li>`;
     })
     .join("");
 }
@@ -127,22 +129,30 @@ if (profilePhotoElement) {
 /*----------------
 Tooltips: show additional info when hovering over certain elements.
 -----------------*/
-if (typeof tippy === "function") {
-  tippy.setDefaultProps({
+const tippyInstance = window.tippy;
+
+if (typeof tippyInstance === "function") {
+  tippyInstance.setDefaultProps({
     zIndex: 1,
     allowHTML: true,
+    touch: false, // Disable tooltips on touch devices by default
   });
-  tippy("#past-topics-link", {
-    content: "<strong>2020 - 2023:</strong> Neural Network Verification <br> \
-      <strong>2016 - 2020:</strong> Pure Mathematics",
+  tippyInstance("#past-topics-link", {
+    content: "<strong>2020 - 2023:</strong> Neural Network Verification <br> <strong>2016 - 2020:</strong> Pure Mathematics",
   });
-  tippy("#showing-profile-photo", {
+  tippyInstance("#showing-profile-photo", {
     content: "Click to see more photos 😊",
   });
-  tippy("#zhihu-link", {
+  tippyInstance("#zhihu-link", {
     content: "My writings in liberal arts 🌟",
+    touch: true,
   });
-  tippy("#demo-link", {
-    content: "Lower the volume if you're in public spaces 🔊",
+  tippyInstance("#demo-link", {
+    content: "Lower your device's volume if you're in public spaces 🔊",
+  });
+  tippyInstance("#navbar-misc", {
+    content: "My theses and other materials 📄",
+    placement: "bottom",
+    zIndex: 11, // Ensure it appears above the header (header has z-index: 10)
   });
 }
