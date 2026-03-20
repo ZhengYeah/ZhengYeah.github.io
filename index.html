@@ -12,7 +12,6 @@
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
   <link rel="preload" href="iconfont.woff2?t=1772886095292" as="font" type="font/woff2" crossorigin>
-  <script src="script.js" defer></script>
   <link href="/images/web-icon.png" rel="icon" type="image/png">
   <link rel="canonical" href="https://zhengyeah.com">
   <script type="application/ld+json">
@@ -66,15 +65,15 @@
           <span class="iconfont icon-company" aria-hidden="true"></span> <span class="pc-bold-text">Rochester Institute of Technology (RIT)</span><br>
           <span class="pc-only"><span class="iconfont icon-youjiantou" aria-hidden="true"></span> Advisor: <a href="https://yidanhu.csec.rit.edu/">Dr. Yidan Hu</a></span>
         </div>
-        <div class="mobile-muted-text"><span class="pc-only">Research interests:</span> <span class="pc-bold-text">AI Privacy</span>, <span class="pc-bold-text">Differential Privacy</span><span class="pc-only">, and <a title="Neural Network Verification, Pure Mathematics" href="#category-bio">past topics</a></span></div>
+        <div class="mobile-muted-text"><span class="pc-only">Research interests:</span> <span class="pc-bold-text">AI Privacy</span>, <span class="pc-bold-text">Differential Privacy</span><span class="pc-only">, and <a id="past-topics-link" href="#category-bio">past topics</a></span></div>
         <div><a href="data/YeZheng-CV.pdf">Resume</a>&nbsp;-
           <a href="https://scholar.google.com/citations?hl=en&user=fIwzSr4AAAAJ&view_op=list_works&sortby=pubdate">G. Scholar</a>&nbsp;-
           <a href="https://github.com/ZhengYeah/">GitHub</a>&nbsp;-
-          <a title="My writings in liberal arts 🌟" href="https://www.zhihu.com/people/zhengyeah/columns">ZhiHu</a>
+          <a id="zhihu-link" href="https://www.zhihu.com/people/zhengyeah/columns">ZhiHu</a>
         </div>
       </div>
       <div class="profile-photo">
-        <img fetchpriority="high" loading="eager" decoding="async" id="showing-profile-photo" alt="Profile photo of Ye Zheng" title="Click to see more photos 😊" src="images/profile/profile-1.webp" width="188" height="188">
+        <img fetchpriority="high" loading="eager" decoding="async" id="showing-profile-photo" alt="Profile photo of Ye Zheng" src="images/profile/profile-1.webp" width="188" height="188">
         <div class="tag-box"><a class="tag-item"
                                 href="https://www.google.com/maps/place/ESL+Global+Cybersecurity+Institute/@43.0835798,-77.6810207,18z/data=!4m14!1m7!3m6!1s0x89d14c60777f4265:0xde1d962619ffaac7!2sRIT+Libraries!8m2!3d43.0839229!4d-77.676333!16s%2Fg%2F1hf3j89_l!3m5!1s0x89d14d2c49d8c867:0x334b947e3eed5a20!8m2!3d43.083636!4d-77.6806043!16s%2Fg%2F11pc76sjk7?hl=en&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"><img
                 class="location-icon" alt="Workplace location on Google Maps" src="images/location.svg" width="30" height="30"></a></div>
@@ -116,7 +115,7 @@
           AudAgent: Automated Auditing of Privacy Policy Compliance in AI Agents</a>&nbsp;&nbsp;
         <a class="button-links" href="/data/phd/audagent-revision.pdf">Revision</a>&nbsp;&nbsp;
         <a class="button-links" href="https://paragraph.com/@metaend/are-your-ai-agents-keeping-their-promises">Media Report</a>&nbsp;&nbsp;
-        <a class="button-links" href="/data/phd/audagent-demo.mp4">Demo</a>&nbsp;&nbsp;
+        <a id="demo-link" class="button-links" href="/data/phd/audagent-demo.mp4">Demo</a>&nbsp;&nbsp;
         <a class="button-links" href="https://github.com/ZhengYeah/AudAgent">Code</a>&nbsp;&nbsp;
         <a class="button-links" href="/data/phd/audagent-slides.pdf">Slides</a>
         <p>
@@ -278,5 +277,10 @@
     </div>
   </div>
 </footer>
+
+<script src="vendor/popper.min.js" defer></script>
+<script src="vendor/tippy-bundle.umd.min.js" defer></script>
+<script src="script.js" defer></script>
+
 </body>
 </html>

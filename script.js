@@ -123,3 +123,26 @@ if (profilePhotoElement) {
     profilePhotoElement.src = imagePaths[currentIndex];
   });
 }
+
+/*----------------
+Tooltips: show additional info when hovering over certain elements.
+-----------------*/
+if (typeof tippy === "function") {
+  tippy("#past-topics-link", {
+    content: "<strong>2020 - 2023:</strong> Neural Network Verification <br> \
+      <strong>2016 - 2020:</strong> Pure Mathematics",
+    allowHTML: true
+  });
+  tippy("#showing-profile-photo", {
+    content: "Click to see more photos 😊",
+    allowHTML: true
+  });
+  tippy("#zhihu-link", {
+    content: "My writings in liberal arts 🌟",
+    allowHTML: true
+  });
+  tippy("#demo-link", {
+    content: "Lower the volume if you're in public spaces 🔊",
+    allowHTML: true
+  });
+}
