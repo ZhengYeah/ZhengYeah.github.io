@@ -101,7 +101,7 @@ header {
   width: 100%;
   background-color: var(--surface-color);
   font-size: 20px;
-  z-index: 1;
+  z-index: 10;
   box-shadow: var(--shadow-soft);
 }
 
@@ -211,7 +211,7 @@ header {
 .mobile-overlay {
   height: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   margin-top: 70px;
   right: 20px;
   opacity: 0;
