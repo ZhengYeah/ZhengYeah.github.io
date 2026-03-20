@@ -120,7 +120,7 @@ if (profilePhotoElement) {
   const imagePaths = Array.from({ length: totalImgNum }, (_, index) => `./images/profile/profile-${index + 1}.webp`);
   let currentIndex = 0;
 
-  profilePhotoElement.addEventListener("click", (e) => {
+  profilePhotoElement.addEventListener("click", () => {
     currentIndex = (currentIndex + 1) % totalImgNum;
     profilePhotoElement.src = imagePaths[currentIndex];
   });
@@ -148,7 +148,7 @@ if (typeof tippyInstance === "function") {
     touch: true,
   });
   tippyInstance("#demo-link", {
-    content: "Lower your device's volume if you're in public spaces 🔊",
+    content: "Lower your device's volume first if you're in a public space 🔊",
   });
   tippyInstance("#navbar-misc", {
     content: "My theses and other materials 📄",
