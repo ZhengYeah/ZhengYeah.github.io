@@ -155,4 +155,22 @@ if (typeof tippyInstance === "function") {
     placement: "bottom",
     zIndex: 11, // Ensure it appears above the header (header has z-index: 10)
   });
+  tippyInstance("#tldr-audagent", {
+    content: "Your AI agent claims to value your data privacy, but what happens to your data when you can't see? 🔍",
+  });
+  tippyInstance("#tldr-qcu", {
+    content: "If your data is perturbed by LDP, what classification accuracy can you expect? 🤔",
+  });
+  tippyInstance("#tldr-tracs", {
+    content: "Trajectory collection under LDP is often limited to discrete spaces—working in continuous space is universal and better! 🚀",
+  });
+  tippyInstance("#tldr-ogpm", {
+    content: "Piecewise mechanisms are popular now—do you know their optimal form? 🤔",
+  });
+  tippyInstance("#tldr-jrr", {
+    content: "Correlated LDP mechanisms!",
+  });
+  tippyInstance("#tldr-mpbp", {
+    content: "Bound propagation is a core technique for verifying neural network robustness. You can equip it with multiple propagation paths to get tighter bounds! 🚀",
+  });
 }
