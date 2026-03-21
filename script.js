@@ -134,11 +134,14 @@ const tippyInstance = window.tippy;
 if (typeof tippyInstance === "function") {
   tippyInstance.setDefaultProps({
     zIndex: 1,
-    allowHTML: true,
+    animition: false,
+    allowHTML: false,
+    interactive: false,
     touch: false, // Disable tooltips on touch devices by default
   });
   tippyInstance("#past-topics-link", {
     content: "<strong>2020 – 2023:</strong> Neural Network Verification <br> <strong>2016 – 2020:</strong> Pure Mathematics",
+    allowHTML: true,
   });
   tippyInstance("#showing-profile-photo", {
     content: "Click to see more photos 😊",
