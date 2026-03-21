@@ -208,8 +208,10 @@ header {
 }
 
 /* Mobile menu list */
+/* overflow: hidden used to prevent scrolling when the menu is closed  */
 .mobile-overlay {
   height: 0;
+  overflow-y: hidden;
   position: fixed;
   z-index: 10;
   margin-top: 70px;
@@ -242,14 +244,13 @@ header {
   background-color: var(--surface-color);
   box-shadow: var(--shadow-soft);
   border-radius: 5px;
-  overflow-y: hidden;
 }
 
 .mobile-overlay-list a {
   text-decoration: none;
   color: var(--text-color);
   display: block;
-  padding: 0 24px;
+  padding: 0 20px;
 }
 
 .mobile-overlay-list a:hover {
