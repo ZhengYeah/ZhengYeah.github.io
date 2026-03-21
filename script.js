@@ -148,7 +148,7 @@ if (typeof tippyInstance === "function") {
     touch: true,
   });
   tippyInstance("#demo-link", {
-    content: "Lower your device's volume first if you're in a public space 🔊",
+    content: "Lower your device's volume first in a public space 🔊",
   });
   tippyInstance("#navbar-misc", {
     content: "My theses and other materials 📄",
