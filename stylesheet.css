@@ -208,15 +208,17 @@ header {
 }
 
 /* Mobile menu list */
-/* overflow: hidden used to prevent scrolling when the menu is closed  */
+/* overflow: visible to allow the dropdown to be visible outside the header */
 .mobile-overlay {
-  height: 0;
-  overflow-y: hidden;
+  max-height: 0;
+  overflow: visible;
   position: fixed;
   z-index: 10;
   margin-top: 70px;
   right: 20px;
   opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   top: 0;
   transition: 0.3s;
 }
@@ -234,8 +236,10 @@ header {
 }
 
 .mobile-overlay.is-open {
-  height: auto;
+  max-height: 80vh;
   opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .mobile-overlay-list {
