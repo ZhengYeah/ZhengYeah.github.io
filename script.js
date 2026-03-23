@@ -139,6 +139,12 @@ if (typeof tippyInstance === "function") {
     interactive: false,
     touch: ["hold", 200], // Show tooltip on long press for touch devices, with a delay of 200ms
   });
+  tippyInstance("#navbar-misc", {
+    content: "My theses and other materials 📄",
+    placement: "bottom",
+    zIndex: 11, // Ensure it appears above the header (header has z-index: 10)
+    touch: false,
+  });
   tippyInstance("#past-topics-link", {
     content: "<strong>2020 – 2023:</strong> Neural Network Verification <br> <strong>2016 – 2020:</strong> Pure Mathematics",
     allowHTML: true,
@@ -152,11 +158,6 @@ if (typeof tippyInstance === "function") {
   });
   tippyInstance("#demo-link", {
     content: "Lower your device's volume first in a public space 🔊",
-  });
-  tippyInstance("#navbar-misc", {
-    content: "My theses and other materials 📄",
-    placement: "bottom",
-    zIndex: 11, // Ensure it appears above the header (header has z-index: 10)
   });
   tippyInstance.delegate(".publications-list", {
     target: ".paper-tldr", // Better performance by delegating to the container instead of initializing on each element
