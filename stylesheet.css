@@ -83,6 +83,11 @@ main {
   margin: 20px 0;
 }
 
+.deferred-section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 820px;
+}
+
 @media screen and (max-width: 820px) {
   .soft-card {
     border-radius: 0;

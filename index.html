@@ -37,11 +37,16 @@
 </head>
 
 <body class="bg-light">
+<!-- Use static header for independence of JS -->
 <header id="header" class="header">
   <nav class="navigation-bar">
     <div class="my-name"><a href="https://zhengyeah.com">Ye Zheng</a></div>
     <div class="link-collection">
-      <ul id="desktop-nav-links"></ul>
+      <ul>
+        <li><a href="#category-publications">Publications</a></li>
+        <li><a href="#category-bio">Biography</a></li>
+        <li><a id="navbar-misc" href="#category-misc">Misc</a></li>
+      </ul>
     </div>
     <div class="mobile-menu-button">
       <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-overlay" type="button">
@@ -52,7 +57,12 @@
 </header>
 <div id="mobile-overlay" class="mobile-overlay">
   <div class="mobile-overlay-list">
-    <ul id="mobile-nav-links"></ul>
+    <ul>
+      <li><a href="#category-publications">Publications</a></li>
+      <li><a href="#category-awards">Awards</a></li>
+      <li><a href="#category-bio">Biography</a></li>
+      <li><a id="mobile-navbar-misc" href="#category-misc">Misc</a></li>
+    </ul>
   </div>
 </div>
 
@@ -103,7 +113,7 @@
     </div>
   </section>
 
-  <section id="category-publications" class="soft-card">
+  <section id="category-publications" class="soft-card deferred-section">
     <h1 class="heading">Publications <span class="small-muted-text">(selected 1st-author)</span></h1>
     <div class="publications-list">
       <div class="paper-entry">
@@ -193,7 +203,7 @@
     </div>
   </section>
 
-  <section id="category-awards" class="soft-card">
+  <section id="category-awards" class="soft-card deferred-section">
     <h1 class="heading">Awards</h1>
     <div class="awards-list">
       <div class="paper-entry">
@@ -204,7 +214,7 @@
     </div>
   </section>
 
-  <section id="category-bio" class="soft-card">
+  <section id="category-bio" class="soft-card deferred-section">
     <h1 class="heading">Biography</h1>
     <div class="bio-list">
       <div class="paper-entry">
@@ -231,7 +241,7 @@
     </div>
   </section>
 
-  <section id="category-misc" class="soft-card">
+  <section id="category-misc" class="soft-card deferred-section">
     <h1 class="heading">Misc</h1>
     <div class="archives-list">
       <article class="paper-entry">
@@ -278,10 +288,6 @@
   </div>
 </footer>
 
-<!-- Current popper.js version: https://unpkg.com/@popperjs/core@2.11.8/dist/umd/popper.min.js -->
-<!-- Current tippy.js version: https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js -->
-<script src="vendor/popper.min.js" defer></script>
-<script src="vendor/tippy-bundle.umd.min.js" defer></script>
 <script src="script.js" defer></script>
 
 </body>

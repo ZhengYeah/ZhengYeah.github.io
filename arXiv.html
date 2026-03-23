@@ -21,11 +21,16 @@
 
 
 <body class="bg-light">
+<!-- Use static header for independence of JS -->
 <header id="header" class="header">
   <nav class="navigation-bar">
     <div class="my-name"><a href="https://zhengyeah.com">Ye Zheng</a></div>
     <div class="link-collection">
-      <ul id="desktop-nav-links"></ul>
+      <ul>
+        <li><a href="index.html#category-publications">Publications</a></li>
+        <li><a href="index.html#category-bio">Biography</a></li>
+        <li><a id="navbar-misc" href="index.html#category-misc">Misc</a></li>
+      </ul>
     </div>
     <div class="mobile-menu-button">
       <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-overlay" type="button">
@@ -36,7 +41,12 @@
 </header>
 <div id="mobile-overlay" class="mobile-overlay">
   <div class="mobile-overlay-list">
-    <ul id="mobile-nav-links"></ul>
+    <ul>
+      <li><a href="index.html#category-publications">Publications</a></li>
+      <li><a href="index.html#category-awards">Awards</a></li>
+      <li><a href="index.html#category-bio">Biography</a></li>
+      <li><a id="mobile-navbar-misc" href="index.html#category-misc">Misc</a></li>
+    </ul>
   </div>
 </div>
 

@@ -1,37 +1,4 @@
 /*----------------
-Navigation links: render desktop and mobile menus from one source.
------------------*/
-const desktopNavList = document.getElementById("desktop-nav-links");
-const mobileNavList = document.getElementById("mobile-nav-links");
-const isIndexPage = document.getElementById("main-content") !== null;
-
-const navItems = [
-  { label: "Publications", sectionId: "category-publications", desktop: true, mobile: true },
-  { label: "Awards", sectionId: "category-awards", desktop: false, mobile: true },
-  { label: "Biography", sectionId: "category-bio", desktop: true, mobile: true },
-  { label: "Misc", sectionId: "category-misc", desktop: true, mobile: true }
-];
-
-function buildNavMarkup(items) {
-  return items
-    .map((item) => {
-      const href = isIndexPage ? `#${item.sectionId}` : `index.html#${item.sectionId}`;
-      // if teh label is "Misc", add an id to the link for tooltip purposes
-      const idAttr = item.label === "Misc" ? 'id="navbar-misc"' : "";
-      return `<li><a ${idAttr} href="${href}">${item.label}</a></li>`;
-    })
-    .join("");
-}
-
-if (desktopNavList) {
-  desktopNavList.innerHTML = buildNavMarkup(navItems.filter((item) => item.desktop));
-}
-
-if (mobileNavList) {
-  mobileNavList.innerHTML = buildNavMarkup(navItems.filter((item) => item.mobile));
-}
-
-/*----------------
 Mobile menu toggle and header hide/show on scroll.
 -----------------*/
 const mobileOverlay = document.querySelector(".mobile-overlay");
@@ -127,11 +94,60 @@ if (profilePhotoElement) {
 }
 
 /*----------------
-Tooltips: show additional info when hovering over certain elements.
+Tooltips: lazy-load tooltip dependencies after idle time or first interaction.
 -----------------*/
-const tippyInstance = window.tippy;
+let tooltipLoaderPromise;
+let tooltipsInitialized = false;
 
-if (typeof tippyInstance === "function") {
+// Returns a promise that resolves when the script is loaded, or rejects if it fails to load.
+function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    const existingScript = document.querySelector(`script[src="${src}"]`);
+    if (existingScript) {
+      existingScript.addEventListener("load", resolve, { once: true });
+      existingScript.addEventListener("error", reject, { once: true });
+      if (existingScript.dataset.loaded === "true") {
+        resolve();
+      }
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = src;
+    script.defer = true;
+    script.addEventListener("load", () => {
+      script.dataset.loaded = "true";
+      resolve();
+    }, { once: true });
+    script.addEventListener("error", reject, { once: true });
+    document.head.appendChild(script);
+  });
+}
+
+// Loads Popper.js and Tippy.js sequentially, then initializes tooltips.
+// Current popper.js version: https://unpkg.com/@popperjs/core@2.11.8/dist/umd/popper.min.js
+// Current tippy.js version: https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js
+function loadTooltipDependencies() {
+  if (!tooltipLoaderPromise) {
+    tooltipLoaderPromise = loadScript("vendor/popper.min.js")
+      .then(() => loadScript("vendor/tippy-bundle.umd.min.js"))
+      .then(() => {
+        initializeTooltips();
+      })
+      .catch(() => {
+        tooltipLoaderPromise = null;
+      });
+  }
+  return tooltipLoaderPromise;
+}
+
+// Initializes tooltips on the page. This function is called after the tooltip libraries are loaded.
+function initializeTooltips() {
+  if (tooltipsInitialized) {return;}
+
+  const tippyInstance = window.tippy;
+  if (typeof tippyInstance !== "function") {return;}
+
+  tooltipsInitialized = true;
   tippyInstance.setDefaultProps({
     zIndex: 1,
     animation: false,
@@ -159,7 +175,31 @@ if (typeof tippyInstance === "function") {
   tippyInstance("#demo-link", {
     content: "Lower your device's volume first in a public space 🔊",
   });
-  tippyInstance.delegate(".publications-list", {
-    target: ".paper-tldr", // Better performance by delegating to the container instead of initializing on each element
-  });
+  if (document.querySelector(".publications-list")) {
+    tippyInstance.delegate(".publications-list", {
+      target: ".paper-tldr", // Better performance by delegating to the container instead of initializing on each element
+    });
+  }
 }
+
+// List of events that indicate user interaction and should trigger tooltip loading. Use passive listeners for better performance.
+const tooltipInteractionEvents = ["pointerover", "focusin", "touchstart"];
+
+function scheduleTooltipLoad() {
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(() => {
+      loadTooltipDependencies();
+    }, { timeout: 1500 });
+    return;
+  }
+
+  window.setTimeout(() => {
+    loadTooltipDependencies();
+  }, 800);
+}
+
+tooltipInteractionEvents.forEach((eventName) => {
+  window.addEventListener(eventName, loadTooltipDependencies, { once: true, passive: true });
+});
+
+window.addEventListener("load", scheduleTooltipLoad, { once: true });
