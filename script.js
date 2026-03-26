@@ -81,16 +81,19 @@ if (mobileOverlay && menuButton && mobileMenuButton) {
 Profile image carousel: when the profile image is clicked, change to the next image.
 -----------------*/
 const profilePhotoElement = document.getElementById("showing-profile-photo");
+const profilePhotoButton = document.getElementById("profile-photo-button");
 
-if (profilePhotoElement) {
+if (profilePhotoElement && profilePhotoButton) {
   const totalImgNum = 3; // only change this number when adding more images
   const imagePaths = Array.from({ length: totalImgNum }, (_, index) => `./images/profile/profile-${index + 1}.webp`);
   let currentIndex = 0;
 
-  profilePhotoElement.addEventListener("click", () => {
+  function showNextProfilePhoto() {
     currentIndex = (currentIndex + 1) % totalImgNum;
     profilePhotoElement.src = imagePaths[currentIndex];
-  });
+  }
+
+  profilePhotoButton.addEventListener("click", showNextProfilePhoto);
 }
 
 /*----------------

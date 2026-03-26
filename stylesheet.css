@@ -101,7 +101,6 @@ header {
   top: 0;
   transform: translateY(0);
   transition: transform 0.3s ease;
-  will-change: transform;
   overflow: hidden;
   width: 100%;
   background-color: var(--surface-color);
@@ -311,7 +310,18 @@ header {
   vertical-align: middle;
 }
 
+.profile-photo-button {
+  display: block;
+  border-radius: 5px;
+}
+
+.profile-photo-button:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 3px;
+}
+
 #showing-profile-photo {
+  display: block;
   padding: 4px;
   border: 2px solid var(--border-light-gray);
   border-radius: 5px;
