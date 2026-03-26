@@ -97,7 +97,7 @@ if (profilePhotoElement && profilePhotoButton) {
 }
 
 /*----------------
-Tooltips: lazy-load tooltip dependencies after idle time or first interaction.
+Tooltips: defer loading until the browser is idle.
 -----------------*/
 let tooltipLoaderPromise;
 let tooltipsInitialized = false;
@@ -185,9 +185,7 @@ function initializeTooltips() {
   }
 }
 
-// List of events that indicate user interaction and should trigger tooltip loading. Use passive listeners for better performance.
-const tooltipInteractionEvents = ["pointerover", "focusin", "touchstart"];
-
+// Schedules the loading of tooltip dependencies when the browser is idle, with a fallback timeout for browsers that don't support requestIdleCallback. 
 function scheduleTooltipLoad() {
   if ("requestIdleCallback" in window) {
     window.requestIdleCallback(() => {
@@ -195,14 +193,12 @@ function scheduleTooltipLoad() {
     }, { timeout: 1500 });
     return;
   }
-
-  window.setTimeout(() => {
-    loadTooltipDependencies();
-  }, 800);
+  window.setTimeout(() => { loadTooltipDependencies(); }, 800);
 }
 
-tooltipInteractionEvents.forEach((eventName) => {
-  window.addEventListener(eventName, loadTooltipDependencies, { once: true, passive: true });
-});
-
-window.addEventListener("load", scheduleTooltipLoad, { once: true });
+// Start loading tooltips after the page has fully loaded, to avoid impacting initial load performance. If the page is already loaded, start immediately.
+if (document.readyState === "complete") {
+  scheduleTooltipLoad();
+} else {
+  window.addEventListener("load", scheduleTooltipLoad, { once: true });
+}
