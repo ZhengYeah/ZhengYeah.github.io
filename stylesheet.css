@@ -315,11 +315,6 @@ header {
   border-radius: 5px;
 }
 
-.profile-photo-button:focus-visible {
-  outline: 2px solid var(--link-color);
-  outline-offset: 3px;
-}
-
 #showing-profile-photo {
   display: block;
   padding: 4px;
@@ -448,7 +443,7 @@ header {
 
 /******************** Heading block ********************/
 
-h1.heading {
+h2.heading {
   font-size: 24px;
   font-weight: normal;
   border-bottom: 2px solid var(--border-light-gray);
