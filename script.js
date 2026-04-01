@@ -178,6 +178,11 @@ function initializeTooltips() {
   tippyInstance("#demo-link", {
     content: "Lower your device's volume first in a public space 🔊",
   });
+  tippyInstance("#pets-26-best-paper-link", {
+    content: "<img src='./data/phd/PoPETs-Best-Student-Paper-Award.webp' alt='Best Student Paper Award' style='display: block; width: min(300px, calc(100vw - 32px)); max-width: 100%; height: auto; margin:3px auto;'>",
+    allowHTML: true,
+    interactive: true,
+  });
   if (document.querySelector(".publications-list")) {
     tippyInstance.delegate(".publications-list", {
       target: ".paper-tldr", // Better performance by delegating to the container instead of initializing on each element
