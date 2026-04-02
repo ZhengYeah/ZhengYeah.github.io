@@ -268,7 +268,7 @@ header {
 
 .mobile-overlay-list ul {
   margin: 0;
-  padding: 0px 8px 0;
+  padding: 0 8px 0;
 }
 
 .mobile-overlay-list li {
@@ -583,6 +583,10 @@ h2.heading {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jiangzhang:before {
+  content: "\fc6e";
 }
 
 .icon-find:before {
