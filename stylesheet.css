@@ -53,12 +53,6 @@ body.bg-light {
   background-color: var(--bg-light-gray);
 }
 
-@font-face {
-  font-family: "iconfont";
-  src: url('iconfont.woff2?t=1772886095292') format('woff2');
-  font-display: swap;
-}
-
 main {
   width: 100%;
   max-width: 820px;
@@ -577,6 +571,12 @@ h2.heading {
 }
 
 /******************** Icon font ********************/
+
+@font-face {
+  font-family: "iconfont";
+  src: url('iconfont.woff2?t=1775163517254') format('woff2');
+  font-display: swap;
+}
 
 .iconfont {
   font-family: "iconfont", sans-serif !important;
