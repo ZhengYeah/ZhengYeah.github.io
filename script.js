@@ -102,7 +102,7 @@ Tooltips: defer loading until the browser is idle.
 let tooltipLoaderPromise;
 let tooltipsInitialized = false;
 
-// Returns a promise that resolves when the script is loaded, or rejects if it fails to load.
+// If the script is already in the document, listen for its load/error events. Otherwise, create a new script element and load it. 
 function loadScript(src) {
   return new Promise((resolve, reject) => {
     const existingScript = document.querySelector(`script[src="${src}"]`);
@@ -126,7 +126,6 @@ function loadScript(src) {
   });
 }
 
-// Loads Popper.js and Tippy.js sequentially, then initializes tooltips.
 // Current popper.js version: https://unpkg.com/@popperjs/core@2.11.8/dist/umd/popper.min.js
 // Current tippy.js version: https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js
 function loadTooltipDependencies() {
@@ -188,8 +187,7 @@ function initializeTooltips() {
     });
   }
 }
-
-// Schedules the loading of tooltip dependencies when the browser is idle, with a fallback timeout for browsers that don't support requestIdleCallback. 
+// Schedules the loading of tooltip dependencies when the browser is idle, with a fallback for old browsers.
 function scheduleTooltipLoad() {
   if ("requestIdleCallback" in window) {
     window.requestIdleCallback(() => {
@@ -200,7 +198,7 @@ function scheduleTooltipLoad() {
   window.setTimeout(() => { loadTooltipDependencies(); }, 800);
 }
 
-// Start loading tooltips after the page has fully loaded, to avoid impacting initial load performance. If the page is already loaded, start immediately.
+// Start loading tooltips after the page has fully loaded. If the page is already loaded, start immediately.
 if (document.readyState === "complete") {
   scheduleTooltipLoad();
 } else {
