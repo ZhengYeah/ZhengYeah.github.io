@@ -455,6 +455,10 @@ h2.heading {
   margin-top: 40px;
 }
 
+.paper-entry p { /* Compact layout for paper entries */
+  margin-top: 0; 
+}
+
 .news-list .paper-entry:first-child,
 .publications-list .paper-entry:first-child,
 .bio-list .paper-entry:first-child,
