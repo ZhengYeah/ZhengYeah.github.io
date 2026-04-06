@@ -142,7 +142,7 @@ function loadTooltipDependencies() {
   return tooltipLoaderPromise;
 }
 
-// Initializes tooltips on the page. This function is called after the tooltip libraries are loaded.
+// Initializes tooltips on the page, called after the tooltip libraries are loaded.
 function initializeTooltips() {
   if (tooltipsInitialized) {return;}
 
@@ -161,19 +161,17 @@ function initializeTooltips() {
     content: "<strong>2020 – 2023:</strong> Neural Network Verification <br> <strong>2016 – 2020:</strong> Pure Mathematics",
     allowHTML: true,
   });
-  tippyInstance("#showing-profile-photo", {
-    content: "Click to see more photos 😊",
-  });
   tippyInstance("#zhihu-link", {
     content: "My writings in liberal arts 🌟",
     touch: true,
   });
-  tippyInstance("#demo-link", {
-    content: "Lower your device's volume first in a public space 🔊",
-  });
   tippyInstance("#pets-26-best-paper-link", {
-    content: "<img src='data/phd/popets-26-best-paper.webp' alt='Best Student Paper Award' style='display: block; width: min(300px, calc(100vw - 32px)); max-width: 100%; height: auto; margin:3px auto;'>",
+    content: "<img src='data/phd/popets-26-best-paper.webp' alt='Best Student Paper Award' " +
+        "style='display: block; width: min(300px, calc(100vw - 32px)); max-width: 100%; height: auto; margin:3px auto;'>",
     allowHTML: true,
+  });
+  tippyInstance(".tippy-demo-link", { // For all demos
+    content: "Lower your device's volume first in a public space 🔊",
   });
   if (document.querySelector(".publications-list")) {
     tippyInstance.delegate(".publications-list", {
@@ -181,6 +179,7 @@ function initializeTooltips() {
     });
   }
 }
+
 // Schedules the loading of tooltip dependencies when the browser is idle, with a fallback for old browsers.
 function scheduleTooltipLoad() {
   if ("requestIdleCallback" in window) {
