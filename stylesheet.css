@@ -6,6 +6,7 @@
   --text-color: #212121;
   --border-light-gray: #F5F5F5;
   --muted-text-color: #91989F;
+  --small-text: 12px;
   --link-color: #1772D0;
   --link-hover-color: #D0104C;
   --surface-color: #FFFFFF;
@@ -407,7 +408,7 @@ header {
 /******************** Text content ********************/
 
 .button-links {
-  font-size: 12px;
+  font-size: var(--small-text);
   padding: 0 4px;
   border: 1px solid;
   border-radius: 6px;
@@ -448,7 +449,7 @@ h2.heading {
 
 .small-muted-text {
   color: var(--muted-text-color);
-  font-size: 12px;
+  font-size: var(--small-text);
 }
 
 .paper-entry {
@@ -461,14 +462,6 @@ h2.heading {
 .misc-list .paper-entry:first-child,
 .awards-list .paper-entry:first-child {
   margin-top: 20px;
-}
-
-.paper-title {
-  font-size: 16px;
-}
-
-#category-bio ul li {
-  margin-bottom: 16px;
 }
 
 /******************** Footer ********************/
@@ -491,7 +484,7 @@ h2.heading {
   max-width: 100%;
   margin: auto;
   padding: 10px 0 20px;
-  font-size: 12px;
+  font-size: var(--small-text);
   color: var(--muted-text-color);
   display: flex;
   justify-content: space-between;
