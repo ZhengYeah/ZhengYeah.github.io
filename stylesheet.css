@@ -567,7 +567,7 @@ h2.heading {
 
 @font-face {
   font-family: "iconfont";
-  src: url('iconfont.woff2?t=1775566148638') format('woff2');
+  src: url('iconfont.woff2?t=1775575441357') format('woff2');
   font-display: swap;
 }
 
@@ -578,12 +578,8 @@ h2.heading {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-map-location:before {
-  content: "\ed4f";
-}
-
-.icon-location:before {
-  content: "\e60b";
+.icon-travel-location-map:before {
+  content: "\e6da";
 }
 
 .icon-boshimao-L:before {
@@ -629,5 +625,3 @@ h2.heading {
 .icon-company:before {
   content: "\e659";
 }
-
-
