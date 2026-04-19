@@ -85,7 +85,7 @@ const profilePhotoButton = document.getElementById("profile-photo-button");
 
 if (profilePhotoElement && profilePhotoButton) {
   const totalImgNum = 3; // only change this number when adding more images
-  const imagePaths = Array.from({ length: totalImgNum }, (_, index) => `./images/profile/profile-${index + 1}.webp`);
+  const imagePaths = Array.from({ length: totalImgNum }, (_, index) => `images/profile/profile-${index + 1}.webp`);
   let currentIndex = 0;
 
   function showNextProfilePhoto() {

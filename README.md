@@ -2,7 +2,7 @@
 
 This is the source code of Ye Zheng's public homepage: https://zhengyeah.com/. 
 
-![Screenshots](/images/screen-website.png)
+![Screenshots](images/screen-website.png)
 
 ## Features
 
@@ -17,7 +17,7 @@ This website is designed for personal academic homepage, with the following feat
 
 This website is performance-oriented. Here is the Lighthouse score:
 
-![Lighthouse score](/images/lighthouse-score.png)
+![Lighthouse score](images/lighthouse-score.png)
 
 ## Freedom of Usage
 
