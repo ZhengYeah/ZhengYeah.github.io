@@ -567,7 +567,7 @@ h2.heading {
 
 @font-face {
   font-family: "iconfont";
-  src: url('iconfont.woff2?t=1775575441357') format('woff2');
+  src: url('iconfont.woff2?t=1780401360184') format('woff2');
   font-display: swap;
 }
 
@@ -576,6 +576,10 @@ h2.heading {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-diannaoshouji:before {
+  content: "\e657";
 }
 
 .icon-travel-location-map:before {
