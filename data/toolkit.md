@@ -1,8 +1,10 @@
+I work and live with Windows and Android, having a preference for their freedom and diversity (along with their complexity and chaos). I have tried and am trying many hardware and software products, and here are the main tools I am using daily.
+
 ## Hardware
 
 [HONOR MagicBook Art 14 2025](https://www.honor.com/global/laptops/honor-magicbook-art-14/): Ultra-slim with 1kg and 1cm.
 
-[HONOR Magic7 Pro](https://www.honor.com/global/phones/honor-magic7-pro/): HONOR’s flagship smartphone, with a larger battery than other brands.
+[HONOR Magic7 Pro](https://www.honor.com/global/phones/honor-magic7-pro/): HONOR’s flagship smartphone, with a larger battery than other brands. Compatible with [GMS](https://www.android.com/intl/en_hk/gms/).
 
 [HONOR Earbuds Open](https://www.honor.com/global/audio/honor-earbuds-open/): HONOR’s flagship earbuds, stable to wear. No special features compared with other brands.
 
@@ -22,13 +24,15 @@
 
 [Affinity](https://www.affinity.studio/): Alternative to Adobe Photoshop and Illustrator.
 
-[AxMath](https://www.axsoft.co/): Mathematical equation editor for Windows.
+[AxMath](https://www.axsoft.co/): Mathematical equation editor for Windows, an alternative to MathType, used with Affinity for drawing mathematical diagrams.
 
-[FastStone Image Viewer](https://www.faststone.org/FSViewerDetail.htm) + [FastStone Capture](https://www.faststone.org/FSCaptureDetail.htm): Fast image browsing; full-featured screen capture.
+[FastStone Image Viewer](https://www.faststone.org/FSViewerDetail.htm) + [FastStone Capture](https://www.faststone.org/FSCaptureDetail.htm): Fast image browsing (including PSD and PDF); full-featured screen capture.
 
 [Typora](https://typora.io/): Markdown editor with real-time preview.
 
-[Zotero](https://www.zotero.org/) + [Nutstore](https://www.jianguoyun.com/static/html/International/index.html): Research paper management; synchronous network disk for storing Zotero papers and documents (an alternative to OneDrive).
+[Zotero](https://www.zotero.org/) + [Nutstore](https://www.jianguoyun.com/static/html/International/index.html): Research paper management; synchronous network disk for storing Zotero papers and personal documents (an alternative to OneDrive, but with WebDAV support).
+
+[Calibre](https://calibre-ebook.com/about): Full-featured e-book management software. Its e-book libraries can be stored in Nutstore.
 
 [7-Zip](https://www.7-zip.org/): Open-source file compression tool.
 
