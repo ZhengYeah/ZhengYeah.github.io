@@ -2,11 +2,11 @@
 
 [HONOR MagicBook Art 14 2025](https://www.honor.com/global/laptops/honor-magicbook-art-14/): Ultra-slim with 1kg and 1cm.
 
-[HONOR Magic7 Pro](https://www.honor.com/global/phones/honor-magic7-pro/)
+[HONOR Magic7 Pro](https://www.honor.com/global/phones/honor-magic7-pro/): HONOR’s flagship smartphone, with a larger battery than other brands.
 
-[HONOR Earbuds Open](https://www.honor.com/global/audio/honor-earbuds-open/) 
+[HONOR Earbuds Open](https://www.honor.com/global/audio/honor-earbuds-open/): HONOR’s flagship earbuds, stable to wear. No special features compared with other brands.
 
-[NiZ-X87](https://www.niz.store/en/products/x87): Capacitive non-contact electrostatic keyboard.
+[NiZ-X87](https://www.niz.store/en/products/x87): Electrostatic capacitive keyboard with a lightweight 30gf actuation force.
 
 [Logitech MX Master 3S](https://www.logitech.com/en-hk/shop/p/mx-master-3s): Ergonomic mouse with fast electromagnetic scrolling.
 
