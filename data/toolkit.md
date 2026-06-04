@@ -20,7 +20,7 @@ I work and live with Windows and Android, having a preference for their freedom 
 
 [Oh My Posh](https://ohmyposh.dev/): Prompt engine displaying dynamic information in your terminal, such as folder paths, Git status, system resources, and coding language versions.
 
-[Traffic Monitor](https://trafficmonitor.org/): Network speed, CPU, and RAM usage monitor with a taskbar widget.
+[Traffic Monitor](https://trafficmonitor.org/): Network speed, CPU, and RAM usage monitor with a taskbar widget. 
 
 [Affinity](https://www.affinity.studio/): Alternative to Adobe Photoshop and Illustrator.
 
@@ -30,13 +30,17 @@ I work and live with Windows and Android, having a preference for their freedom 
 
 [Typora](https://typora.io/): Markdown editor with real-time preview.
 
-[Zotero](https://www.zotero.org/) + [Nutstore](https://www.jianguoyun.com/static/html/International/index.html): Research paper management; synchronous network disk for storing Zotero papers and personal documents (an alternative to OneDrive, but with WebDAV support).
+[Zotero](https://www.zotero.org/): Research paper manager.
+
+[Nutstore](https://www.jianguoyun.com/static/html/International/index.html): Synchronous network disk for storing Zotero papers and personal documents (an alternative to OneDrive, but with WebDAV support).
 
 [Calibre](https://calibre-ebook.com/about): Full-featured e-book management software. Its e-book libraries can be stored in Nutstore.
 
 [7-Zip](https://www.7-zip.org/): Open-source file compression tool.
 
-[MiKTex](https://miktex.org/) + VS Code (with extensions [LaTeX Wrokshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop), [LTeX](https://ltex-plus.github.io/ltex-plus/), [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme), and [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)): LaTeX writing environment.
+[MiKTeX](https://miktex.org/) + VS Code (with extensions [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop), [LTeX+](https://ltex-plus.github.io/ltex-plus/), [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme), and [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)): LaTeX writing environment.
+
+[Firefox](https://www.mozilla.org/en-US/firefox/new/): To support the diversity of web browser engines, I recommend giving Firefox a try. I primarily use its Android version, which is much better than Chrome and Edge on Android.
 
 ## Websites
 
