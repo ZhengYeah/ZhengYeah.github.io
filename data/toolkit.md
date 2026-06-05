@@ -24,15 +24,15 @@ I work and live with Windows and Android, having a preference for their freedom 
 
 [Affinity](https://www.affinity.studio/): Alternative to Adobe Photoshop and Illustrator.
 
-[AxMath](https://www.axsoft.co/): Mathematical equation editor for Windows, an alternative to MathType, used with Affinity for drawing mathematical diagrams.
+[AxMath](https://www.axsoft.co/): Mathematical equation editor for Windows, an alternative to MathType, used with Affinity for drawing mathematical diagrams. (Paid software)
 
-[FastStone Image Viewer](https://www.faststone.org/FSViewerDetail.htm) + [FastStone Capture](https://www.faststone.org/FSCaptureDetail.htm): Fast image browsing (including PSD and PDF); full-featured screen capture.
+[FastStone Image Viewer](https://www.faststone.org/FSViewerDetail.htm) + [FastStone Capture](https://www.faststone.org/FSCaptureDetail.htm): Fast image browsing (including PSD and PDF); full-featured screen capture (Paid software).
 
-[Typora](https://typora.io/): Markdown editor with real-time preview.
+[Typora](https://typora.io/): Markdown editor with real-time preview. (Paid software)
 
 [Zotero](https://www.zotero.org/): Research paper manager.
 
-[Nutstore](https://www.jianguoyun.com/static/html/International/index.html): Synchronous network disk for storing Zotero papers and personal documents (an alternative to OneDrive, but with WebDAV support).
+[Nutstore](https://www.jianguoyun.com/static/html/International/index.html): Synchronous network disk for storing Zotero papers and personal documents. An alternative to OneDrive, but with WebDAV support. (Subscription-based service)
 
 [Calibre](https://calibre-ebook.com/about): Full-featured e-book management software. Its e-book libraries can be stored in Nutstore.
 
