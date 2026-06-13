@@ -48,6 +48,8 @@ I work and live with Windows and Android, having a preference for their freedom 
 
 [Hacker News](https://news.ycombinator.com/): American social news website focusing on computer science and entrepreneurship. Beautified Android APP: [Harmonic for HN](https://github.com/SimonHalvdansson/Harmonic-HN).
 
-[Embrace The Red](https://embracethered.com/blog/): Computer security, ethical hacking, red teaming and technology at large.
+[Aeon](https://aeon.co/): A digital magazine of ideas, with essays, articles, and videos on philosophy, culture, and science.
 
 [LessWrong](https://www.lesswrong.com/): Discussion of cognitive biases, philosophy, psychology, economics, rationality, and artificial intelligence.
+
+[Embrace The Red](https://embracethered.com/blog/): Computer security, ethical hacking, red teaming and technology at large.
