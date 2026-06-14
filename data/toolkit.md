@@ -48,7 +48,7 @@ I work and live with Windows and Android, having a preference for their freedom 
 
 [Hacker News](https://news.ycombinator.com/): American social news website focusing on computer science and entrepreneurship. Beautified Android APP: [Harmonic for HN](https://github.com/SimonHalvdansson/Harmonic-HN).
 
-[Aeon](https://aeon.co/): A digital magazine of ideas, with essays, articles, and videos on philosophy, culture, and science.
+[Arts and Letters Daily](https://www.aldaily.com/): A daily compilation of links to articles, book reviews, and essays on culture, literature, philosophy, and current events, offering greater diversity than [Aeon](https://aeon.co/).
 
 [LessWrong](https://www.lesswrong.com/): Discussion of cognitive biases, philosophy, psychology, economics, rationality, and artificial intelligence.
 
