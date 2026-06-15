@@ -50,6 +50,8 @@ I work and live with Windows and Android, having a preference for their freedom 
 
 [Arts and Letters Daily](https://www.aldaily.com/): A daily compilation of links to articles, book reviews, and essays on culture, literature, philosophy, and current events, offering greater diversity than [Aeon](https://aeon.co/).
 
+[Internet Encyclopedia of Philosophy](https://iep.utm.edu/a/): Comprehensive explanations of philosophical concepts, theories, and philosophers.
+
 [LessWrong](https://www.lesswrong.com/): Discussion of cognitive biases, philosophy, psychology, economics, rationality, and artificial intelligence.
 
 [Embrace The Red](https://embracethered.com/blog/): Computer security, ethical hacking, red teaming and technology at large.
