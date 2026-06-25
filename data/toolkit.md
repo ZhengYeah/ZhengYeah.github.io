@@ -39,19 +39,3 @@ I work and live with Windows and Android, having a preference for their freedom 
 [7-Zip](https://www.7-zip.org/): Open-source file compression tool.
 
 [MiKTeX](https://miktex.org/) + VS Code (with extensions [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop), [LTeX+](https://ltex-plus.github.io/ltex-plus/), [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme), and [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)): LaTeX writing environment.
-
-[Firefox](https://www.mozilla.org/en-US/firefox/new/): To support the diversity of web browser engines, I recommend giving Firefox a try. I primarily use its Android version, which is much better than Chrome and Edge on Android.
-
-## Websites
-
-[iconfont.cn](https://www.iconfont.cn/): The largest vector icon library in China, providing vector icon download, online storage, format conversion and other functions.
-
-[Hacker News](https://news.ycombinator.com/): American social news website focusing on computer science and entrepreneurship. Beautified Android APP: [Harmonic for HN](https://github.com/SimonHalvdansson/Harmonic-HN).
-
-[Arts and Letters Daily](https://www.aldaily.com/): A daily compilation of links to articles, book reviews, and essays on culture, literature, philosophy, and current events, offering greater diversity than [Aeon](https://aeon.co/).
-
-[Internet Encyclopedia of Philosophy](https://iep.utm.edu/a/): Comprehensive explanations of philosophical concepts, theories, and philosophers.
-
-[LessWrong](https://www.lesswrong.com/): Discussion of cognitive biases, philosophy, psychology, economics, rationality, and artificial intelligence.
-
-[Embrace The Red](https://embracethered.com/blog/): Computer security, ethical hacking, red teaming and technology at large.
