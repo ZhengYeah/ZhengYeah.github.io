@@ -16,6 +16,8 @@ I work and live with Windows and Android, having a preference for their freedom 
 
 ## Software
 
+[Win11Debloat](https://github.com/Raphire/Win11Debloat): A lightweight PowerShell script that removes pre-installed apps, disable telemetry, and perform various other changes to declutter and customize Windows. 
+
 [WinGet](https://learn.microsoft.com/en-us/windows/package-manager/winget/): Unified software installation and management for Windows.
 
 [Oh My Posh](https://ohmyposh.dev/): Prompt engine displaying dynamic information in your terminal, such as folder paths, Git status, system resources, and coding language versions.
