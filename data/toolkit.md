@@ -32,11 +32,9 @@ I work and live with Windows and Android, having a preference for their freedom 
 
 [Typora](https://typora.io/): Markdown editor with real-time preview. (Paid software)
 
-[Zotero](https://www.zotero.org/): Research paper manager.
+[Zotero](https://www.zotero.org/): Research paper manager. Paper libraries can be stored in cloud storage such as OneDrive.
 
-[Nutstore](https://www.jianguoyun.com/static/html/International/index.html): Synchronous network disk for storing Zotero papers and personal documents. An alternative to OneDrive, but with WebDAV support. (Subscription-based service)
-
-[Calibre](https://calibre-ebook.com/about): Full-featured e-book management software. Its e-book libraries can be stored in Nutstore.
+[Calibre](https://calibre-ebook.com/about): Full-featured e-book management software. Its e-book libraries can be stored in cloud storage.
 
 [7-Zip](https://www.7-zip.org/): Open-source file compression tool.
 
