@@ -26,11 +26,15 @@ I work and live with Windows and Android, having a preference for their freedom 
 
 [Affinity](https://www.affinity.studio/): Alternative to Adobe Photoshop and Illustrator.
 
+[Kdenlive](https://kdenlive.org/en/): Lightweight and open-source video editing software, alternative to Adobe Premiere Pro.
+
 [AxMath](https://www.axsoft.co/): Mathematical equation editor for Windows, an alternative to MathType, used with Affinity for drawing mathematical diagrams. (Paid software)
 
 [FastStone Image Viewer](https://www.faststone.org/FSViewerDetail.htm) + [FastStone Capture](https://www.faststone.org/FSCaptureDetail.htm): Fast image browsing (including PSD and PDF); full-featured screen capture (Paid software).
 
 [Typora](https://typora.io/): Markdown editor with real-time preview. (Paid software)
+
+[OneDrive](https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage): Cloud storage integrated well with Windows. Super affordable through Microsoft 365 Family plan on Taobao. (Paid service)
 
 [Zotero](https://www.zotero.org/): Research paper manager. Paper libraries can be stored in cloud storage such as OneDrive.
 
