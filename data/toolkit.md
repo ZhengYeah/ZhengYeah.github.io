@@ -14,6 +14,8 @@ I work and live with Windows and Android, having a preference for their freedom 
 
 [iReader Ocean5 Pro](https://www.reddit.com/r/ereader/comments/1q8w3ak/ireader_ocean5pro_review/): Fast-refresh e-reader.
 
+Desktop computer: AMD Ryzen 5 9600X, Gigabyte B850M Force WiFi6E, XPG D300 24GB 6000MHz, Jonsbo Z20.
+
 ## Software
 
 [Win11Debloat](https://github.com/Raphire/Win11Debloat): A lightweight PowerShell script that removes pre-installed apps, disable telemetry, and perform various other changes to declutter and customize Windows. 
@@ -36,7 +38,7 @@ I work and live with Windows and Android, having a preference for their freedom 
 
 [OneDrive](https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage): Cloud storage integrated well with Windows. Super affordable through Microsoft 365 Family plan on Taobao. (Paid service)
 
-[Zotero](https://www.zotero.org/): Research paper manager. Paper libraries can be stored in cloud storage such as OneDrive.
+[Zotero](https://www.zotero.org/): Research paper manager. Paper libraries can be stored in cloud storage such as OneDrive via plugin [ZotMoov](https://github.com/wileyyugioh/zotmoov).
 
 [Calibre](https://calibre-ebook.com/about): Full-featured e-book management software. Its e-book libraries can be stored in cloud storage.
 
