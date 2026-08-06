@@ -14,7 +14,7 @@ I work and live with Windows and Android, having a preference for their freedom 
 
 [iReader Ocean5 Pro](https://www.reddit.com/r/ereader/comments/1q8w3ak/ireader_ocean5pro_review/): Fast-refresh e-reader.
 
-Desktop computer: AMD Ryzen 5 9600X, Gigabyte B850M Force WiFi6E, XPG D300 24GB 6000MHz, Jonsbo Z20.
+Desktop computer: AMD Ryzen 5 9600X, Gigabyte B850M Force WiFi6E, XPG D300 24GB 6000MHz, Jonsbo Z20 Micro-ATX case.
 
 ## Software
 
