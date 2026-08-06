@@ -1,20 +1,16 @@
-I work and live with Windows and Android, having a preference for their freedom and diversity (along with their complexity and chaos). I have tried and am trying many hardware and software products, and here are the main tools I am using daily.
+I work and live with Windows and Android, having preference for their freedom and diversity (along with complexity and chaos). I have tried and am trying many hardware and software products, and here are the main tools I am using daily.
 
 ## Hardware
 
 [HONOR MagicBook Art 14 2025](https://www.honor.com/global/laptops/honor-magicbook-art-14/): Ultra-slim with 1kg and 1cm.
 
-[HONOR Magic7 Pro](https://www.honor.com/global/phones/honor-magic7-pro/): HONOR’s flagship smartphone, with a larger battery than other brands. Compatible with [GMS](https://www.android.com/intl/en_hk/gms/).
-
-[HONOR Earbuds Open](https://www.honor.com/global/audio/honor-earbuds-open/): HONOR’s flagship earbuds, stable to wear. No special features compared with other brands.
+Desktop computer: CPU: [AMD Ryzen 5 9600X](https://www.amd.com/en/products/processors/desktops/ryzen.html), Motherboard: [Gigabyte B850M Force WiFi6E](https://www.gigabyte.com/sg/Motherboard), RAM: [XPG D300 6000MHz 24GB](https://www.xpg.com/ng), Storage: [SIX X7400 NVMe M.2 SSD 512GB](https://sixmemory.com/), Case: [Jonsbo Z20 Micro-ATX](https://www.jonsbo.com/en/product/ComputerCase.html).
 
 [NiZ-X87](https://www.niz.store/en/products/x87): Electrostatic capacitive keyboard with a lightweight 30gf actuation force.
 
 [Logitech MX Master 3S](https://www.logitech.com/en-hk/shop/p/mx-master-3s): Ergonomic mouse with fast electromagnetic scrolling.
 
 [iReader Ocean5 Pro](https://www.reddit.com/r/ereader/comments/1q8w3ak/ireader_ocean5pro_review/): Fast-refresh e-reader.
-
-Desktop computer: AMD Ryzen 5 9600X, Gigabyte B850M Force WiFi6E, XPG D300 24GB 6000MHz, Jonsbo Z20 Micro-ATX case.
 
 ## Software
 
