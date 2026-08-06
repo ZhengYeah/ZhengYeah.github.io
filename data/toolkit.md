@@ -4,7 +4,12 @@ I work and live with Windows and Android, having preference for their freedom an
 
 [HONOR MagicBook Art 14 2025](https://www.honor.com/global/laptops/honor-magicbook-art-14/): Ultra-slim with 1kg and 1cm.
 
-Desktop computer: CPU: [AMD Ryzen 5 9600X](https://www.amd.com/en/products/processors/desktops/ryzen.html), Motherboard: [Gigabyte B850M Force WiFi6E](https://www.gigabyte.com/sg/Motherboard), RAM: [XPG D300 6000MHz 24GB](https://www.xpg.com/ng), Storage: [SIX X7400 NVMe M.2 SSD 512GB](https://sixmemory.com/), Case: [Jonsbo Z20 Micro-ATX](https://www.jonsbo.com/en/product/ComputerCase.html).
+Desktop computer:
+- CPU: [AMD Ryzen 5 9600X](https://www.amd.com/en/products/processors/desktops/ryzen.html)
+- Motherboard: [Gigabyte B850M Force WiFi6E](https://www.gigabyte.com/sg/Motherboard)
+- RAM: [XPG D300 6000MHz 24GB](https://www.xpg.com/ng/category/computer-memory)
+- Storage: [SIX X7400 NVMe M.2 SSD 512GB](https://sixmemory.com/)
+- Case: [Jonsbo Z20 Micro-ATX](https://www.jonsbo.com/en/product/ComputerCase.html).
 
 [NiZ-X87](https://www.niz.store/en/products/x87): Electrostatic capacitive keyboard with a lightweight 30gf actuation force.
 
