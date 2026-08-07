@@ -25,7 +25,9 @@ Desktop computer:
 
 [Oh My Posh](https://ohmyposh.dev/): Prompt engine displaying dynamic information in your terminal, such as folder paths, Git status, system resources, and coding language versions.
 
-[Traffic Monitor](https://trafficmonitor.org/): Network speed, CPU, and RAM usage monitor with a taskbar widget. 
+[Traffic Monitor](https://trafficmonitor.org/): Network speed, CPU, and RAM usage monitor with a taskbar widget.
+
+[HWiNFO64](https://www.hwinfo.com/): Professional System Information and Diagnostics, used for monitoring hardware status and temperatures. 
 
 [Affinity](https://www.affinity.studio/): Alternative to Adobe Photoshop and Illustrator.
 
