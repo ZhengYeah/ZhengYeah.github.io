@@ -7,11 +7,11 @@ I work and live with Windows and Android, having preference for their freedom an
 Desktop computer:
 - CPU: [AMD Ryzen 5 9600X](https://www.amd.com/en/products/processors/desktops/ryzen.html)
 - Motherboard: [Gigabyte B850M Force WiFi6E](https://www.gigabyte.com/sg/Motherboard)
-- RAM: [XPG D300 6000MHz 24GB](https://www.xpg.com/ng/category/computer-memory)
+- RAM: [XPG D300 6000MHz CL36 24GB](https://www.xpg.com/ng/category/computer-memory)
 - Storage: [SIX X7400 NVMe M.2 SSD 512GB](https://sixmemory.com/)
 - Case: [Jonsbo Z20 Micro-ATX](https://www.jonsbo.com/en/product/ComputerCase.html).
 
-[NiZ-X87](https://www.niz.store/en/products/x87): Electrostatic capacitive keyboard with a lightweight 30gf actuation force.
+[NiZ-X87](https://www.niz.store/en): Electrostatic capacitive keyboard with a lightweight 30gf actuation force.
 
 [Logitech MX Master 3S](https://www.logitech.com/en-hk/shop/p/mx-master-3s): Ergonomic mouse with fast electromagnetic scrolling.
 
@@ -21,9 +21,7 @@ Desktop computer:
 
 [Win11Debloat](https://github.com/Raphire/Win11Debloat): A lightweight PowerShell script that removes pre-installed apps, disable telemetry, and perform various other changes to declutter and customize Windows. 
 
-[WinGet](https://learn.microsoft.com/en-us/windows/package-manager/winget/): Unified software installation and management for Windows.
-
-[Oh My Posh](https://ohmyposh.dev/): Prompt engine displaying dynamic information in your terminal, such as folder paths, Git status, system resources, and coding language versions.
+[UniGetUI](https://devolutions.net/unigetui/): GUI for the most common CLI package managers on Windows 11, including WinGet, Scoop, Snap, Chocolatey, etc.
 
 [Traffic Monitor](https://trafficmonitor.org/): Network speed, CPU, and RAM usage monitor with a taskbar widget.
 
@@ -43,8 +41,10 @@ Desktop computer:
 
 [Zotero](https://www.zotero.org/): Research paper manager. Paper libraries can be stored in cloud storage such as OneDrive via plugin [ZotMoov](https://github.com/wileyyugioh/zotmoov).
 
-[Calibre](https://calibre-ebook.com/about): Full-featured e-book management software. Its e-book libraries can be stored in cloud storage.
-
 [7-Zip](https://www.7-zip.org/): Open-source file compression tool.
 
 [MiKTeX](https://miktex.org/) + VS Code (with extensions [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop), [LTeX+](https://ltex-plus.github.io/ltex-plus/), [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme), and [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)): LaTeX writing environment.
+
+[Oh My Posh](https://ohmyposh.dev/): Prompt engine displaying dynamic information in your terminal, such as folder paths, Git status, system resources, and coding language versions.
+
+[Calibre](https://calibre-ebook.com/about): Full-featured e-book management software. Its e-book libraries can be stored in cloud storage.
