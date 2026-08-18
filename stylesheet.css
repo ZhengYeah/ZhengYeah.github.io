@@ -477,37 +477,22 @@ h2.heading {
 }
 
 .paper-entry {
-  margin-top: 40px;
+  margin: 16px 0;
 }
 
 /* Divider lines between entries in publications, news, and bio sections */
+.news-list .paper-entry > p,
 .publications-list .paper-entry > p,
-.news-list .paper-entry > p {
+.bio-list .paper-entry > p{
   margin: 0;
 }
 
-.bio-list .paper-entry > p:first-child {
-  margin-top: 0;
-}
-
-.bio-list .paper-entry > ul:last-child {
-  margin-bottom: 0;
-}
-
-.publications-list .paper-entry + .paper-entry,
 .news-list .paper-entry + .paper-entry,
+.publications-list .paper-entry + .paper-entry,
 .bio-list .paper-entry + .paper-entry {
   margin-top: 16px;
   padding-top: 16px;
   border-top: 1px dashed var(--divider-color);
-}
-
-.news-list .paper-entry:first-child,
-.publications-list .paper-entry:first-child,
-.bio-list .paper-entry:first-child,
-.misc-list .paper-entry:first-child,
-.awards-list .paper-entry:first-child {
-  margin-top: 20px;
 }
 
 /******************** Footer ********************/
