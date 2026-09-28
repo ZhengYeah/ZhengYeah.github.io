@@ -613,6 +613,10 @@ h2.heading {
   content: "\ee14";
 }
 
+.icon-github:before {
+  content: "\e718";
+}
+
 .icon-travel-location-map:before {
   content: "\e6da";
 }
