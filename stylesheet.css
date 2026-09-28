@@ -480,16 +480,18 @@ h2.heading {
   margin: 16px 0;
 }
 
-/* Divider lines between entries in publications, news, and bio sections */
+/* Divider lines between entries in publications, news, bio, and misc sections */
 .news-list .paper-entry > p,
 .publications-list .paper-entry > p,
-.bio-list .paper-entry > p{
+.bio-list .paper-entry > p,
+.misc-list .paper-entry > p {
   margin: 0;
 }
 
 .news-list .paper-entry + .paper-entry,
 .publications-list .paper-entry + .paper-entry,
-.bio-list .paper-entry + .paper-entry {
+.bio-list .paper-entry + .paper-entry,
+.misc-list .paper-entry + .paper-entry {
   margin-top: 16px;
   padding-top: 16px;
   border-top: 1px dashed var(--divider-color);
