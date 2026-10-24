@@ -599,16 +599,24 @@ h2.heading {
 /******************** Icon font ********************/
 
 @font-face {
-  font-family: "iconfont";
-  src: url('iconfont.woff2?t=1780404088324') format('woff2');
+  font-family: "iconfont"; /* Project id 1721354 */
+  src: url('iconfont.woff2?t=1792849654242') format('woff2');
   font-display: swap;
 }
 
 .iconfont {
-  font-family: "iconfont", sans-serif !important;
+  font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xiangxia3:before {
+  content: "\e773";
+}
+
+.icon-xiangxiazhanhang:before {
+  content: "\ec0b";
 }
 
 .icon-toolkit:before {
@@ -617,10 +625,6 @@ h2.heading {
 
 .icon-github:before {
   content: "\e718";
-}
-
-.icon-travel-location-map:before {
-  content: "\e6da";
 }
 
 .icon-boshimao-L:before {
@@ -666,3 +670,4 @@ h2.heading {
 .icon-company:before {
   content: "\e659";
 }
+
