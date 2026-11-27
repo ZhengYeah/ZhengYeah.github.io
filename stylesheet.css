@@ -431,11 +431,19 @@ header {
 
 /******************** Text content ********************/
 
+.paper-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  margin-block: 6px;
+}
+
 .button-links {
   font-size: var(--small-text);
-  padding: 0 4px;
-  border: 1px solid;
-  border-radius: 5px;
+  line-height: 1.5;
+  padding: 1px 7px;
+  border: 1px solid var(--link-color);
+  border-radius: 6px;
   white-space: nowrap;
 }
 
@@ -478,13 +486,6 @@ h2.heading {
 
 .paper-entry {
   margin: 16px 0;
-}
-
-.paper-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 8px;
-  margin-block: 6px;
 }
 
 /* Divider lines between entries in publications, news, bio, and misc sections */
