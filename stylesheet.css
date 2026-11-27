@@ -440,7 +440,7 @@ header {
 
 .button-links {
   font-size: var(--small-text);
-  line-height: 1.5;
+  line-height: 1.4;
   padding: 1px 7px;
   border: 1px solid var(--link-color);
   border-radius: 6px;
