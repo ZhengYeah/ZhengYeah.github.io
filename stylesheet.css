@@ -435,7 +435,7 @@ header {
   font-size: var(--small-text);
   padding: 0 4px;
   border: 1px solid;
-  border-radius: 6px;
+  border-radius: 5px;
   white-space: nowrap;
 }
 
