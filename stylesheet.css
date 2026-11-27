@@ -480,6 +480,13 @@ h2.heading {
   margin: 16px 0;
 }
 
+.paper-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  margin-block: 6px;
+}
+
 /* Divider lines between entries in publications, news, bio, and misc sections */
 .news-list .paper-entry > p,
 .publications-list .paper-entry > p,
